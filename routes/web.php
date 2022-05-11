@@ -1,5 +1,17 @@
 <?php
+//Guest
+use App\Http\Controllers\Guest\ArtikelController as GuestArtikel;
+use App\Http\Controllers\Guest\BerandaController as GuestBeranda;
+use App\Http\Controllers\Guest\KontakController as GuestKontak;
+use App\Http\Controllers\Guest\ProdukController as GuestProduk;
+use App\Http\Controllers\Guest\TentangController as GuestTentang;
 
+//Admin
+use App\Http\Controllers\Admin\ArtikelController;
+use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\KategoriController;
+use App\Http\Controllers\Admin\ProdukController;
+use App\Http\Controllers\Admin\TestimonialController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +27,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('guest.beranda.index');
+});
+//Guest
+Route::resource('beranda', GuestBeranda::class);
+Route::resource('artikel', GuestArtikel::class);
+Route::resource('kontak', GuestKontak::class);
+Route::resource('produk', GuestProduk::class);
+Route::resource('tentang', GuestTentang::class);
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::resource('dashboard-artikel', ArtikelController::class);
+    Route::resource('dashboard-banner', BannerController::class);
+    Route::resource('dashboard-kategori', KategoriController::class);
+    Route::resources('dashboard-produk', ProdukController::class);
+    Route::resource('dashboard-testimonial', TestimonialController::class);
 });
 
 Route::get('/dashboard', function () {

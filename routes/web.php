@@ -35,6 +35,7 @@ Route::resource('kontak', GuestKontak::class);
 Route::resource('produk', GuestProduk::class);
 Route::resource('tentang', GuestTentang::class);
 
+//Admin
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('dashboard-artikel', ArtikelController::class);
     Route::resource('dashboard-banner', BannerController::class);

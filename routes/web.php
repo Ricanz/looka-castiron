@@ -36,11 +36,11 @@ Route::resource('produk', GuestProduk::class);
 Route::resource('tentang', GuestTentang::class);
 
 //Admin
-Route::group(['middleware' => ['auth']], function () {
+Route::group(['middleware' => 'auth'], function () {
     Route::resource('dashboard-artikel', ArtikelController::class);
     Route::resource('dashboard-banner', BannerController::class);
     Route::resource('dashboard-kategori', KategoriController::class);
-    Route::resources('dashboard-produk', ProdukController::class);
+    Route::resource('dashboard-produk', ProdukController::class);
     Route::resource('dashboard-testimonial', TestimonialController::class);
 });
 

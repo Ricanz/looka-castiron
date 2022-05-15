@@ -14,7 +14,7 @@ class TentangController extends Controller
      */
     public function index()
     {
-        //
+        return view('guest.tentang.index');
     }
 
     /**

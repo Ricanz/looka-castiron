@@ -42,15 +42,13 @@
                         </div>
                         <div class="col-sm-12 col-lg-2 ec-footer-info">
                             <div class="ec-footer-widget">
-                                <h4 class="ec-footer-heading">Information</h4>
+                                <h4 class="ec-footer-heading">Menu</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="ec-footer-link"><a href="about-us.html">About us</a></li>
-                                        <li class="ec-footer-link"><a href="track-order.html">Delivery Information</a></li>
-                                        <li class="ec-footer-link"><a href="privacy-policy.html">Policy & policy </a></li>
-                                        <li class="ec-footer-link"><a href="terms-condition.html">Terms & conditions</a></li>
-                                        <li class="ec-footer-link"><a href="contact-us.html">Contact us</a></li>
-                                        <li class="ec-footer-link"><a href="#">Returns</a></li>
+                                        <li class="ec-footer-link"><a href="about-us.html">Tentang Kami</a></li>
+                                        <li class="ec-footer-link"><a href="track-order.html">Katalog</a></li>
+                                        <li class="ec-footer-link"><a href="privacy-policy.html">Artikel </a></li>
+                                        <li class="ec-footer-link"><a href="terms-condition.html">Kontak</a></li>
                                     </ul>
                                 </div>
                             </div>

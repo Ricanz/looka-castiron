@@ -108,7 +108,7 @@
                     <div class="col ec-main-menu-block align-self-center d-none d-lg-block p-0">
                         <div class="ec-main-menu">
                             <ul>
-                                <li><a href="{{ url('/kontak') }}">Beranda</a></li>
+                                <li><a href="{{ url('/') }}">Beranda</a></li>
                                 <li><a href="{{ url('/tentang') }}">Tentang</a></li>
                                 <li><a href="{{ url('/produk') }}">Katalog</a></li>
                                 <li><a href="{{ url('/artikel') }}">Artikel</a></li>

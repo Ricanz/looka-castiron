@@ -39,7 +39,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('dashboard-artikel', ArtikelController::class);
     Route::resource('dashboard-banner', BannerController::class);
     Route::resource('dashboard-kategori', KategoriController::class);
-    Route::resources('dashboard-produk', ProdukController::class);
+    Route::resource('dashboard-produk', ProdukController::class);
     Route::resource('dashboard-testimonial', TestimonialController::class);
 });
 

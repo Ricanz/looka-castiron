@@ -153,7 +153,7 @@
                 <div class="row">
                     <div class="col-md-12 section-title-block">
                         <div class="section-title">
-                            <h2 class="ec-title">Featured Products</h2>
+                            <h2 class="ec-title">Produk Terlaris</h2>
                             <h6 class="ec-sub-title">Lorem Ipsum is simply dummy text of the printing</h6>
 
                         </div>

@@ -28,6 +28,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('guest.beranda.index');
 });
+
+//Dashboard Admin Route Test
+Route::get('/dashboard', function(){
+    return view('admin.index');
+});
+
 //Guest
 Route::resource('beranda', GuestBeranda::class);
 Route::resource('artikel', GuestArtikel::class);
@@ -43,8 +49,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('dashboard-testimonial', TestimonialController::class);
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';

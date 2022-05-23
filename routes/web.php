@@ -30,10 +30,12 @@ Route::get('/', function () {
 });
 
 //Dashboard Admin Route Test
-Route::get('admin-dashboard', function(){
-    return view('admin.index');
+Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
+    Route::get('dashboard', function () {
+        return view('admin.index');
+    });
+    Route::resource('produk', ProdukController::class);
 });
-Route::resource('produk', ProdukController::class);
 
 //Guest
 Route::resource('beranda', GuestBeranda::class);
@@ -54,4 +56,4 @@ Route::resource('tentang', GuestTentang::class);
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

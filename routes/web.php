@@ -30,24 +30,25 @@ Route::get('/', function () {
 });
 
 //Dashboard Admin Route Test
-Route::get('/dashboard', function(){
+Route::get('admin-dashboard', function(){
     return view('admin.index');
 });
+Route::resource('produk', ProdukController::class);
 
 //Guest
 Route::resource('beranda', GuestBeranda::class);
 Route::resource('artikel', GuestArtikel::class);
 Route::resource('kontak', GuestKontak::class);
-Route::resource('produk', GuestProduk::class);
+// Route::resource('produk', GuestProduk::class);
 Route::resource('tentang', GuestTentang::class);
 
-Route::group(['middleware' => ['auth']], function () {
-    Route::resource('dashboard-artikel', ArtikelController::class);
-    Route::resource('dashboard-banner', BannerController::class);
-    Route::resource('dashboard-kategori', KategoriController::class);
-    Route::resource('dashboard-produk', ProdukController::class);
-    Route::resource('dashboard-testimonial', TestimonialController::class);
-});
+// Route::group(['middleware' => ['auth']], function () {
+//     Route::resource('admin/artikel', ArtikelController::class);
+//     Route::resource('admin/banner', BannerController::class);
+//     Route::resource('admin/kategori', KategoriController::class);
+//     Route::resource('admin/produk', ProdukController::class);
+//     Route::resource('admin/testimonial', TestimonialController::class);
+// });
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

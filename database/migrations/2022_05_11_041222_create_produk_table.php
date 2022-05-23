@@ -16,11 +16,14 @@ return new class extends Migration
         Schema::create('produk', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('harga');
             $table->foreignId('kategori_id')->constrained('kategori')->onDelete('cascade')->onUpdate('cascade');
             $table->string('gambar');
-            $table->longText('detail_gambar');
-            $table->string('link');
-            $table->text('deskripsi');
+            $table->string('slug');
+            $table->longText('deskripsi');
+            $table->string('shopee_link')->nullable();
+            $table->string('tokopedia_link')->nullable();
+            $table->string('lazada_link')->nullable();
             $table->timestamps();
         });
     }

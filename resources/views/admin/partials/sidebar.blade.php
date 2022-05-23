@@ -102,21 +102,21 @@
                 </li>
 
                 <!-- Products -->
-                <li class="has-sub {{ request()->is('produk*') ? 'active expand' : '' }}">
+                <li class="has-sub {{ request()->is('admin/produk*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-palette-advanced"></i>
-                        <span class="nav-text">Products</span> <b class="caret"></b>
+                        <span class="nav-text">Produk</span> <b class="caret"></b>
                     </a>
-                    <div class="collapse {{ request()->is('produk*') ? 'show' : '' }}">
+                    <div class="collapse {{ request()->is('admin-produk*') ? 'show' : '' }}">
                         <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
-                            <li class="{{ request()->is('produk/create') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="">
-                                    <span class="nav-text">Add Product</span>
+                            <li class="{{ request()->is('admin-produk/create') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="admin-produk/create">
+                                    <span class="nav-text">Tambah Produk</span>
                                 </a>
                             </li>
-                            <li class="{{ request()->is('produk') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="">
-                                    <span class="nav-text">List Product</span>
+                            <li class="{{ request()->is('admin/produk') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="produk">
+                                    <span class="nav-text">List Produk</span>
                                 </a>
                             </li>
                             <li class="{{ request()->is('produk-grid') ? 'active' : '' }}">

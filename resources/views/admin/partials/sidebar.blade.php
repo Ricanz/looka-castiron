@@ -132,18 +132,40 @@
                 <li class="has-sub {{ request()->is('testimonial*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-star-half"></i>
-                        <span class="nav-text">Testimonials</span> <b class="caret"></b>
+                        <span class="nav-text">Testimonial</span> <b class="caret"></b>
                     </a>
                     <div class="collapse {{ request()->is('testimonial*') ? 'show' : '' }}">
                         <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
                             <li class="{{ request()->is('testimonial/create') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="">
-                                    <span class="nav-text">Add Testimonial</span>
+                                <a class="sidenav-item-link" href="testimonial/create">
+                                    <span class="nav-text">Tambah Testimoni</span>
                                 </a>
                             </li>
                             <li class="{{ request()->is('testimonial') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="testimonial">
+                                    <span class="nav-text">List Testimoni</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                {{-- Banner --}}
+                <li class="has-sub {{ request()->is('banner*') ? 'active expand' : '' }}">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class="mdi mdi-star-half"></i>
+                        <span class="nav-text">Banner</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse {{ request()->is('banner*') ? 'show' : '' }}">
+                        <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+                            <li class="{{ request()->is('banner/create') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="">
-                                    <span class="nav-text">List Testimonial</span>
+                                    <span class="nav-text">Tambah Banner</span>
+                                </a>
+                            </li>
+                            <li class="{{ request()->is('banner') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="">
+                                    <span class="nav-text">List Banner</span>
                                 </a>
                             </li>
                         </ul>

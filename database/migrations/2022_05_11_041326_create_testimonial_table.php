@@ -16,8 +16,11 @@ return new class extends Migration
         Schema::create('testimonial', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('foto');
-            $table->string('instansi');
+            $table->string('foto')->nullable();
+            $table->string('instansi')->nullable();
+            $table->integer('rating');
+            $table->string('deskripsi')->nullable();
+            $table->enum('status', ['aktif', 'inaktif'])->default('aktif');
             $table->timestamps();
         });
     }

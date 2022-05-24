@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
 class TestimonialController extends Controller
@@ -14,7 +15,8 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        //
+        $testimoni = Testimonial::all();
+        return view('admin.testimoni.index', compact('testimoni'));
     }
 
     /**
@@ -24,7 +26,7 @@ class TestimonialController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.testimoni.create');
     }
 
     /**
@@ -35,7 +37,27 @@ class TestimonialController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nama' => 'required',
+            'rating' => 'required',
+        ]);
+
+        $date = date("his");
+        $extension = $request->file('gambar')->extension();
+        $file_name = "testimonial_$date.$extension";
+        $path = $request->file('gambar')->storeAs('public/Testimonial', $file_name);
+
+        $testimoni = Testimonial::create([
+            'nama' => $request->nama,
+            'instansi' => $request->instansi,
+            'foto' => $file_name,
+            'deskripsi' => $request->deskripsi,
+            'rating' => $request->rating,
+        ]);
+        if($testimoni){
+            return redirect()->route('testimonial.index')
+                ->with('success', 'testimonial Berhasil Ditambahkan');
+        }
     }
 
     /**

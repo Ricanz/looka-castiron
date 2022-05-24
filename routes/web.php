@@ -35,6 +35,7 @@ Route::get('dashboard', function () {
     return view('admin.index');
 });
 Route::resource('banner', BannerController::class);
+Route::resource('testimonial', TestimonialController::class);
 
 
 //Guest

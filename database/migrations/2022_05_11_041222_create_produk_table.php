@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('shopee_link')->nullable();
             $table->string('tokopedia_link')->nullable();
             $table->string('lazada_link')->nullable();
+            $table->boolean('status')->nullable();
             $table->timestamps();
         });
     }

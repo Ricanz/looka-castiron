@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Kategori;
 use App\Models\Produk;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProdukController extends Controller
 {
@@ -26,7 +28,8 @@ class ProdukController extends Controller
      */
     public function create()
     {
-        return view('admin.produk.create');
+        $Kategori = Kategori::all();
+        return view('admin.produk.create', compact('Kategori'));
     }
 
     /**
@@ -42,10 +45,10 @@ class ProdukController extends Controller
             'harga' => 'required',
             'deskripsi' => 'required',
             'kategori_id' => 'required',
-            'gambar' => 'required', 
+            'gambar' => 'required',
         ]);
 
-        dd($request->all);
+        // dd($request->all());
 
         $date = date("his");
         $extension = $request->file('gambar')->extension();
@@ -54,7 +57,7 @@ class ProdukController extends Controller
 
         Produk::create([
             'nama' => $request->nama,
-            'deskripsi' => $request->detail,
+            'deskripsi' => $request->deskripsi,
             'gambar' => $file_name,
             'harga' => $request->harga,
             'slug' => str_replace(' ', '-', strtolower($request->nama)),
@@ -63,7 +66,7 @@ class ProdukController extends Controller
             'lazada_link' => $request->lazada_link,
             'kategori_id' => $request->kategori_id,
         ]);
-        return redirect()->route('produk.index')
+        return redirect()->route('Produk.index')
             ->with('success', 'Produk Berhasil Ditambahkan');
     }
 
@@ -86,7 +89,10 @@ class ProdukController extends Controller
      */
     public function edit($id)
     {
-        return 'test';
+        $Kategori = Kategori::all();
+        $Produk = Produk::find($id);
+        // dd($Produk);
+        return view('admin.produk.edit', compact('Kategori', 'Produk'));
     }
 
     /**
@@ -98,7 +104,36 @@ class ProdukController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $Produk = Produk::find($id);
+        if ($Produk) {
+            if (!$request->Produk) {
+
+                $date = date("his");
+                $extension = $request->file('gambar')->extension();
+                $file_name = "Produk_$date.$extension";
+                $request->gambar->storeAs('public/Produk', $file_name);
+                $Produk->gambar = "Produk_$date.$extension";;
+            } else {
+
+                $date = date("his");
+                $extension = $request->file('gambar')->extension();
+                $file_name = "Produk_$date.$extension";
+                $request->gambar->storeAs('public/Produk', $file_name);
+                $Produk->gambar = "Produk_$date.$extension";;
+            }
+
+            $Produk->nama = $request->nama;
+            $Produk->deskripsi = $request->deskripsi;
+            $Produk->harga = $request->harga;
+            $Produk->slug = str_replace(' ', '-', strtolower($request->nama));
+            $Produk->shopee_link = $request->shopee_link;
+            $Produk->lazada_link = $request->lazada_link;
+            $Produk->kategori_id = $request->kategori_id;
+            $Produk->save();
+        }
+
+        return redirect()->route('Produk.index')
+            ->with('edit', 'Produk Berhasil Diedit');
     }
 
     /**
@@ -109,6 +144,10 @@ class ProdukController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $Produk = Produk::findOrFail($id);
+        Storage::delete("public/Produk/$Produk->gambar");
+        $Produk->delete();
+        return redirect()->route('Produk.index')
+            ->with('delete', 'Produk Berhasil Dihapus');
     }
 }

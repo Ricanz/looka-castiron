@@ -19,7 +19,8 @@ class Produk extends Model
         'shopee_link',
         'tokopedia_link',
         'lazada_link',
-        'kategori_id'
+        'kategori_id',
+        'status'
     ];
 
     public function kategori()

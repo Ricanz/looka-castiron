@@ -80,21 +80,16 @@
                 </li>
 
                 <!-- Category -->
-                <li class="has-sub {{ request()->is('subKategori*', '||', 'kategori*') ? 'active expand' : '' }} ">
+                <li class="has-sub {{ request()->is('admin/Kategori*') ? 'active expand' : '' }} ">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-dns-outline"></i>
                         <span class="nav-text">Categories</span> <b class="caret"></b>
                     </a>
-                    <div class="collapse {{ request()->is('subKategori*' , '||', 'kategori*') ? 'show' : '' }}">
+                    <div class="collapse {{ request()->is('admin/Kategori*') ? 'show' : '' }}">
                         <ul class="sub-menu" id="categorys" data-parent="#sidebar-menu">
-                            <li class="{{ request()->is('kategori*') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="">
-                                    <span class="nav-text">Main Category</span>
-                                </a>
-                            </li>
-                            <li class="{{ request()->is('subKategori*') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="">
-                                    <span class="nav-text">Sub Category</span>
+                            <li class="{{ request()->is('admin/Kategori*') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('Kategori.index')}}">
+                                    <span class="nav-text">Kategori</span>
                                 </a>
                             </li>
                         </ul>
@@ -102,28 +97,28 @@
                 </li>
 
                 <!-- Products -->
-                <li class="has-sub {{ request()->is('produk*') ? 'active expand' : '' }}">
+                <li class="has-sub {{ request()->is('admin/Produk*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-palette-advanced"></i>
                         <span class="nav-text">Produk</span> <b class="caret"></b>
                     </a>
-                    <div class="collapse {{ request()->is('produk*') ? 'show' : '' }}">
+                    <div class="collapse {{ request()->is('admin/Produk*') ? 'show' : '' }}">
                         <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
-                            <li class="{{ request()->is('produk/create') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="{{route('produk.create')}}">
+                            <li class="{{ request()->is('admin/Produk/create') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('Produk.create')}}">
                                     <span class="nav-text">Tambah Produk</span>
                                 </a>
                             </li>
-                            <li class="{{ request()->is('produk') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="{{route('produk.index')}}">
+                            <li class="{{ request()->is('admin/Produk') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('Produk.index')}}">
                                     <span class="nav-text">List Produk</span>
                                 </a>
                             </li>
-                            <li class="{{ request()->is('produk-grid') ? 'active' : '' }}">
+                            {{-- <li class="{{ request()->is('Produk-grid') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="">
                                     <span class="nav-text">Grid Product</span>
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </li>
@@ -180,7 +175,7 @@
                     </a>
                     <div class="collapse {{ request()->is('') ? 'show' : '' }}">
                         <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
-                            <li class="{{ request()->is('produk-grid') ? 'active' : '' }}">
+                            <li class="{{ request()->is('Produk-grid') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="">
                                     <span class="nav-text">Add Product</span>
                                 </a>

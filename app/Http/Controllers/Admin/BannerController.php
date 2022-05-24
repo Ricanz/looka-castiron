@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Banner;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BannerController extends Controller
 {
@@ -14,7 +16,8 @@ class BannerController extends Controller
      */
     public function index()
     {
-        //
+        $banner = Banner::all();
+        return view('admin.banner.index', compact('banner'));
     }
 
     /**
@@ -24,7 +27,7 @@ class BannerController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.banner.create');
     }
 
     /**
@@ -35,7 +38,35 @@ class BannerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'banner' => 'required',
+        ]);
+
+        if (isset($request->banner)) {
+            $extention = $request->banner->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/banner/". $file_name;
+            $request->banner->storeAs('public/banner', $file_name);
+        } else {
+            $file_name = null;
+        }
+        $banner = Banner::create([
+            'judul' => $request->judul,
+            'sub_judul' => $request->sub_judul,
+            'deskripsi' => $request->deskripsi,
+            'gambar' => $txt,
+            'status' => 'aktif',
+            'tombol_text' => $request->tombol,
+            'tombol_link' => $request->link,
+        ]);
+
+        if($banner){
+            return redirect()->route('banner.index')
+                ->with('success', 'Banner Berhasil Ditambahkan');
+        } else{
+            return redirect()->back();
+        }
+
     }
 
     /**
@@ -57,7 +88,8 @@ class BannerController extends Controller
      */
     public function edit($id)
     {
-        //
+        $banner = Banner::findOrFail($id);
+        return view('admin.banner.edit', compact('banner'));
     }
 
     /**
@@ -69,7 +101,33 @@ class BannerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $banner = Banner::find($id);
+        if($banner){
+            if (!$request->banner) {
+                $extention = $request->banner->extension();
+                $file_name = time() . '.' . $extention;
+                $txt = "storage/banner/". $file_name;
+                $request->banner->storeAs('public/banner', $file_name);
+                $banner->gambar = $txt;
+            } else{
+                $extention = $request->banner->extension();
+                $file_name = time() . '.' . $extention;
+                $txt = "storage/banner/". $file_name;
+                $request->banner->storeAs('public/banner', $file_name);
+                $banner->gambar = $txt;
+            }
+            $banner->judul = $request->judul;
+            $banner->sub_judul = $request->sub_judul;
+            $banner->deskripsi = $request->deskripsi;
+            $banner->tombol_text = $request->tombol;
+            $banner->tombol_link = $request->link;
+            $banner->status = $request->status;
+            $banner->save();
+
+        }
+
+        return redirect()->route('banner.index')
+        ->with('edit', 'Banner Berhasil Diedit');
     }
 
     /**
@@ -80,6 +138,10 @@ class BannerController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $banner = Banner::findOrFail($id);
+        Storage::delete("public/banner/$banner->gambar");
+        $banner->delete();
+        return redirect()->route('banner.index')
+            ->with('delete', 'Banner Berhasil Dihapus');
     }
 }

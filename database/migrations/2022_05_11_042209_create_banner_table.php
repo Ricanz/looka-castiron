@@ -15,9 +15,13 @@ return new class extends Migration
     {
         Schema::create('banner', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->string('gambar');
-            $table->text('deskripsi');
+            $table->string('judul')->nullable();
+            $table->string('sub_judul')->nullable();
+            $table->string('gambar')->nullable();
+            $table->text('deskripsi')->nullable();
+            $table->enum('status', ['aktif', 'inaktif'])->default('aktif');
+            $table->string('tombol_text')->nullable();
+            $table->string('tombol_link');
             $table->timestamps();
         });
     }

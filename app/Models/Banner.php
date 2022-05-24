@@ -12,6 +12,10 @@ class Banner extends Model
     protected $fillable = [
         'judul',
         'gambar',
-        'deskripsi'
+        'deskripsi',
+        'sub_judul',
+        'status',
+        'tombol_text',
+        'tombol_link'
     ];
 }

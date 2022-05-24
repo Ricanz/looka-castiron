@@ -25,11 +25,17 @@ Route::get('/', function () {
 
 //Dashboard Admin Route Test
 Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
-    Route::get('dashboard', function () {
-        return view('admin.index');
-    });
+    // Route::get('dashboard', function () {
+    //     return view('admin.index');
+    // });
     Route::resource('produk', ProdukController::class);
 });
+
+Route::get('dashboard', function () {
+    return view('admin.index');
+});
+Route::resource('banner', BannerController::class);
+
 
 //Guest
 Route::get('about-us', [BerandaController::class, 'tentang_view'])->name('tentang_view');

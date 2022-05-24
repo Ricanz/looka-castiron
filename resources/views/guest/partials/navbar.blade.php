@@ -109,10 +109,10 @@
                         <div class="ec-main-menu">
                             <ul>
                                 <li><a href="{{ url('/') }}">Beranda</a></li>
-                                <li><a href="{{ url('/tentang') }}">Tentang</a></li>
-                                <li><a href="{{ url('/produk') }}">Katalog</a></li>
-                                <li><a href="{{ url('/artikel') }}">Artikel</a></li>
-                                <li><a href="{{ url('/kontak') }}">Kontak</a></li>
+                                <li><a href="{{ url('/about-us') }}">Tentang</a></li>
+                                <li><a href="{{ url('/products') }}">Katalog</a></li>
+                                <li><a href="{{ url('/article') }}">Artikel</a></li>
+                                <li><a href="{{ url('/contact') }}">Kontak</a></li>
                             </ul>
                         </div>
                     </div>

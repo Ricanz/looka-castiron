@@ -1,17 +1,11 @@
 <?php
-//Guest
-use App\Http\Controllers\Guest\ArtikelController as GuestArtikel;
-use App\Http\Controllers\Guest\BerandaController as GuestBeranda;
-use App\Http\Controllers\Guest\KontakController as GuestKontak;
-use App\Http\Controllers\Guest\ProdukController as GuestProduk;
-use App\Http\Controllers\Guest\TentangController as GuestTentang;
-
 //Admin
 use App\Http\Controllers\Admin\ArtikelController;
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\KategoriController;
 use App\Http\Controllers\Admin\ProdukController;
 use App\Http\Controllers\Admin\TestimonialController;
+use App\Http\Controllers\BerandaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,11 +32,11 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
 });
 
 //Guest
-Route::resource('beranda', GuestBeranda::class);
-Route::resource('artikel', GuestArtikel::class);
-Route::resource('kontak', GuestKontak::class);
-// Route::resource('produk', GuestProduk::class);
-Route::resource('tentang', GuestTentang::class);
+Route::get('about-us', [BerandaController::class, 'tentang_view'])->name('tentang_view');
+Route::get('products', [BerandaController::class, 'products_view'])->name('products_view');
+Route::get('article', [BerandaController::class, 'article_view'])->name('article_view');
+Route::get('contact', [BerandaController::class, 'contact_view'])->name('contact_view');
+
 
 // Route::group(['middleware' => ['auth']], function () {
 //     Route::resource('admin/artikel', ArtikelController::class);

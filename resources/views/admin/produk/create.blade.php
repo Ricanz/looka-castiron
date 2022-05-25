@@ -7,7 +7,7 @@
             </p>
         </div>
         <div>
-            <a href="{{ route('produk.index') }}" class="btn btn-primary"> Lihat Semua
+            <a href="{{ route('Produk.index') }}" class="btn btn-primary"> Lihat Semua
             </a>
         </div>
     </div>
@@ -20,15 +20,16 @@
 
                 <div class="card-body">
                     <div class="row ec-vendor-uploads">
-                        <form class="row g-3" method="post" action="{{ route('produk.store') }}" enctype="multipart/form-data">
+                        <form class="row g-3" method="post" action="{{ route('Produk.store') }}"
+                            enctype="multipart/form-data">
                             @csrf
                             <div class="col-lg-4">
                                 <div class="ec-vendor-img-upload">
                                     <div class="ec-vendor-main-img">
                                         <div class="avatar-upload">
                                             <div class="avatar-edit">
-                                                <input type='file' id="imageUpload" name="gambar" class="ec-image-upload"
-                                                    accept=".png, .jpg, .jpeg" />
+                                                <input type='file' id="imageUpload" name="gambar"
+                                                    class="ec-image-upload" accept=".png, .jpg, .jpeg" />
                                                 <label for="imageUpload"><img
                                                         src="{{ asset('tadmin/assets/img/icons/edit.svg') }}"
                                                         class="svg_img header_svg" alt="edit" /></label>
@@ -48,7 +49,7 @@
                                 <div class="ec-vendor-upload-detail row g-3">
                                     <div class="col-md-6 mb-2">
                                         <label for="inputEmail4" class="form-label">Nama Produk</label>
-                                        <input type="text" name="nama" class="form-control slug-title" id="inputEmail4" >
+                                        <input type="text" name="nama" class="form-control slug-title" id="inputEmail4">
                                     </div>
                                     <div class="col-md-6 mb-2">
                                         <label class="form-label">Harga <span>( In IDR
@@ -58,39 +59,43 @@
                                     <div class="col-md-12 mb-2">
                                         <label class="form-label">Kategori</label>
                                         <select name="kategori_id" id="Categories" class="form-select">
-                                            {{-- @foreach ($kategori as $item)
+                                            @foreach ($Kategori as $item)
                                                 <option value="{{ $item->id }}">{{ $item->nama }}</option>
-                                            @endforeach --}}
-                                            <option value="1">Celana Dalam</option>
+                                            @endforeach
+                                            {{-- <option value="1">Celana Dalam</option>
                                             <option value="1">Celana Luar</option>
-                                            <option value="1">Baju Dalam</option>
+                                            <option value="1">Baju Dalam</option> --}}
                                         </select>
                                     </div>
                                     <div class="col-md-12 mb-2">
                                         <label class="form-label">Link Shopee</label>
-                                        <input type="shopee_link" min="0" class="form-control" name="stok" id="quantity1">
+                                        <input type="shopee_link" min="0" class="form-control" name="stok"
+                                            id="quantity1">
                                     </div>
                                     <div class="col-md-6 mb-2">
                                         <label class="form-label">Link Tokopedia</label>
-                                        <input type="tokopedia_link" min="0" class="form-control" name="stok" id="quantity1">
+                                        <input type="tokopedia_link" min="0" class="form-control" name="stok"
+                                            id="quantity1">
                                     </div>
                                     <div class="col-md-6 mb-2">
                                         <label class="form-label">Link Lazada</label>
-                                        <input type="lazada_link" min="0" class="form-control" name="stok" id="quantity1">
+                                        <input type="lazada_link" min="0" class="form-control" name="stok"
+                                            id="quantity1">
                                     </div>
                                     <div class="col-md-12 mb-2">
                                         <label class="form-label">Deskripsi</label>
-                                        <textarea class="form-control" name="detail" rows="4"></textarea>
+                                        <textarea class="form-control" name="deskripsi" rows="4"></textarea>
                                     </div>
                                     <div class="col-md-12 mt-4">
                                         <button type="submit" class="btn btn-primary">Simpan</button>
                                     </div>
+
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
 </x-app-layout>

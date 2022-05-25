@@ -785,7 +785,7 @@
                     <div class="ec-spe-section col-lg-6 col-md-12 col-sm-12 margin-b-30">
                         <div class="col-md-12 text-left">
                             <div class="section-title mb-6">
-                                <h2 class="ec-title">Loka Cast Iron</h2>
+                                <h2 class="ec-title">Looka Cast Iron</h2>
                             </div>
                         </div>
 
@@ -807,39 +807,6 @@
                                         </div>
                                         <div class="ec-pro-actions">
                                             <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Baca Selengkapnya</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ec-fs-product">
-                                <div class="ec-fs-pro-inner ec-product-inner">
-                                    <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
-                                        <div class="ec-fs-pro-image">
-                                            <a href="product-left-sidebar.html" class="image"><img class="main-image"
-                                                    src="{{asset('tlandingPage/assets/images/special-product/2_1.jpg')}}" alt="Product" /></a>
-                                        </div>
-                                    </div>
-                                    <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Wireless Earphone with Mic neckband </a></h5>
-                                        <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">Multimedia</a></h6>
-                                        <div class="ec-pro-rat-price">
-                                            <span class="ec-price">
-                                                <span class="new-price">$480.00</span>
-                                                <span class="old-price">$700.00</span>
-                                            </span>
-                                        </div>
-                                        <div class="ec-fs-pro-progress">
-                                            <span class="ec-fs-pro-progress-desc"><span>Solid:
-                                                    <b>0</b></span><span>Available: <b>200</b></span></span>
-                                            <span class="ec-fs-pro-progressbar"></span>
-                                        </div>
-                                        <div class="countdowntimer">
-                                            <span class="ec-fs-count-desc"> Hurry up ! offers ends in:</span>
-                                            <span id="ec-fs-count-2"></span>
-                                        </div>
-                                        <div class="ec-pro-actions">
-                                            <button title="Add To Cart" class="add-to-cart btn btn-primary">Add To
-                                                Cart</button>
                                         </div>
                                     </div>
                                 </div>

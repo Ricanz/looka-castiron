@@ -29,7 +29,7 @@
                                 <div class="card-wrapper">
                                     <div class="card-container">
                                         <div class="card-top">
-                                            <img class="card-image" src="{{asset('storage/Testimonial/'.$item->foto)}}"
+                                            <img class="card-image" src="{{asset($item->foto)}}"
                                                 alt="" />
                                         </div>
                                         <div class="card-bottom">

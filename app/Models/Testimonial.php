@@ -13,6 +13,8 @@ class Testimonial extends Model
         'nama',
         'foto',
         'instansi',
-        'rating'
+        'rating',
+        'deskripsi',
+        'status'
     ];
 }

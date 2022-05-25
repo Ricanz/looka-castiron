@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class TestimonialController extends Controller
 {
@@ -40,17 +41,20 @@ class TestimonialController extends Controller
         $request->validate([
             'nama' => 'required',
             'rating' => 'required',
+            'foto' => 'required'
         ]);
 
-        $date = date("his");
-        $extension = $request->file('gambar')->extension();
-        $file_name = "testimonial_$date.$extension";
-        $path = $request->file('gambar')->storeAs('public/Testimonial', $file_name);
+        if ($request->foto) {
+            $extention = $request->foto->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/testimoni/". $file_name;
+            $request->foto->storeAs('public/testimoni', $file_name);
+        }
 
         $testimoni = Testimonial::create([
             'nama' => $request->nama,
             'instansi' => $request->instansi,
-            'foto' => $file_name,
+            'foto' => $txt,
             'deskripsi' => $request->deskripsi,
             'rating' => $request->rating,
         ]);
@@ -79,7 +83,8 @@ class TestimonialController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Testimonial::find($id);
+        return view('admin.testimoni.edit', compact('data'));
     }
 
     /**
@@ -91,7 +96,25 @@ class TestimonialController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $testimoni = Testimonial::find($id);
+
+        if ($request->foto) {
+            $extention = $request->foto->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/testimoni/". $file_name;
+            $request->foto->storeAs('public/testimoni', $file_name);
+            $testimoni->foto = $txt;
+        }
+
+        $testimoni->nama = $request->nama;
+        $testimoni->instansi = $request->instansi;
+        $testimoni->rating = $request->rating;
+        $testimoni->deskripsi = $request->deskripsi;
+        $testimoni->status = $request->status;
+        $testimoni->save();
+
+        return redirect()->route('testimonial.index')
+                ->with('success', 'Data Berhasil Diubah');
     }
 
     /**
@@ -102,6 +125,11 @@ class TestimonialController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $testimoni = Testimonial::findOrFail($id);
+        Storage::delete("public/testimoni/$testimoni->foto");
+        $testimoni->delete();
+        return redirect()->route('testimonial.index')
+            ->with('delete', 'Testimoni Berhasil Dihapus');
+
     }
 }

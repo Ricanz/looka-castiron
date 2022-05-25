@@ -12,6 +12,7 @@ class Artikel extends Model
     protected $fillable = [
         'judul',
         'gambar',
-        'deskripsi'
+        'deskripsi',
+        'status'
     ];
 }

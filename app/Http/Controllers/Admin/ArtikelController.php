@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Artikel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ArtikelController extends Controller
 {
@@ -14,7 +16,8 @@ class ArtikelController extends Controller
      */
     public function index()
     {
-        //
+        $artikel = Artikel::all();
+        return view('admin.artikel.index', compact('artikel'));
     }
 
     /**
@@ -24,7 +27,7 @@ class ArtikelController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.artikel.create');
     }
 
     /**
@@ -35,7 +38,29 @@ class ArtikelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'judul' => 'required',
+            'deskripsi' => 'required',
+            'gambar' => 'required'
+        ]);
+
+        if ($request->gambar) {
+            $extention = $request->gambar->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/artikel/". $file_name;
+            $request->gambar->storeAs('public/artikel', $file_name);
+        }
+
+        $artikel = Artikel::create([
+            'judul' => $request->judul,
+            'gambar' => $txt,
+            'deskripsi' => $request->deskripsi,
+            'status' => 'aktif'
+        ]);
+        if($artikel){
+            return redirect()->route('artikel.index')
+                ->with('success', 'Artikel Berhasil Ditambahkan');
+        }
     }
 
     /**
@@ -57,7 +82,8 @@ class ArtikelController extends Controller
      */
     public function edit($id)
     {
-        //
+        $artikel = Artikel::find($id);
+        return view('admin.artikel.edit', compact('artikel'));
     }
 
     /**
@@ -69,7 +95,22 @@ class ArtikelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $artikel = Artikel::findOrFail($id);
+
+        if ($request->gambar) {
+            $extention = $request->gambar->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/artikel/". $file_name;
+            $request->gambar->storeAs('public/artikel', $file_name);
+            $artikel->gambar = $txt;
+        }
+
+        $artikel->judul = $request->judul;
+        $artikel->deskripsi = $request->deskripsi;
+        $artikel->status = $request->status;
+        $artikel->save();
+        return redirect()->route('artikel.index')
+                ->with('success', 'Artikel Berhasil Diubah');
     }
 
     /**
@@ -80,6 +121,11 @@ class ArtikelController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $artikel = Artikel::findOrFail($id);
+        // dd($artikel);
+        Storage::delete("public/artikel/$artikel->gambar");
+        $artikel->delete;
+        return redirect()->route('artikel.index')
+            ->with('delete', 'Artikel Berhasil Dihapus');
     }
 }

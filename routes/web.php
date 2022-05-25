@@ -35,6 +35,7 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
 
 Route::resource('banner', BannerController::class);
 Route::resource('testimonial', TestimonialController::class);
+Route::resource('artikel', ArtikelController::class);
 
 
 //Guest

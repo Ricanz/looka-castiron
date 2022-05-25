@@ -123,6 +123,28 @@
                     </div>
                 </li>
 
+                {{-- Artikel --}}
+                <li class="has-sub {{ request()->is('artikel*') ? 'active expand' : '' }}">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class="mdi mdi-star-half"></i>
+                        <span class="nav-text">Artikel</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse {{ request()->is('artikel*') ? 'show' : '' }}">
+                        <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+                            <li class="{{ request()->is('artikel/create') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="artikel/create">
+                                    <span class="nav-text">Tambah Artikel</span>
+                                </a>
+                            </li>
+                            <li class="{{ request()->is('artikel') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="artikel">
+                                    <span class="nav-text">List Artikel</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
                 {{-- Testimonial --}}
                 <li class="has-sub {{ request()->is('testimonial*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">

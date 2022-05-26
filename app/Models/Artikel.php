@@ -13,6 +13,5 @@ class Artikel extends Model
         'judul',
         'gambar',
         'deskripsi',
-        'status'
     ];
 }

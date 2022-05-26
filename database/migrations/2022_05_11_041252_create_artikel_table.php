@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('judul');
             $table->string('gambar');
             $table->text('deskripsi');
-            $table->enum('status', ['aktif', 'inaktif']);
             $table->timestamps();
         });
     }

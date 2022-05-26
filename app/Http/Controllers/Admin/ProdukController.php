@@ -18,7 +18,7 @@ class ProdukController extends Controller
     public function index()
     {
         $products = Produk::all();
-        return view('admin..produk.index', compact('products'));
+        return view('admin.produk.index', compact('products'));
     }
 
     /**
@@ -53,12 +53,13 @@ class ProdukController extends Controller
         $date = date("his");
         $extension = $request->file('gambar')->extension();
         $file_name = "Produk_$date.$extension";
+        $txt = "storage/Produk/" . $file_name;
         $path = $request->file('gambar')->storeAs('public/Produk', $file_name);
 
         Produk::create([
             'nama' => $request->nama,
             'deskripsi' => $request->deskripsi,
-            'gambar' => $file_name,
+            'gambar' => $txt,
             'harga' => $request->harga,
             'slug' => str_replace(' ', '-', strtolower($request->nama)),
             'shopee_link' => $request->shopee_link,
@@ -66,7 +67,7 @@ class ProdukController extends Controller
             'lazada_link' => $request->lazada_link,
             'kategori_id' => $request->kategori_id,
         ]);
-        return redirect()->route('Produk.index')
+        return redirect()->route('produk.index')
             ->with('success', 'Produk Berhasil Ditambahkan');
     }
 
@@ -106,21 +107,15 @@ class ProdukController extends Controller
     {
         $Produk = Produk::find($id);
         if ($Produk) {
-            if (!$request->Produk) {
+            if ($request->gambar != null) {
 
                 $date = date("his");
                 $extension = $request->file('gambar')->extension();
                 $file_name = "Produk_$date.$extension";
                 $request->gambar->storeAs('public/Produk', $file_name);
-                $Produk->gambar = "Produk_$date.$extension";;
-            } else {
-
-                $date = date("his");
-                $extension = $request->file('gambar')->extension();
-                $file_name = "Produk_$date.$extension";
-                $request->gambar->storeAs('public/Produk', $file_name);
-                $Produk->gambar = "Produk_$date.$extension";;
-            }
+                $txt = "storage/Produk/" . $file_name;
+                $Produk->gambar = $txt;
+            } 
 
             $Produk->nama = $request->nama;
             $Produk->deskripsi = $request->deskripsi;
@@ -132,7 +127,7 @@ class ProdukController extends Controller
             $Produk->save();
         }
 
-        return redirect()->route('Produk.index')
+        return redirect()->route('produk.index')
             ->with('edit', 'Produk Berhasil Diedit');
     }
 
@@ -147,7 +142,7 @@ class ProdukController extends Controller
         $Produk = Produk::findOrFail($id);
         Storage::delete("public/Produk/$Produk->gambar");
         $Produk->delete();
-        return redirect()->route('Produk.index')
+        return redirect()->route('produk.index')
             ->with('delete', 'Produk Berhasil Dihapus');
     }
 }

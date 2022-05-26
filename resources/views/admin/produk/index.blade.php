@@ -10,7 +10,7 @@
                     </p>
                 </div>
                 <div>
-                    <a href="admin-produk/create" class="btn btn-primary"> Tambah Produk</a>
+                    <a href="{{route('produk.create')}}" class="btn btn-primary"> Tambah Produk</a>
                 </div>
             </div>
             <div class="row">
@@ -58,9 +58,9 @@
                                                         </button>
                                                         <div class="dropdown-menu">
                                                             <a class="dropdown-item"
-                                                                href="{{ route('Produk.edit', $item->id) }}">Edit</a>
+                                                                href="{{ route('produk.edit', $item->id) }}">Edit</a>
                                                             <form method="POST"
-                                                                action="{{ route('Produk.destroy', $item->id) }}">
+                                                                action="{{ route('produk.destroy', $item->id) }}">
                                                                 @csrf
                                                                 @method("DELETE")
                                                                 <button class="dropdown-item" href="">Delete</button>

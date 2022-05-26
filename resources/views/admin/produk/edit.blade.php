@@ -7,7 +7,7 @@
             </p>
         </div>
         <div>
-            <a href="{{ route('Produk.index') }}" class="btn btn-primary"> Lihat Semua
+            <a href="{{ route('produk.index') }}" class="btn btn-primary"> Lihat Semua
             </a>
         </div>
     </div>
@@ -20,7 +20,7 @@
 
                 <div class="card-body">
                     <div class="row ec-vendor-uploads">
-                        <form class="row g-3" method="post" action="{{ route('Produk.update', $Produk->id) }}"
+                        <form class="row g-3" method="post" action="{{ route('produk.update', $Produk->id) }}"
                             enctype="multipart/form-data">
                             @csrf
                             @method('PUT')

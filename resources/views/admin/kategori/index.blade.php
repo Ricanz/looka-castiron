@@ -75,7 +75,7 @@
 
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item">
-                                                        <form action="{{route('Kategori.destroy', $item->id)}}" method="POST">
+                                                        <form action="{{route('kategori.destroy', $item->id)}}" method="POST">
                                                             @csrf
                                                             @method("DELETE")
                                                             <button type="submit" class="btn show_confirm">Hapus</button>

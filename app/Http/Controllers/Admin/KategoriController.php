@@ -100,7 +100,7 @@ class KategoriController extends Controller
     {
         $Kategori = Kategori::findOrFail($id);
         $Kategori->delete();
-        return redirect()->route('Kategori.index')
+        return redirect()->route('kategori.index')
             ->with('delete', 'Kategori Berhasil Dihapus');
     }
 }

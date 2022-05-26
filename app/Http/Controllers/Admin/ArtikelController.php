@@ -55,7 +55,6 @@ class ArtikelController extends Controller
             'judul' => $request->judul,
             'gambar' => $txt,
             'deskripsi' => $request->deskripsi,
-            'status' => 'aktif'
         ]);
         if($artikel){
             return redirect()->route('artikel.index')
@@ -97,7 +96,7 @@ class ArtikelController extends Controller
     {
         $artikel = Artikel::findOrFail($id);
 
-        if ($request->gambar) {
+        if ($request->gambar != null) {
             $extention = $request->gambar->extension();
             $file_name = time() . '.' . $extention;
             $txt = "storage/artikel/". $file_name;
@@ -107,7 +106,6 @@ class ArtikelController extends Controller
 
         $artikel->judul = $request->judul;
         $artikel->deskripsi = $request->deskripsi;
-        $artikel->status = $request->status;
         $artikel->save();
         return redirect()->route('artikel.index')
                 ->with('success', 'Artikel Berhasil Diubah');
@@ -124,7 +122,7 @@ class ArtikelController extends Controller
         $artikel = Artikel::findOrFail($id);
         // dd($artikel);
         Storage::delete("public/artikel/$artikel->gambar");
-        $artikel->delete;
+        $artikel->delete();
         return redirect()->route('artikel.index')
             ->with('delete', 'Artikel Berhasil Dihapus');
     }

@@ -45,7 +45,7 @@ class BannerController extends Controller
         if (isset($request->banner)) {
             $extention = $request->banner->extension();
             $file_name = time() . '.' . $extention;
-            $txt = "storage/banner/". $file_name;
+            $txt = "storage/banner/" . $file_name;
             $request->banner->storeAs('public/banner', $file_name);
         } else {
             $file_name = null;
@@ -60,13 +60,12 @@ class BannerController extends Controller
             'tombol_link' => $request->link,
         ]);
 
-        if($banner){
+        if ($banner) {
             return redirect()->route('banner.index')
                 ->with('success', 'Banner Berhasil Ditambahkan');
-        } else{
+        } else {
             return redirect()->back();
         }
-
     }
 
     /**
@@ -101,33 +100,29 @@ class BannerController extends Controller
      */
     public function update(Request $request, $id)
     {
+        // dd($request->gambar);
         $banner = Banner::find($id);
-        if($banner){
-            if (!$request->banner) {
-                $extention = $request->banner->extension();
-                $file_name = time() . '.' . $extention;
-                $txt = "storage/banner/". $file_name;
-                $request->banner->storeAs('public/banner', $file_name);
-                $banner->gambar = $txt;
-            } else{
-                $extention = $request->banner->extension();
-                $file_name = time() . '.' . $extention;
-                $txt = "storage/banner/". $file_name;
-                $request->banner->storeAs('public/banner', $file_name);
-                $banner->gambar = $txt;
-            }
-            $banner->judul = $request->judul;
-            $banner->sub_judul = $request->sub_judul;
-            $banner->deskripsi = $request->deskripsi;
-            $banner->tombol_text = $request->tombol;
-            $banner->tombol_link = $request->link;
-            $banner->status = $request->status;
-            $banner->save();
 
+
+        if ($request->gambar != null) {
+            $extention = $request->gambar->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/banner/" . $file_name;
+            $request->gambar->storeAs('public/banner', $file_name);
+            $banner->gambar = $txt;
         }
 
+        $banner->judul = $request->judul;
+        $banner->sub_judul = $request->sub_judul;
+        $banner->deskripsi = $request->deskripsi;
+        $banner->tombol_text = $request->tombol;
+        $banner->tombol_link = $request->link;
+        $banner->status = $request->status;
+        $banner->save();
+
+
         return redirect()->route('banner.index')
-        ->with('edit', 'Banner Berhasil Diedit');
+            ->with('edit', 'Banner Berhasil Diedit');
     }
 
     /**

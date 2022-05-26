@@ -19,31 +19,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('guest.beranda.index');
-});
+
 
 //Dashboard Admin Route Test
 Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
     Route::get('dashboard', function () {
         return view('admin.index');
     });
-    Route::resource('Kategori', KategoriController::class);
-    Route::resource('Produk', ProdukController::class);
+    Route::resource('kategori', KategoriController::class);
+    Route::resource('produk', ProdukController::class);
+    Route::resource('artikel', ArtikelController::class);
 });
 
 
 Route::resource('banner', BannerController::class);
 Route::resource('testimonial', TestimonialController::class);
-Route::resource('artikel', ArtikelController::class);
+
 
 
 //Guest
+Route::get('/', [BerandaController::class, 'index']);
 Route::get('about-us', [BerandaController::class, 'tentang_view'])->name('tentang_view');
 Route::get('products', [BerandaController::class, 'products_view'])->name('products_view');
 Route::get('article', [BerandaController::class, 'article_view'])->name('article_view');
 Route::get('contact', [BerandaController::class, 'contact_view'])->name('contact_view');
-
+Route::get('products/{id}', [BerandaController::class, 'kategori_produk'])->name('kategori_produk');
 
 // Route::group(['middleware' => ['auth']], function () {
 //     Route::resource('admin/artikel', ArtikelController::class);

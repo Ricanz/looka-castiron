@@ -8,9 +8,10 @@
                         <!-- Ec Header Logo Start -->
                         <div class="align-self-center ec-header-logo ">
                             <div class="header-logo">
-                                <a href="/"><img src="{{asset('tlandingPage/assets/images/favicon/looka-logo.jpeg')}}" alt="Site Logo" /><img
-                                        class="dark-logo" src="{{asset('tlandingPage/assets/images/logo/dark-logo-5.png')}}" alt="Site Logo"
-                                        style="display: none;" /></a>
+                                <a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/looka-logo.jpeg') }}"
+                                        alt="Site Logo" /><img class="dark-logo"
+                                        src="{{ asset('tlandingPage/assets/images/logo/dark-logo-5.png') }}"
+                                        alt="Site Logo" style="display: none;" /></a>
                             </div>
                         </div>
                         <!-- Ec Header Logo End -->
@@ -28,7 +29,8 @@
                                         </ul>
                                     </div> --}}
                                     <input class="form-control" placeholder="Cari Produk..." type="text">
-                                    <button class="search_submit" type="submit"><i class="ecicon eci-search"></i></button>
+                                    <button class="search_submit" type="submit"><i
+                                            class="ecicon eci-search"></i></button>
                                 </form>
                             </div>
                         </div>
@@ -53,8 +55,9 @@
                     <!-- Ec Header Logo Start -->
                     <div class="col">
                         <div class="header-logo">
-                            <a href="/"><img src="{{asset('tlandingPage/assets/images/logo/logo-5.png')}}" alt="Site Logo" /><img
-                                    class="dark-logo" src="{{asset('tlandingPage/assets/images/logo/dark-logo-5.png')}}" alt="Site Logo"
+                            <a href="/"><img src="{{ asset('tlandingPage/assets/images/logo/logo-5.png') }}"
+                                    alt="Site Logo" /><img class="dark-logo"
+                                    src="{{ asset('tlandingPage/assets/images/logo/dark-logo-5.png') }}" alt="Site Logo"
                                     style="display: none;" /></a>
                         </div>
                     </div>
@@ -94,12 +97,9 @@
                             <div class="ec-category-content">
                                 <div id="ec-category-menu" class="ec-category-menu">
                                     <ul class="ec-category-wrapper">
-                                        <li><a title="" class="ec-cat-menu-link" href="#">Home & Kitchen</a></li>
-                                        <li><a title="" class="ec-cat-menu-link" href="#">Electronics & Digital</a></li>
-                                        <li><a title="" class="ec-cat-menu-link" href="#">Home Accessories</a></li>
-                                        <li><a title="" class="ec-cat-menu-link" href="#">Electronics</a></li>
-                                        <li><a title="" class="ec-cat-menu-link" href="#">Office Furniture</a></li>
-                                        <li><a title="" class="ec-cat-menu-link" href="#">Hotel Furniture</a></li>
+                                        @foreach ($kategori as $item)
+                                            <li><a title="" class="ec-cat-menu-link" href="{{route('kategori_produk',$item->id)}}">{{$item->nama}}</a></li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
@@ -190,8 +190,10 @@
                                         <li><a href="shop-list-full-col-2.html">Full width 2 columns</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="p-0" href="shop-left-sidebar-col-3.html"><img class="img-responsive"
-                                            src="{{asset('tlandingPage/assets/images/menu-banner/1.jpg')}}" alt=""></a>
+                                <li><a class="p-0" href="shop-left-sidebar-col-3.html"><img
+                                            class="img-responsive"
+                                            src="{{ asset('tlandingPage/assets/images/menu-banner/1.jpg') }}"
+                                            alt=""></a>
                                 </li>
                             </ul>
                         </li>

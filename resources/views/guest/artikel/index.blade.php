@@ -161,14 +161,15 @@
                                 <h2 class="ec-title">Artikel Looka Cast Iron</h2>
                             </div>
                         </div>
+                        @foreach ($articles as $item)
                         <div class="ec-spe-products mb-4">
                             <div class="ec-fs-product">
                                 <div class="ec-fs-pro-inner ec-product-inner">
                                     <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                        <h3 class="ec-pro-title" align="left"><a href="product-left-sidebar.html">Creative Iron Store</a></h3>
+                                        <h3 class="ec-pro-title" align="left"><a href="product-left-sidebar.html">{{ $item->judul }}</a></h3>
                                         <div class="countdowntimer">
                                             <span class="ec-fs-count-desc" align="justify"> 
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                {{ Str::limit($item->deskripsi, 320) }}
                                             </span>
                                         </div>
                                         <div class="ec-pro-actions">
@@ -178,12 +179,13 @@
                                     <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
                                         <div class="ec-fs-pro-image">
                                             <a href="product-left-sidebar.html" class="image"><img class="main-image"
-                                                    src="{{asset('tlandingPage/assets/images/special-product/1_1.jpg')}}" alt="Product" /></a>
+                                                    src="{{ $item->gambar }}" alt="Product" /></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div> 
+                        @endforeach
                     </div>
                     <!--  Special Section End -->
 

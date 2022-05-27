@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artikel;
 use App\Models\Produk;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
@@ -34,7 +35,8 @@ class BerandaController extends Controller
 
     public function article_view()
     {
-        return view('guest.artikel.index');
+        $articles = Artikel::where('status', 'aktif')->paginate(10);
+        return view('guest.artikel.index', compact('articles'));
     }
 
     public function contact_view()

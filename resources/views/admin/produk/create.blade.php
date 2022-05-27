@@ -62,9 +62,6 @@
                                             @foreach ($Kategori as $item)
                                                 <option value="{{ $item->id }}">{{ $item->nama }}</option>
                                             @endforeach
-                                            {{-- <option value="1">Celana Dalam</option>
-                                            <option value="1">Celana Luar</option>
-                                            <option value="1">Baju Dalam</option> --}}
                                         </select>
                                     </div>
                                     <div class="col-md-12 mb-2">

@@ -37,13 +37,13 @@
                                         @foreach ($products as $item)
                                             <tr>
                                                 <td><img class="tbl-thumb"
-                                                        src="{{ asset('storage/Produk/' . $item->gambar) }}"
+                                                        src="{{ asset($item->gambar) }}"
                                                         alt="Product Image" /></td>
                                                 <td>{{ $item->nama }}</td>
                                                 <td>{{ $item->harga }}</td>
                                                 <td>{{ $item->kategori->nama }}</td>
                                                 <td>{{ $item->deskripsi }}</td>
-                                                <td>ACTIVE</td>
+                                                <td>{{ $item->status }}</td>
                                                 <td>{{ $item->created_at->format('d-m-Y') }}</td>
                                                 <td>Admin</td>
                                                 <td>

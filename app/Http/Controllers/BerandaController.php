@@ -10,10 +10,10 @@ class BerandaController extends Controller
 {
     public function index()
     {
-        $testimonial = Testimonial::all();
-        $produkTerbaru = Produk::latest()->paginate(5);
-        // dd($testimonial);
-        return view('guest.beranda.index', compact('testimonial','produkTerbaru'));
+        $testimonial = Testimonial::where('status', 'aktif')->get();
+        $produkTerbaru = Produk::where('status', 'aktif')->latest()->paginate(5);
+        $products = Produk::where('status', 'aktif')->with('kategori')->paginate(12);
+        return view('guest.beranda.index', compact('testimonial','produkTerbaru', 'products'));
     }
     public function kategori_produk($id)
     {

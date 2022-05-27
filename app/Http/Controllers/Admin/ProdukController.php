@@ -66,6 +66,7 @@ class ProdukController extends Controller
             'tokopedia_link' => $request->tokopedia_link,
             'lazada_link' => $request->lazada_link,
             'kategori_id' => $request->kategori_id,
+            'status' => 'aktif',
         ]);
         return redirect()->route('produk.index')
             ->with('success', 'Produk Berhasil Ditambahkan');
@@ -92,7 +93,6 @@ class ProdukController extends Controller
     {
         $Kategori = Kategori::all();
         $Produk = Produk::find($id);
-        // dd($Produk);
         return view('admin.produk.edit', compact('Kategori', 'Produk'));
     }
 
@@ -124,6 +124,7 @@ class ProdukController extends Controller
             $Produk->shopee_link = $request->shopee_link;
             $Produk->lazada_link = $request->lazada_link;
             $Produk->kategori_id = $request->kategori_id;
+            $Produk->status = $request->status;
             $Produk->save();
         }
 

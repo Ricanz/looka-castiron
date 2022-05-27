@@ -32,13 +32,13 @@
                                                 <input type='file' id="imageUpload" name="gambar"
                                                     class="ec-image-upload" accept=".png, .jpg, .jpeg" />
                                                 <label for="imageUpload"><img
-                                                        src="{{ asset('storage/Produk/' . $Produk->gambar) }}"
+                                                        src="{{ asset($Produk->gambar) }}"
                                                         class="svg_img header_svg" alt="edit" /></label>
                                             </div>
                                             <div class="avatar-preview ec-preview">
                                                 <div class="imagePreview ec-div-preview">
                                                     <img class="ec-image-preview"
-                                                        src="{{ asset('storage/Produk/' . $Produk->gambar) }}"
+                                                        src="{{ asset($Produk->gambar) }}"
                                                         alt="edit" />
                                                 </div>
                                             </div>
@@ -67,9 +67,6 @@
                                                     selected
                                                 @endif value="{{ $item->id }}">{{ $item->nama }}</option>
                                             @endforeach
-                                            {{-- <option value="1">Celana Dalam</option>
-                                            <option value="1">Celana Luar</option>
-                                            <option value="1">Baju Dalam</option> --}}
                                         </select>
                                     </div>
                                     <div class="col-md-12 mb-2">
@@ -90,6 +87,13 @@
                                     <div class="col-md-12 mb-2">
                                         <label class="form-label">Deskripsi</label>
                                         <textarea class="form-control" name="deskripsi" rows="4">{{ $Produk->deskripsi }}</textarea>
+                                    </div>
+                                    <div class="col-md-12 mb-2">
+                                        <label class="form-label">Status</label>
+                                        <select name="status" id="status" class="form-select">
+                                            <option value="aktif">Aktif</option>
+                                            <option value="inaktif">Inaktif</option>
+                                        </select>
                                     </div>
                                     <div class="col-md-12 mt-4">
                                         <button type="submit" class="btn btn-primary">Simpan</button>

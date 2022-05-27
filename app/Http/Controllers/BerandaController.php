@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artikel;
+use App\Models\Banner;
 use App\Models\Produk;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
@@ -14,7 +15,8 @@ class BerandaController extends Controller
         $testimonial = Testimonial::where('status', 'aktif')->get();
         $produkTerbaru = Produk::where('status', 'aktif')->latest()->paginate(5);
         $products = Produk::where('status', 'aktif')->with('kategori')->paginate(12);
-        return view('guest.beranda.index', compact('testimonial','produkTerbaru', 'products'));
+        $banner = Banner::where('status', 'aktif')->get();
+        return view('guest.beranda.index', compact('testimonial','produkTerbaru', 'products', 'banner'));
     }
     public function kategori_produk($id)
     {

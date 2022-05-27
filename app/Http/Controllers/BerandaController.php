@@ -29,8 +29,16 @@ class BerandaController extends Controller
 
     public function products_view()
     {
-        $Produk = Produk::where('status', 'aktif')->get();
-        return view('guest.katalog.index',compact('Produk'));
+        $Produk = Produk::where('status', 'aktif')->with('kategori')->get();
+        $produk_terbaru = Produk::with('kategori')
+                        ->where('status', 'aktif')
+                        ->orderBy('created_at', 'desc')
+                        ->take(5)->get();
+        $produk_terlaris = Produk::with('kategori')
+        ->where('status', 'aktif')
+        ->orderBy('created_at', 'asc')
+        ->take(5)->get();
+        return view('guest.katalog.index',compact('Produk', 'produk_terbaru', 'produk_terlaris'));
     }
 
     public function article_view()

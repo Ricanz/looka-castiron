@@ -228,15 +228,19 @@
                     </div>
 
                     <div class="ec-exe-products product-mt-minus-15">
+                        
+                        @foreach ($produk_terlaris as $item)
                         <div class="ec-product-content">
                             <div class="ec-product-inner">
                                 <div class="ec-product-hover"></div>
                                 <div class="ec-pro-image-outer">
                                     <div class="ec-pro-image">
                                         <a href="product-left-sidebar.html" class="image">
-                                            <img class="main-image" src="{{asset('tlandingPage/assets/images/special-product/3_1.jpg')}}"
+                                            <img class="main-image"
+                                                src="{{ asset($item->gambar) }}"
                                                 alt="Product" />
-                                            <img class="hover-image" src="{{asset('tlandingPage/assets/images/special-product/3_2.jpg')}}"
+                                            <img class="hover-image"
+                                                src="{{ asset($item->gambar) }}"
                                                 alt="Product" />
                                         </a>
                                     </div>
@@ -244,204 +248,25 @@
                                 <div class="ec-pro-content">
                                     <div class="ec-pro-option">
                                         <div class="ec-pro-opt-inner">
-                                            <div class="ec-pro-color">
-                                                <ul class="ec-opt-swatch ec-change-img">
-                                                    <li class="active"><a href="#" class="ec-opt-clr-img"
-                                                            data-src="{{asset('tlandingPage/assets/images/special-product/3_1.jpg')}}"
-                                                            data-src-hover="{{asset('tlandingPage/assets/images/special-product/3_1.jpg')}}"
-                                                            data-tooltip="Gray"><span
-                                                                style="background-color:#dbdbdb;"></span></a></li>
-                                                    <li><a href="#" class="ec-opt-clr-img"
-                                                            data-src="{{asset('tlandingPage/assets/images/special-product/3_2.jpg')}}"
-                                                            data-src-hover="{{asset('tlandingPage/assets/images/special-product/3_2.jpg')}}"
-                                                            data-tooltip="Orange"><span
-                                                                style="background-color:#76e7e7;"></span></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="ec-pro-compare">
-                                                <a href="compare.html" class="ec-btn-group compare" title="Compare"><img
-                                                        src="{{asset('tlandingPage/assets/images/icons/compare_5.svg')}}" class="svg_img pro_svg"
-                                                        alt="" /></a>
-                                            </div>
                                         </div>
                                     </div>
-                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">JBLK wireless speaker</a></h5>
-                                    <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">Multimedia</a></h6>
+                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{ $item->nama }}</a></h5>
+                                    <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">{{ $item->kategori->nama }}</a>
+                                    </h6>
                                     <div class="ec-pro-rat-price">
                                         <div class="ec-pro-rat-pri-inner">
                                             <span class="ec-price">
-                                                <span class="new-price">$230.00</span>
-                                                <span class="old-price">$360.00</span>
-                                            </span>
-                                            <span class="ec-pro-rating">
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star-o"></i>
-                                                <i class="ecicon eci-star-o"></i>
+                                                <span class="new-price">{{ $item->harga }}</span>
                                             </span>
                                         </div>
                                     </div>
                                     <div class="pro-hidden-block">
-
-                                        <div class="ec-pro-desc">Lorem Ipsum is simply dummy text of the printing. </div>
-                                        <div class="ec-pro-actions">
-                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                            <button title="Add To Cart" class="add-to-cart btn btn-primary">Add To
-                                                Cart</button>
-                                            <a href="#" class="ec-btn-group quickview" data-link-action="quickview"
-                                                title="Quick view" data-bs-toggle="modal"
-                                                data-bs-target="#ec_quickview_modal"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                        </div>
+                                        <div class="ec-pro-desc" align='left'>{{ Str::limit($item->deskripsi, 150) }}</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="ec-product-content">
-                            <div class="ec-product-inner">
-                                <div class="ec-product-hover"></div>
-                                <div class="ec-pro-image-outer">
-                                    <div class="ec-pro-image">
-                                        <a href="product-left-sidebar.html" class="image">
-                                            <img class="main-image" src="{{asset('tlandingPage/assets/images/special-product/4_1.jpg')}}"
-                                                alt="Product" />
-                                            <img class="hover-image" src="{{asset('tlandingPage/assets/images/special-product/4_2.jpg')}}"
-                                                alt="Product" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="ec-pro-content">
-                                    <div class="ec-pro-option">
-                                        <div class="ec-pro-opt-inner">
-                                            <div class="ec-pro-color">
-                                                <ul class="ec-opt-swatch ec-change-img">
-                                                    <li class="active"><a href="#" class="ec-opt-clr-img"
-                                                            data-src="{{asset('tlandingPage/assets/images/special-product/4_1.jpg')}}"
-                                                            data-src-hover="{{asset('tlandingPage/assets/images/special-product/4_2.jpg')}}"
-                                                            data-tooltip="Gray"><span
-                                                                style="background-color:#202020;"></span></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="ec-pro-compare">
-                                                <a href="compare.html" class="ec-btn-group compare" title="Compare"><img
-                                                        src="{{asset('tlandingPage/assets/images/icons/compare_5.svg')}}" class="svg_img pro_svg"
-                                                        alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Galacy 8 phone 4gb | 64gb </a></h5>
-                                    <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">Phone</a></h6>
-                                    <div class="ec-pro-rat-price">
-                                        <div class="ec-pro-rat-pri-inner">
-                                            <span class="ec-price">
-                                                <span class="new-price">$159.00</span>
-                                                <span class="old-price">$200.00</span>
-                                            </span>
-                                            <span class="ec-pro-rating">
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star-o"></i>
-                                                <i class="ecicon eci-star-o"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="pro-hidden-block">
-
-                                        <div class="ec-pro-desc">Lorem Ipsum is simply dummy text of the printing.</div>
-                                        <div class="ec-pro-actions">
-                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                            <button title="Add To Cart" class="add-to-cart btn btn-primary">Add To
-                                                Cart</button>
-                                            <a href="#" class="ec-btn-group quickview" data-link-action="quickview"
-                                                title="Quick view" data-bs-toggle="modal"
-                                                data-bs-target="#ec_quickview_modal"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ec-product-content">
-                            <div class="ec-product-inner">
-                                <div class="ec-product-hover"></div>
-                                <div class="ec-pro-image-outer">
-                                    <div class="ec-pro-image">
-                                        <a href="product-left-sidebar.html" class="image">
-                                            <img class="main-image" src="{{asset('tlandingPage/assets/images/special-product/6_1.jpg')}}"
-                                                alt="Product" />
-                                            <img class="hover-image" src="{{asset('tlandingPage/assets/images/special-product/6_2.jpg')}}"
-                                                alt="Product" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="ec-pro-content">
-                                    <div class="ec-pro-option">
-                                        <div class="ec-pro-opt-inner">
-                                            <div class="ec-pro-color">
-                                                <ul class="ec-opt-swatch ec-change-img">
-                                                    <li class="active"><a href="#" class="ec-opt-clr-img"
-                                                            data-src="{{asset('tlandingPage/assets/images/special-product/6_1.jpg')}}"
-                                                            data-src-hover="{{asset('tlandingPage/assets/images/special-product/6_1.jpg')}}"
-                                                            data-tooltip="Gray"><span
-                                                                style="background-color:#dfdfdf;"></span></a></li>
-                                                    <li><a href="#" class="ec-opt-clr-img"
-                                                            data-src="{{asset('tlandingPage/assets/images/special-product/6_2.jpg')}}"
-                                                            data-src-hover="{{asset('tlandingPage/assets/images/special-product/6_2.jpg')}}"
-                                                            data-tooltip="Orange"><span
-                                                                style="background-color:#91b6ff;"></span></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="ec-pro-compare">
-                                                <a href="compare.html" class="ec-btn-group compare" title="Compare"><img
-                                                        src="{{asset('tlandingPage/assets/images/icons/compare_5.svg')}}" class="svg_img pro_svg"
-                                                        alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Ultra sound smart speaker</a></h5>
-                                    <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">Multimedia</a></h6>
-                                    <div class="ec-pro-rat-price">
-                                        <div class="ec-pro-rat-pri-inner">
-                                            <span class="ec-price">
-                                                <span class="new-price">$768.00</span>
-                                                <span class="old-price">$845.00</span>
-                                            </span>
-                                            <span class="ec-pro-rating">
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star-o"></i>
-                                                <i class="ecicon eci-star-o"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="pro-hidden-block">
-
-                                        <div class="ec-pro-desc">Lorem Ipsum is simply dummy text of the printing.</div>
-                                        <div class="ec-pro-actions">
-                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                            <button title="Add To Cart" class="add-to-cart btn btn-primary">Add To
-                                                Cart</button>
-                                            <a href="#" class="ec-btn-group quickview" data-link-action="quickview"
-                                                title="Quick view" data-bs-toggle="modal"
-                                                data-bs-target="#ec_quickview_modal"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
                 <!--  Special Section End -->
@@ -452,17 +277,19 @@
                             <h2 class="ec-title">Produk Terbaru</h2>
                         </div>
                     </div>
-
                     <div class="ec-exe-products product-mt-minus-15">
+                        @foreach ($produk_terbaru as $item)
                         <div class="ec-product-content">
                             <div class="ec-product-inner">
                                 <div class="ec-product-hover"></div>
                                 <div class="ec-pro-image-outer">
                                     <div class="ec-pro-image">
                                         <a href="product-left-sidebar.html" class="image">
-                                            <img class="main-image" src="{{asset('tlandingPage/assets/images/special-product/3_1.jpg')}}"
+                                            <img class="main-image"
+                                                src="{{ asset($item->gambar) }}"
                                                 alt="Product" />
-                                            <img class="hover-image" src="{{asset('tlandingPage/assets/images/special-product/3_2.jpg')}}"
+                                            <img class="hover-image"
+                                                src="{{ asset($item->gambar) }}"
                                                 alt="Product" />
                                         </a>
                                     </div>
@@ -470,204 +297,25 @@
                                 <div class="ec-pro-content">
                                     <div class="ec-pro-option">
                                         <div class="ec-pro-opt-inner">
-                                            <div class="ec-pro-color">
-                                                <ul class="ec-opt-swatch ec-change-img">
-                                                    <li class="active"><a href="#" class="ec-opt-clr-img"
-                                                            data-src="{{asset('tlandingPage/assets/images/special-product/3_1.jpg')}}"
-                                                            data-src-hover="{{asset('tlandingPage/assets/images/special-product/3_1.jpg')}}"
-                                                            data-tooltip="Gray"><span
-                                                                style="background-color:#dbdbdb;"></span></a></li>
-                                                    <li><a href="#" class="ec-opt-clr-img"
-                                                            data-src="{{asset('tlandingPage/assets/images/special-product/3_2.jpg')}}"
-                                                            data-src-hover="{{asset('tlandingPage/assets/images/special-product/3_2.jpg')}}"
-                                                            data-tooltip="Orange"><span
-                                                                style="background-color:#76e7e7;"></span></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="ec-pro-compare">
-                                                <a href="compare.html" class="ec-btn-group compare" title="Compare"><img
-                                                        src="{{asset('tlandingPage/assets/images/icons/compare_5.svg')}}" class="svg_img pro_svg"
-                                                        alt="" /></a>
-                                            </div>
                                         </div>
                                     </div>
-                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">JBLK wireless speaker</a></h5>
-                                    <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">Multimedia</a></h6>
+                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{ $item->nama }}</a></h5>
+                                    <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">{{ $item->kategori->nama }}</a>
+                                    </h6>
                                     <div class="ec-pro-rat-price">
                                         <div class="ec-pro-rat-pri-inner">
                                             <span class="ec-price">
-                                                <span class="new-price">$230.00</span>
-                                                <span class="old-price">$360.00</span>
-                                            </span>
-                                            <span class="ec-pro-rating">
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star-o"></i>
-                                                <i class="ecicon eci-star-o"></i>
+                                                <span class="new-price">{{ $item->harga }}</span>
                                             </span>
                                         </div>
                                     </div>
                                     <div class="pro-hidden-block">
-
-                                        <div class="ec-pro-desc">Lorem Ipsum is simply dummy text of the printing. </div>
-                                        <div class="ec-pro-actions">
-                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                            <button title="Add To Cart" class="add-to-cart btn btn-primary">Add To
-                                                Cart</button>
-                                            <a href="#" class="ec-btn-group quickview" data-link-action="quickview"
-                                                title="Quick view" data-bs-toggle="modal"
-                                                data-bs-target="#ec_quickview_modal"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                        </div>
+                                        <div class="ec-pro-desc" align='left'>{{ Str::limit($item->deskripsi, 150) }}</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="ec-product-content">
-                            <div class="ec-product-inner">
-                                <div class="ec-product-hover"></div>
-                                <div class="ec-pro-image-outer">
-                                    <div class="ec-pro-image">
-                                        <a href="product-left-sidebar.html" class="image">
-                                            <img class="main-image" src="{{asset('tlandingPage/assets/images/special-product/4_1.jpg')}}"
-                                                alt="Product" />
-                                            <img class="hover-image" src="{{asset('tlandingPage/assets/images/special-product/4_2.jpg')}}"
-                                                alt="Product" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="ec-pro-content">
-                                    <div class="ec-pro-option">
-                                        <div class="ec-pro-opt-inner">
-                                            <div class="ec-pro-color">
-                                                <ul class="ec-opt-swatch ec-change-img">
-                                                    <li class="active"><a href="#" class="ec-opt-clr-img"
-                                                            data-src="{{asset('tlandingPage/assets/images/special-product/4_1.jpg')}}"
-                                                            data-src-hover="{{asset('tlandingPage/assets/images/special-product/4_2.jpg')}}"
-                                                            data-tooltip="Gray"><span
-                                                                style="background-color:#202020;"></span></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="ec-pro-compare">
-                                                <a href="compare.html" class="ec-btn-group compare" title="Compare"><img
-                                                        src="{{asset('tlandingPage/assets/images/icons/compare_5.svg')}}" class="svg_img pro_svg"
-                                                        alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Galacy 8 phone 4gb | 64gb </a></h5>
-                                    <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">Phone</a></h6>
-                                    <div class="ec-pro-rat-price">
-                                        <div class="ec-pro-rat-pri-inner">
-                                            <span class="ec-price">
-                                                <span class="new-price">$159.00</span>
-                                                <span class="old-price">$200.00</span>
-                                            </span>
-                                            <span class="ec-pro-rating">
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star-o"></i>
-                                                <i class="ecicon eci-star-o"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="pro-hidden-block">
-
-                                        <div class="ec-pro-desc">Lorem Ipsum is simply dummy text of the printing.</div>
-                                        <div class="ec-pro-actions">
-                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                            <button title="Add To Cart" class="add-to-cart btn btn-primary">Add To
-                                                Cart</button>
-                                            <a href="#" class="ec-btn-group quickview" data-link-action="quickview"
-                                                title="Quick view" data-bs-toggle="modal"
-                                                data-bs-target="#ec_quickview_modal"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ec-product-content">
-                            <div class="ec-product-inner">
-                                <div class="ec-product-hover"></div>
-                                <div class="ec-pro-image-outer">
-                                    <div class="ec-pro-image">
-                                        <a href="product-left-sidebar.html" class="image">
-                                            <img class="main-image" src="{{asset('tlandingPage/assets/images/special-product/6_1.jpg')}}"
-                                                alt="Product" />
-                                            <img class="hover-image" src="{{asset('tlandingPage/assets/images/special-product/6_2.jpg')}}"
-                                                alt="Product" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="ec-pro-content">
-                                    <div class="ec-pro-option">
-                                        <div class="ec-pro-opt-inner">
-                                            <div class="ec-pro-color">
-                                                <ul class="ec-opt-swatch ec-change-img">
-                                                    <li class="active"><a href="#" class="ec-opt-clr-img"
-                                                            data-src="{{asset('tlandingPage/assets/images/special-product/6_1.jpg')}}"
-                                                            data-src-hover="{{asset('tlandingPage/assets/images/special-product/6_1.jpg')}}"
-                                                            data-tooltip="Gray"><span
-                                                                style="background-color:#dfdfdf;"></span></a></li>
-                                                    <li><a href="#" class="ec-opt-clr-img"
-                                                            data-src="{{asset('tlandingPage/assets/images/special-product/6_2.jpg')}}"
-                                                            data-src-hover="{{asset('tlandingPage/assets/images/special-product/6_2.jpg')}}"
-                                                            data-tooltip="Orange"><span
-                                                                style="background-color:#91b6ff;"></span></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="ec-pro-compare">
-                                                <a href="compare.html" class="ec-btn-group compare" title="Compare"><img
-                                                        src="{{asset('tlandingPage/assets/images/icons/compare_5.svg')}}" class="svg_img pro_svg"
-                                                        alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Ultra sound smart speaker</a></h5>
-                                    <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">Multimedia</a></h6>
-                                    <div class="ec-pro-rat-price">
-                                        <div class="ec-pro-rat-pri-inner">
-                                            <span class="ec-price">
-                                                <span class="new-price">$768.00</span>
-                                                <span class="old-price">$845.00</span>
-                                            </span>
-                                            <span class="ec-pro-rating">
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star-o"></i>
-                                                <i class="ecicon eci-star-o"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="pro-hidden-block">
-
-                                        <div class="ec-pro-desc">Lorem Ipsum is simply dummy text of the printing.</div>
-                                        <div class="ec-pro-actions">
-                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                            <button title="Add To Cart" class="add-to-cart btn btn-primary">Add To
-                                                Cart</button>
-                                            <a href="#" class="ec-btn-group quickview" data-link-action="quickview"
-                                                title="Quick view" data-bs-toggle="modal"
-                                                data-bs-target="#ec_quickview_modal"><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}" class="svg_img pro_svg"
-                                                    alt="" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
                 <!--  Feature Section End -->
@@ -676,59 +324,6 @@
         </div>
     </section>
     <!-- Feature & Special Section End -->
-
-    <!-- Ec Instagram Start -->
-    {{-- Ini section untuk list social media toko --}}
-    <section class="section ec-instagram-section section-space-pt mb-4">
-        <div class="ec-insta-wrapper">
-            <div class="ec-insta-outer">
-                <div class="insta-auto">
-                    <h2 class="d-none">Instagram</h2>
-                    <!-- instagram item -->
-                    <div class="ec-insta-item">
-                        <div class="ec-insta-inner">
-                            <a href="#" target="_blank"><img src="{{asset('tlandingPage/assets/images/instragram-image/1.jpg')}}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- instagram item -->
-                    <div class="ec-insta-item">
-                        <div class="ec-insta-inner">
-                            <a href="#" target="_blank"><img src="{{asset('tlandingPage/assets/images/instragram-image/2.jpg')}}" alt="">
-
-                            </a>
-                        </div>
-                    </div>
-                    <!-- instagram item -->
-                    <div class="ec-insta-item">
-                        <div class="ec-insta-inner">
-                            <a href="#" target="_blank"><img src="{{asset('tlandingPage/assets/images/instragram-image/3.jpg')}}" alt="">
-
-                            </a>
-                        </div>
-                    </div>
-                    <!-- instagram item -->
-                    <div class="ec-insta-item">
-                        <div class="ec-insta-inner">
-                            <a href="#" target="_blank"><img src="{{asset('tlandingPage/assets/images/instragram-image/4.jpg')}}" alt="">
-
-                            </a>
-                        </div>
-                    </div>
-                    <!-- instagram item -->
-                    <div class="ec-insta-item">
-                        <div class="ec-insta-inner">
-                            <a href="#" target="_blank"><img src="{{asset('tlandingPage/assets/images/instragram-image/5.jpg')}}" alt="">
-
-                            </a>
-                        </div>
-                    </div>
-                    <!-- instagram item -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Ec Instagram End -->
 
     <!--  services Section Start -->
     <section class="section ec-services-section">

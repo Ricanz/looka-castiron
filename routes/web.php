@@ -33,8 +33,8 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
     Route::resource('produk', ProdukController::class);
     Route::resource('artikel', ArtikelController::class);
     Route::resource('banner', BannerController::class);
+    Route::resource('aboutUs', AboutUsController::class);
 });
-Route::resource('aboutUs', AboutUsController::class);
 
 
 

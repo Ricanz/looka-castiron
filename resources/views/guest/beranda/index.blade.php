@@ -256,10 +256,7 @@
                                             Store</a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                                            1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a type specimen book.
+                                            {{ Str::limit($tentang->deskripsi, 150) }}
                                         </span>
                                     </div>
                                     <div class="ec-pro-actions">
@@ -289,10 +286,10 @@
                                         <div class="ec-pro-image">
                                             <a href="product-left-sidebar.html" class="image">
                                                 <img class="main-image"
-                                                    src="{{ asset('tlandingPage/assets/images/special-product/6_1.jpg') }}"
+                                                    src="{{ asset($item->gambar) }}"
                                                     alt="Product" />
                                                 <img class="hover-image"
-                                                    src="{{ asset('tlandingPage/assets/images/special-product/6_2.jpg') }}"
+                                                    src="{{ asset($item->gambar) }}"
                                                     alt="Product" />
                                             </a>
                                         </div>
@@ -342,19 +339,7 @@
                                         </div>
                                         <div class="pro-hidden-block">
 
-                                            <div class="ec-pro-desc">{{$item->deskripsi}}
-                                            </div>
-                                            <div class="ec-pro-actions">
-                                                <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                        src="{{ asset('tlandingPage/assets/images/icons/pro_wishlist.svg') }}"
-                                                        class="svg_img pro_svg" alt="" /></a>
-                                                <button title="Add To Cart" class="add-to-cart btn btn-primary">Add To
-                                                    Cart</button>
-                                                <a href="#" class="ec-btn-group quickview" data-link-action="quickview"
-                                                    title="Quick view" data-bs-toggle="modal"
-                                                    data-bs-target="#ec_quickview_modal"><img
-                                                        src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
-                                                        class="svg_img pro_svg" alt="" /></a>
+                                            <div class="ec-pro-desc" align="left">{{ Str::limit($item->deskripsi, 200) }}
                                             </div>
                                         </div>
                                     </div>
@@ -397,7 +382,7 @@
                 <div class="col-md-12 section-title-block">
                     <div class="section-title">
                         <h2 class="ec-title">Client Testimonials</h2>
-                        <h6 class="ec-sub-title">Lorem Ipsum is simply dummy text of the printing</h6>
+                        <h6 class="ec-sub-title">Kata mereka tentang toko kami</h6>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,7 @@
 <?php
 //Admin
+
+use App\Http\Controllers\Admin\AboutUsController;
 use App\Http\Controllers\Admin\ArtikelController;
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\KategoriController;
@@ -32,6 +34,8 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
     Route::resource('artikel', ArtikelController::class);
     Route::resource('banner', BannerController::class);
 });
+Route::resource('aboutUs', AboutUsController::class);
+
 
 
 

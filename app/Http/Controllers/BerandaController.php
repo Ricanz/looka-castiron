@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AboutUs;
 use App\Models\Artikel;
 use App\Models\Banner;
 use App\Models\Produk;
@@ -16,7 +17,8 @@ class BerandaController extends Controller
         $produkTerbaru = Produk::where('status', 'aktif')->latest()->paginate(5);
         $products = Produk::where('status', 'aktif')->with('kategori')->paginate(12);
         $banner = Banner::where('status', 'aktif')->get();
-        return view('guest.beranda.index', compact('testimonial','produkTerbaru', 'products', 'banner'));
+        $tentang = AboutUs::where('id', 1)->first();
+        return view('guest.beranda.index', compact('testimonial','produkTerbaru', 'products', 'banner', 'tentang'));
     }
     public function kategori_produk($id)
     {
@@ -26,7 +28,8 @@ class BerandaController extends Controller
     }
     public function tentang_view()
     {
-        return view('guest.tentang.index');
+        $tentang = AboutUs::where('id', 1)->first();
+        return view('guest.tentang.index', compact('tentang'));
     }
 
     public function products_view()

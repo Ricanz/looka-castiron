@@ -29,7 +29,7 @@ class BerandaController extends Controller
 
     public function products_view()
     {
-        $Produk = Produk::all();
+        $Produk = Produk::where('status', 'aktif')->get();
         return view('guest.katalog.index',compact('Produk'));
     }
 

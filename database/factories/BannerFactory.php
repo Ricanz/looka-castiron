@@ -17,7 +17,14 @@ class BannerFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'judul' => $this->faker->name(),
+            'subjudul'=>$this->faker->name(),
+            'deskripsi' => $this->faker->name(),
+            'gambar'=>'https://source.unsplash.com/random',
+            'deskripsi' => $this->faker->paragraph(),
+            'status'=>'aktif',
+            'tombol_text' => $this->faker->name(),
+            'tombol_link' => $this->faker->name(),
         ];
     }
 }

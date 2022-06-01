@@ -17,7 +17,8 @@ class KategoriFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nama' => $this->faker->name(),
+            'deskripsi' => $this->faker->paragraph(),
         ];
     }
 }

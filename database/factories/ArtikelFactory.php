@@ -17,7 +17,9 @@ class ArtikelFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'deskripsi' => $this->faker->paragraph(),
+            'gambar'=>'https://source.unsplash.com/random',
+            'judul' => $this->faker->name(),
         ];
     }
 }

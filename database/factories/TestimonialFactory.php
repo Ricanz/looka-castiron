@@ -17,7 +17,12 @@ class TestimonialFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nama' => $this->faker->name(),
+            'foto'=>'https://source.unsplash.com/random',
+            'instansi' => $this->faker->name(),
+            'deskripsi' => $this->faker->paragraph(),
+            'rating' => $this->faker->randomDigitNot(5),
+            'status'=>'aktif',
         ];
     }
 }

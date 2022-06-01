@@ -17,7 +17,7 @@ class AboutUsFactory extends Factory
     public function definition()
     {
         return [
-            'deskripsi' => $this->faker->name(),
+            'deskripsi' => $this->faker->paragraph(),
             'gambar'=>'https://source.unsplash.com/random',
         ];
     }

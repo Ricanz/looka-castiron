@@ -1,5 +1,5 @@
 <x-guest-layout>
-    
+
     <!--  Feature & Special Section Start -->
     <section class="section ec-exe-spe-section section-space-ptb-100 section-space-mt section-space-mb-100"
         style="background-image: url('{{asset('tlandingPage/assets/images/special-product/background.jpg')}}');">
@@ -25,7 +25,7 @@
                                 <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
                                     <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Creative Iron Store</a></h5>
                                     <div class="countdowntimer">
-                                        <span class="ec-fs-count-desc" align="justify"> 
+                                        <span class="ec-fs-count-desc" align="justify">
                                             {{ $tentang->deskripsi }}
                                         </span>
                                     </div>

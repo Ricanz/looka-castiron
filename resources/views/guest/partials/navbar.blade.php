@@ -19,7 +19,7 @@
                         <!-- Ec Header Search Start -->
                         <div class="align-self-center ec-header-search">
                             <div class="header-search">
-                                <form class="ec-search-group-form" action="#">
+                                <form class="ec-search-group-form" action="{{route('search')}}" method="GET">
                                     {{-- <div class="ec-search-select-inner">
                                         <div class="ec-search-cat-title">All</div>
                                         <ul class="ec-search-cat-block">
@@ -28,7 +28,7 @@
                                             <li><a href="#">Shoes</a></li>
                                         </ul>
                                     </div> --}}
-                                    <input class="form-control" placeholder="Cari Produk..." type="text">
+                                    <input class="form-control" placeholder="Cari Produk..." type="text" name="cari" value="{{old('cari')}}">
                                     <button class="search_submit" type="submit"><i
                                             class="ecicon eci-search"></i></button>
                                 </form>

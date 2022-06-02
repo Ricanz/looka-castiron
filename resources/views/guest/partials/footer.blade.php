@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-sm-12 col-lg-4 ec-footer-contact">
                             <div class="ec-footer-widget">
-                                <div class="ec-footer-logo"><a href="#"><img src="{{asset('tlandingPage/assets/images/logo/footer-logo-5.png')}}"
+                                <div class="ec-footer-logo"><a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/looka-logo.jpeg') }}"
                                             alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/dark-logo-5.png')}}"
                                             alt="Site Logo" style="display: none;" /></a></div>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -45,10 +45,10 @@
                                 <h4 class="ec-footer-heading">Menu</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="ec-footer-link"><a href="about-us.html">Tentang Kami</a></li>
-                                        <li class="ec-footer-link"><a href="track-order.html">Katalog</a></li>
-                                        <li class="ec-footer-link"><a href="privacy-policy.html">Artikel </a></li>
-                                        <li class="ec-footer-link"><a href="terms-condition.html">Kontak</a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">Tentang Kami</a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/products') }}">Katalog</a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/article') }}">Artikel </a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/contact') }}">Kontak</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -88,14 +88,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="ec-footer-widget ec-share">
+                            {{-- <div class="ec-footer-widget ec-share">
                                 <ul>
                                     <li class="ec-share-link"><a href="#"><img src="{{asset('tlandingPage/assets/images/icons/iphone.png')}}"
                                                 alt="" /></a></li>
                                     <li class="ec-share-link"><a href="#"><img src="{{asset('tlandingPage/assets/images/icons/google.png')}}"
                                                 alt="" /></a></li>
                                 </ul>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                         <!-- Footer Copyright Start -->
                         <div class="col footer-copy">
                             <div class="footer-bottom-copy ">
-                                <div class="ec-copy">© 2021 <a class="site-name" href="#">Ekka</a>. All Rights Reserved
+                                <div class="ec-copy">© {{ now()->year }} <a class="site-name" href="/">Looka Castiron</a>. All Rights Reserved
                                 </div>
                             </div>
                         </div>
@@ -115,7 +115,7 @@
                         <div class="col footer-bottom-right">
                             <div class="footer-bottom-payment d-flex justify-content-end">
                                 <div class="payment-link">
-                                    <img src="{{asset('tlandingPage/assets/images/icons/payment.png')}}" alt="">
+                                    {{-- <img src="{{asset('tlandingPage/assets/images/icons/payment.png')}}" alt=""> --}}
                                 </div>
 
                             </div>

@@ -48,6 +48,7 @@ Route::get('products', [BerandaController::class, 'products_view'])->name('produ
 Route::get('article', [BerandaController::class, 'article_view'])->name('article_view');
 Route::get('contact', [BerandaController::class, 'contact_view'])->name('contact_view');
 Route::get('products/{id}', [BerandaController::class, 'kategori_produk'])->name('kategori_produk');
+Route::get('search', [BerandaController::class, 'search'])->name('search');
 
 // Route::group(['middleware' => ['auth']], function () {
 //     Route::resource('admin/artikel', ArtikelController::class);

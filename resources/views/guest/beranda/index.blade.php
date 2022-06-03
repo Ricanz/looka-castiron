@@ -360,12 +360,12 @@
         <h2 class="d-none">Offer</h2>
         <div class="container">
             <div class="ec-offer-inner ofr-img">
-                <!-- <img src="{{ asset('tlandingPage/assets/images/offer-image/offer_bg.png') }}" alt="" class="offer_bg" /> -->
+                <img src="{{ asset('tlandingPage/assets/images/offer-image/looka-bg.png') }}" alt="" class="offer_bg" />
                 <div class="col-sm-6 ec-offer-content">
                     <div class="ec-offer-content-inner">
-                        <h2 class="ec-offer-stitle">black friday</h2>
+                        {{-- <h2 class="ec-offer-stitle">black friday</h2>
                         <h2 class="ec-offer-title">up to 60 % off</h2>
-                        <span class="ec-offer-desc">Select accessories for your favourites gadgets</span>
+                        <span class="ec-offer-desc">Select accessories for your favourites gadgets</span> --}}
                         <span class="ec-offer-btn"><a href="#" class="btn btn-primary">Shop Now</a></span>
                     </div>
                 </div>

@@ -366,7 +366,7 @@
                         {{-- <h2 class="ec-offer-stitle">black friday</h2>
                         <h2 class="ec-offer-title">up to 60 % off</h2>
                         <span class="ec-offer-desc">Select accessories for your favourites gadgets</span> --}}
-                        <span class="ec-offer-btn"><a href="#" class="btn btn-primary">Shop Now</a></span>
+                        {{-- <span class="ec-offer-btn"><a href="#" class="btn btn-primary">Shop Now</a></span> --}}
                     </div>
                 </div>
             </div>

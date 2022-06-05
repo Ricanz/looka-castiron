@@ -168,14 +168,14 @@
                 </li>
 
                 {{-- Banner --}}
-                <li class="has-sub {{ request()->is('banner*') ? 'active expand' : '' }}">
+                <li class="has-sub {{ request()->is('admin/banner*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-star-half"></i>
                         <span class="nav-text">Banner</span> <b class="caret"></b>
                     </a>
-                    <div class="collapse {{ request()->is('banner*') ? 'show' : '' }}">
+                    <div class="collapse {{ request()->is('admin/banner*') ? 'show' : '' }}">
                         <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
-                            <li class="{{ request()->is('banner/create') ? 'active' : '' }}">
+                            <li class="{{ request()->is('admin/banner/create') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('banner.create')}}">
                                     <span class="nav-text">Tambah Banner</span>
                                 </a>

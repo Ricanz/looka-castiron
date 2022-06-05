@@ -146,19 +146,19 @@
                 </li>
 
                 {{-- Testimonial --}}
-                <li class="has-sub {{ request()->is('testimonial*') ? 'active expand' : '' }}">
+                <li class="has-sub {{ request()->is('admin/testimonial*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-star-half"></i>
                         <span class="nav-text">Testimonial</span> <b class="caret"></b>
                     </a>
-                    <div class="collapse {{ request()->is('testimonial*') ? 'show' : '' }}">
+                    <div class="collapse {{ request()->is('admin/testimonial*') ? 'show' : '' }}">
                         <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
-                            <li class="{{ request()->is('testimonial/create') ? 'active' : '' }}">
+                            <li class="{{ request()->is('admin/testimonial/create') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('testimonial.create')}}">
                                     <span class="nav-text">Tambah Testimoni</span>
                                 </a>
                             </li>
-                            <li class="{{ request()->is('testimonial') ? 'active' : '' }}">
+                            <li class="{{ request()->is('admin/testimonial') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('testimonial.index')}}">
                                     <span class="nav-text">List Testimoni</span>
                                 </a>

@@ -42,7 +42,7 @@ class KategoriController extends Controller
         ]);
 
         if ($Kategori) {
-            return redirect()->route('Kategori.index')
+            return redirect()->route('kategori.index')
                 ->with('success', 'Kategori Berhasil Ditambahkan');
         } else {
             return redirect()->back();
@@ -86,7 +86,7 @@ class KategoriController extends Controller
         $Kategori->deskripsi = $request->deskripsi;
         $Kategori->save();
 
-        return redirect()->route('Kategori.index')
+        return redirect()->route('kategori.index')
             ->with('edit', 'Kategori Berhasil Diedit');
     }
 

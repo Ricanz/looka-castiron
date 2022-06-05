@@ -18,15 +18,19 @@
                             <div class="ec-fs-pro-inner ec-product-inner">
                                 <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
                                     <div class="ec-fs-pro-image">
+                                        @if ($tentang != null)
                                         <a href="product-left-sidebar.html" class="image"><img class="main-image"
-                                                src="{{asset($tentang->gambar)}}" alt="Product" /></a>
+                                            src="{{asset($tentang->gambar)}}" alt="Product" /></a>
+                                        @endif                                       
                                     </div>
                                 </div>
                                 <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
                                     <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Creative Iron Store</a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
+                                            @if ($tentang != null)
                                             {{ $tentang->deskripsi }}
+                                            @endif
                                         </span>
                                     </div>
                                     <div class="ec-pro-actions">

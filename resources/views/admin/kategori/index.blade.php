@@ -11,7 +11,7 @@
                 <div class="card-body">
                     <div class="ec-cat-form">
                         <h4>Tambah Kategori</h4>
-                        <form action="{{ route('Kategori.store') }}" method="post">
+                        <form action="{{ route('kategori.store') }}" method="post">
                             @csrf
 
                             <div class="form-group row">

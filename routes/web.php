@@ -37,10 +37,6 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
 });
 
 
-
-
-
-
 //Guest
 Route::get('/', [BerandaController::class, 'index']);
 Route::get('about-us', [BerandaController::class, 'tentang_view'])->name('tentang_view');
@@ -49,6 +45,8 @@ Route::get('article', [BerandaController::class, 'article_view'])->name('article
 Route::get('contact', [BerandaController::class, 'contact_view'])->name('contact_view');
 Route::get('products/{id}', [BerandaController::class, 'kategori_produk'])->name('kategori_produk');
 Route::get('search', [BerandaController::class, 'search'])->name('search');
+Route::get('produk/detail/{slug}', [BerandaController::class, 'detail_produk'])->name('detail_produk');
+Route::get('artikel/detail/{slug}', [BerandaController::class, 'detail_artikel'])->name('detail_artikel');
 
 // Route::group(['middleware' => ['auth']], function () {
 //     Route::resource('admin/artikel', ArtikelController::class);

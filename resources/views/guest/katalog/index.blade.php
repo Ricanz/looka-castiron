@@ -137,7 +137,7 @@
                                     <div class="ec-product-hover"></div>
                                     <div class="ec-pro-image-outer">
                                         <div class="ec-pro-image">
-                                            <a href="product-left-sidebar.html" class="image">
+                                            <a href="{{ url('/produk/detail').'/'.$item->slug }}" class="image">
                                                 <img class="main-image"
                                                     src="{{ asset($item->gambar) }}"
                                                     alt="Product" />
@@ -150,11 +150,11 @@
                                     <div class="ec-pro-content">
                                         <div class="ec-pro-option">
                                             <div class="ec-pro-opt-inner">
-                                                <a href="" class="btn btn-primary">Lihat Produk</a>
+                                                <a href="{{ url('/produk/detail').'/'.$item->slug }}" class="btn btn-primary">Lihat Produk</a>
                                             </div>
                                         </div>
-                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{ $item->nama }}</a></h5>
-                                        <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">{{ $item->kategori->nama }}</a>
+                                        <h5 class="ec-pro-title"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{ $item->nama }}</a></h5>
+                                        <h6 class="ec-pro-stitle"><a href="#">{{ $item->kategori->nama }}</a>
                                         </h6>
                                         <div class="ec-pro-rat-price">
                                             <div class="ec-pro-rat-pri-inner">
@@ -235,7 +235,7 @@
                                 <div class="ec-product-hover"></div>
                                 <div class="ec-pro-image-outer">
                                     <div class="ec-pro-image">
-                                        <a href="product-left-sidebar.html" class="image">
+                                        <a href="{{ url('/produk/detail').'/'.$item->slug }}" class="image">
                                             <img class="main-image"
                                                 src="{{ asset($item->gambar) }}"
                                                 alt="Product" />
@@ -250,8 +250,8 @@
                                         <div class="ec-pro-opt-inner">
                                         </div>
                                     </div>
-                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{ $item->nama }}</a></h5>
-                                    <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">{{ $item->kategori->nama }}</a>
+                                    <h5 class="ec-pro-title"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{ $item->nama }}</a></h5>
+                                    <h6 class="ec-pro-stitle"><a href="#">{{ $item->kategori->nama }}</a>
                                     </h6>
                                     <div class="ec-pro-rat-price">
                                         <div class="ec-pro-rat-pri-inner">
@@ -284,7 +284,7 @@
                                 <div class="ec-product-hover"></div>
                                 <div class="ec-pro-image-outer">
                                     <div class="ec-pro-image">
-                                        <a href="product-left-sidebar.html" class="image">
+                                        <a href="{{ url('/produk/detail').'/'.$item->slug }}" class="image">
                                             <img class="main-image"
                                                 src="{{ asset($item->gambar) }}"
                                                 alt="Product" />
@@ -299,8 +299,8 @@
                                         <div class="ec-pro-opt-inner">
                                         </div>
                                     </div>
-                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{ $item->nama }}</a></h5>
-                                    <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">{{ $item->kategori->nama }}</a>
+                                    <h5 class="ec-pro-title"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{ $item->nama }}</a></h5>
+                                    <h6 class="ec-pro-stitle"><a href="#">{{ $item->kategori->nama }}</a>
                                     </h6>
                                     <div class="ec-pro-rat-price">
                                         <div class="ec-pro-rat-pri-inner">

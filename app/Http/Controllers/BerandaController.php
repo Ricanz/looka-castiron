@@ -73,4 +73,14 @@ class BerandaController extends Controller
         ->take(5)->get();
         return view('guest.katalog.index',compact('Produk', 'produk_terbaru', 'produk_terlaris', 'produk_cari'));
     }
+
+    public function detail_produk($slug){
+        $produk = Produk::where('slug', $slug)->where('status', 'aktif')->first();
+        return view('guest.katalog.detail', compact('produk'));
+    }
+
+    public function detail_artikel($slug){
+        $artikel = Artikel::where('slug', $slug)->where('status', 'aktif')->first();
+        return view('guest.artikel.detail', compact('artikel'));
+    }
 }

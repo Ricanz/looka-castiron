@@ -148,7 +148,7 @@
                                     <div class="ec-product-hover"></div>
                                     <div class="ec-pro-image-outer">
                                         <div class="ec-pro-image">
-                                            <a href="product-left-sidebar.html" class="image">
+                                            <a href="{{ url('/produk/detail').'/'.$item->slug }}" class="image">
                                                 <img class="main-image"
                                                     src="{{ asset($item->gambar) }}"
                                                     alt="Product" />
@@ -161,11 +161,11 @@
                                     <div class="ec-pro-content">
                                         <div class="ec-pro-option">
                                             <div class="ec-pro-opt-inner">
-                                                <a href="" class="btn btn-primary">Lihat Produk</a>
+                                                <a href="{{ url('/produk/detail').'/'.$item->slug }}" class="btn btn-primary">Lihat Produk</a>
                                             </div>
                                         </div>
-                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{ $item->nama }}</a></h5>
-                                        <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">{{ $item->kategori->nama }}</a>
+                                        <h5 class="ec-pro-title"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{ $item->nama }}</a></h5>
+                                        <h6 class="ec-pro-stitle"><a href="#">{{ $item->kategori->nama }}</a>
                                         </h6>
                                         <div class="ec-pro-rat-price">
                                             <div class="ec-pro-rat-pri-inner">
@@ -175,7 +175,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-hidden-block">
-                                            <div class="ec-pro-desc">{{ $item->deskripsi }}</div>
+                                            <div class="ec-pro-desc">{{ Str::limit($item->deskripsi, 150) }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -284,7 +284,7 @@
                                     <div class="ec-product-hover"></div>
                                     <div class="ec-pro-image-outer">
                                         <div class="ec-pro-image">
-                                            <a href="product-left-sidebar.html" class="image">
+                                            <a href="{{ url('/produk/detail').'/'.$item->slug }}" class="image">
                                                 <img class="main-image"
                                                     src="{{ asset($item->gambar) }}"
                                                     alt="Product" />
@@ -297,29 +297,9 @@
                                     <div class="ec-pro-content">
                                         <div class="ec-pro-option">
                                             <div class="ec-pro-opt-inner">
-                                                <div class="ec-pro-color">
-                                                    <ul class="ec-opt-swatch ec-change-img">
-                                                        <li class="active"><a href="#" class="ec-opt-clr-img"
-                                                                data-src="{{ asset($item->gambar) }}"
-                                                                data-src-hover="{{ asset('$item->gambar') }}"
-                                                                data-tooltip="Gray"><span
-                                                                    style="background-color:#dfdfdf;"></span></a></li>
-                                                        <li><a href="#" class="ec-opt-clr-img"
-                                                                data-src="{{ asset('$item->gambar') }}"
-                                                                data-src-hover="{{ asset('$item->gambar') }}"
-                                                                data-tooltip="Orange"><span
-                                                                    style="background-color:#91b6ff;"></span></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="ec-pro-compare">
-                                                    <a href="compare.html" class="ec-btn-group compare"
-                                                        title="Compare"><img
-                                                            src="{{ asset('tlandingPage/assets/images/icons/compare_5.svg') }}"
-                                                            class="svg_img pro_svg" alt="" /></a>
-                                                </div>
                                             </div>
                                         </div>
-                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{$item->nama}}</a></h5>
+                                        <h5 class="ec-pro-title"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{$item->nama}}</a></h5>
                                         <h6 class="ec-pro-stitle"><a
                                                 href="shop-left-sidebar-col-3.html">{{$item->kategori->nama}}</a>
                                         </h6>

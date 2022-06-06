@@ -55,6 +55,8 @@ class ArtikelController extends Controller
             'judul' => $request->judul,
             'gambar' => $txt,
             'deskripsi' => $request->deskripsi,
+            'slug' => str_replace(' ', '-', strtolower($request->judul)),
+
         ]);
         if($artikel){
             return redirect()->route('artikel.index')
@@ -106,6 +108,7 @@ class ArtikelController extends Controller
 
         $artikel->judul = $request->judul;
         $artikel->deskripsi = $request->deskripsi;
+        $artikel->slug = str_replace(' ', '-', strtolower($request->judul));
         $artikel->save();
         return redirect()->route('artikel.index')
                 ->with('success', 'Artikel Berhasil Diubah');

@@ -172,9 +172,7 @@
                                                 {{ Str::limit($item->deskripsi, 320) }}
                                             </span>
                                         </div>
-                                        <div class="ec-pro-actions">
-                                            <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Baca Selengkapnya</button>
-                                        </div>
+                                        <a href="{{ url('/artikel/detail').'/'.$item->slug }}" class="btn btn-primary">Baca Selengkapnya</a>
                                     </div>
                                     <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
                                         <div class="ec-fs-pro-image">

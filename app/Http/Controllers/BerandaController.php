@@ -7,6 +7,8 @@ use App\Models\Artikel;
 use App\Models\Banner;
 use App\Models\Produk;
 use App\Models\Testimonial;
+use App\Models\Kontak;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
 class BerandaController extends Controller
@@ -82,5 +84,33 @@ class BerandaController extends Controller
     public function detail_artikel($slug){
         $artikel = Artikel::where('slug', $slug)->where('status', 'aktif')->first();
         return view('guest.artikel.detail', compact('artikel'));
+    }
+
+    public function contact_store(Request $request) {
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+            'message' => 'required'
+         ]);
+
+         Kontak::create([
+             'name' => $request->name,
+             'email' => $request->email,
+             'phone' => $request->phone,
+             'message' => $request->message
+         ]);
+
+         Mail::send('mail', array(
+            'name' => $request->get('name'),
+            'email' => $request->get('email'),
+            'phone' => $request->get('phone'),
+            'user_query' => $request->get('message'),
+        ), function($message) use ($request){
+            $message->from($request->email);
+            $message->to('looka@gmail.com')->subject('Saran/Kritik/Pesan Pelanggan');
+        });
+
+        return redirect()->back()->with('success', 'pesan telah terkirim!');
     }
 }

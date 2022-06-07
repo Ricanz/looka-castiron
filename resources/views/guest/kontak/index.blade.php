@@ -102,6 +102,7 @@
                                 <div class="ec-fs-pro-inner ec-product-inner">
                                     <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
                                         <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Form Hubungan</a></h5>
+                                        <form action="{{route('contact_store')}}" method="POST">
                                         <div class="countdowntimer">
                                             <label for="">Nama Lengkap</label>
                                             <input class="form-control" placeholder="Masukkan nama lengkap" type="text" name="name" value="{{old('name')}}">
@@ -115,6 +116,7 @@
                                         <div class="ec-pro-actions">
                                             <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Kirim</button>
                                         </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

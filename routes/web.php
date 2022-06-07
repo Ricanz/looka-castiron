@@ -43,6 +43,7 @@ Route::get('about-us', [BerandaController::class, 'tentang_view'])->name('tentan
 Route::get('products', [BerandaController::class, 'products_view'])->name('products_view');
 Route::get('article', [BerandaController::class, 'article_view'])->name('article_view');
 Route::get('contact', [BerandaController::class, 'contact_view'])->name('contact_view');
+Route::post('contact_store', [BerandaController::class, 'contact_store'])->name('contact_store');
 Route::get('products/{id}', [BerandaController::class, 'kategori_produk'])->name('kategori_produk');
 Route::get('search', [BerandaController::class, 'search'])->name('search');
 Route::get('produk/detail/{slug}', [BerandaController::class, 'detail_produk'])->name('detail_produk');

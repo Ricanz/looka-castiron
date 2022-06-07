@@ -21,7 +21,7 @@
                                         @if ($produk != null)
                                         <a href="product-left-sidebar.html" class="image"><img class="main-image"
                                             src="{{asset($produk->gambar)}}" alt="Product" /></a>
-                                        @endif                                       
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
@@ -35,13 +35,13 @@
                                     </div>
                                     <div class="ec-pro-actions">
                                         @if ($produk->tokopedia_link != '')
-                                        <button title="Baca Selengkapnya" class="add-to-cart btn btn-success me-4">Tokopedia</button>
+                                        <a href="{{$produk->tokopedia_link}}" title="Baca Selengkapnya" class="add-to-cart btn btn-success me-4">Tokopedia</a>
                                         @endif
                                         @if ($produk->shopee_link != '')
-                                        <button title="Baca Selengkapnya" class="add-to-cart btn btn-warning me-4">Shopee</button>
+                                        <a href="{{$produk->shopee_link}}" title="Baca Selengkapnya" class="add-to-cart btn btn-warning me-4">Shopee</a>
                                         @endif
                                         @if ($produk->lazada_link != '')
-                                        <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary me-4">Lazada</button>
+                                        <a href="{{$produk->lazada_link}}" title="Baca Selengkapnya" class="add-to-cart btn btn-primary me-4">Lazada</a>
                                         @endif
                                     </div>
                                 </div>

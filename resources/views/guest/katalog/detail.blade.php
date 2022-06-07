@@ -33,16 +33,16 @@
                                             @endif
                                         </span>
                                     </div>
-                                    <div class="ec-pro-actions">
-                                        @if ($produk->tokopedia_link != '')
-                                        <a href="{{$produk->tokopedia_link}}" title="Baca Selengkapnya" class="add-to-cart btn btn-success me-4">Tokopedia</a>
-                                        @endif
-                                        @if ($produk->shopee_link != '')
-                                        <a href="{{$produk->shopee_link}}" title="Baca Selengkapnya" class="add-to-cart btn btn-warning me-4">Shopee</a>
-                                        @endif
-                                        @if ($produk->lazada_link != '')
-                                        <a href="{{$produk->lazada_link}}" title="Baca Selengkapnya" class="add-to-cart btn btn-primary me-4">Lazada</a>
-                                        @endif
+                                    <div class="ec-offer-content-inner">
+                                        @isset($produk->tokopedia_link)
+                                        <span class="ec-offer-btn"><a href="{{$produk->tokopedia_link}}" target="_blank" title="Baca Selengkapnya" class="btn btn-success me-4">Tokopedia</a></span>
+                                        @endisset
+                                        @isset($produk->shopee_link)
+                                        <span class="ec-offer-btn"><a href="{{$produk->shopee_link}}" target="_blank" title="Baca Selengkapnya" class="btn btn-warning me-4">Shopee</a></span>
+                                        @endisset
+                                        @isset($produk->lazada_link)
+                                        <span class="ec-offer-btn"><a href="{{$produk->lazada_link}}" target="_blank" title="Baca Selengkapnya" class="btn btn-primary me-4">Lazada</a></span>
+                                        @endisset
                                     </div>
                                 </div>
                             </div>

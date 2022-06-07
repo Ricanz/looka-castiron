@@ -66,17 +66,17 @@
                                     </div>
                                     <div class="col-md-12 mb-2">
                                         <label class="form-label">Link Shopee</label>
-                                        <input type="shopee_link" min="0" class="form-control" name="stok"
+                                        <input type="text" min="0" class="form-control" name="shopee_link"
                                             id="quantity1">
                                     </div>
                                     <div class="col-md-6 mb-2">
                                         <label class="form-label">Link Tokopedia</label>
-                                        <input type="tokopedia_link" min="0" class="form-control" name="stok"
+                                        <input type="text" min="0" class="form-control" name="tokopedia_link"
                                             id="quantity1">
                                     </div>
                                     <div class="col-md-6 mb-2">
                                         <label class="form-label">Link Lazada</label>
-                                        <input type="lazada_link" min="0" class="form-control" name="stok"
+                                        <input type="text" min="0" class="form-control" name="lazada_link"
                                             id="quantity1">
                                     </div>
                                     <div class="col-md-12 mb-2">

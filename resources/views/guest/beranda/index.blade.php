@@ -165,7 +165,7 @@
                                             </div>
                                         </div>
                                         <h5 class="ec-pro-title"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{ $item->nama }}</a></h5>
-                                        <h6 class="ec-pro-stitle"><a href="#">{{ $item->kategori->nama }}</a>
+                                        <h6 class="ec-pro-stitle"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{ $item->kategori->nama }}</a>
                                         </h6>
                                         <div class="ec-pro-rat-price">
                                             <div class="ec-pro-rat-pri-inner">

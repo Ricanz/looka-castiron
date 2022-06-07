@@ -39,7 +39,7 @@
                         <!-- Ec Header Button Start -->
                         <div class="align-self-center ec-offer">
                             <div class="ec-offer-content-inner">
-                                <span class="ec-offer-btn"><a href="#" class="btn btn-primary">HUBUNGI KAMI</a></span>
+                                <span class="ec-offer-btn"><a href="{{ url('/contact') }}" class="btn btn-primary">HUBUNGI KAMI</a></span>
                             </div>
                         </div>
                     </div>

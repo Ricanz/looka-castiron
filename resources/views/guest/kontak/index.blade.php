@@ -44,7 +44,7 @@
                                     <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
                                         <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Creative Iron Store</a></h5>
                                         <div class="countdowntimer">
-                                            <span class="ec-fs-count-desc" align="justify"> 
+                                            <span class="ec-fs-count-desc" align="justify">
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                             </span>
                                         </div>
@@ -97,23 +97,23 @@
                                 <h2 class="ec-title">Tuliskan Sesuatu</h2>
                             </div>
                         </div>
-<div class="ec-spe-products">
+                        <div class="ec-group-form">
                             <div class="ec-fs-product">
                                 <div class="ec-fs-pro-inner ec-product-inner">
                                     <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
                                         <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Form Hubungan</a></h5>
                                         <div class="countdowntimer">
                                             <label for="">Nama Lengkap</label>
-                                            <input type="text" placeholder="Masukkan nama lengkap">
+                                            <input class="form-control" placeholder="Masukkan nama lengkap" type="text" name="nama_lengkap" value="{{old('nama_lengkap')}}">
                                             <label for="">Email*</label>
-                                            <input type="text" placeholder="Masukkan email">
+                                            <input class="form-control" placeholder="Masukkan email" type="email" name="email" value="{{old('email')}}">
                                             <label for="">No Telepon / Whatsapp*</label>
-                                            <input type="text" placeholder="Masukkan email">
+                                            <input class="form-control" placeholder="Masukkan nomor" type="number" name="whatsapp" value="{{old('whatsapp')}}">
                                             <label for="">Kritik / Saran / Masukan *</label>
-                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            <textarea class="form-control" placeholder="Masukkan Kritik / Saran / Masukan" name="saran" value="{{old('saran')}}" cols="30" rows="10"></textarea>
                                         </div>
                                         <div class="ec-pro-actions">
-                                            <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Baca Selengkapnya</button>
+                                            <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Kirim</button>
                                         </div>
                                     </div>
                                 </div>

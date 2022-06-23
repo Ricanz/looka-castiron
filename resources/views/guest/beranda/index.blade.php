@@ -23,7 +23,7 @@
     <!-- Main Slider End -->
 
     <!--  category Section Start -->
-    <section class="section ec-category-section section-space-mb">
+    {{-- <section class="section ec-category-section section-space-mb">
         <div class="container">
             <div class="row">
                 <div class="ec_cat_slider">
@@ -122,13 +122,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--category Section End -->
 
     <!-- Product tab Area Start -->
     <section class="section ec-product-tab section-space-p">
         <div class="container">
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-md-12 section-title-block">
                     <div class="section-title">
                         <h2 class="ec-title">Produk Terlaris</h2>
@@ -137,7 +137,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
             <div class="row m-tb-minus-15">
                 <div class="col">
                     <div class="tab-content">
@@ -198,12 +198,12 @@
                     <div class="ec-banner-left col-sm-6">
                         <div class="ec-banner-block ec-banner-block-1 col-sm-12">
                             <div class="banner-block">
-                                <img src="{{ asset('tlandingPage/assets/images/banner/23.png') }}" alt="" />
+                                <img src="{{ asset('tlandingPage/assets/images/brand/brand-1.jpeg') }}" alt="" />
                                 <div class="banner-content">
-                                    <span class="ec-banner-stitle">lenovo tablets</span>
+                                    {{-- <span class="ec-banner-stitle">lenovo tablets</span>
                                     <span class="ec-banner-title">UP to 70% OFF</span>
                                     <span class="ec-banner-btn"><a href="#" class="btn-primary">Shop
-                                            Now</a></span>
+                                            Now</a></span> --}}
                                 </div>
                             </div>
                         </div>
@@ -211,12 +211,12 @@
                     <div class="ec-banner-right col-sm-6">
                         <div class="ec-banner-block ec-banner-block-2 col-sm-12">
                             <div class="banner-block">
-                                <img src="{{ asset('tlandingPage/assets/images/banner/24.png') }}" alt="" />
+                                <img src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}" alt="" />
                                 <div class="banner-content">
-                                    <span class="ec-banner-stitle">Xiaoyi YI 1080p</span>
+                                    {{-- <span class="ec-banner-stitle">Xiaoyi YI 1080p</span>
                                     <span class="ec-banner-title">WiFi IP Camera 36</span>
                                     <span class="ec-banner-btn"><a href="#" class="btn-primary">Shop
-                                            Now</a></span>
+                                            Now</a></span> --}}
                                 </div>
                             </div>
                         </div>
@@ -226,7 +226,19 @@
         </div>
     </section>
     <!-- ec Banner Section End -->
-
+    <div class="ec-main-slider section">
+        <div class="ec-slider">
+            <div class="ec-slide-item d-flex slide-1">
+                <img src="tlandingPage/assets/images/slider-brand/brand-1.jpeg" style="width: relative; height: relative" alt="">
+            </div>
+            <div class="ec-slide-item d-flex slide-2">
+                <img src="tlandingPage/assets/images/slider-brand/brand-2.jpeg" style="width: relative; height: relative" alt="">
+            </div>
+            <div class="ec-slide-item d-flex slide-3">
+                <img src="tlandingPage/assets/images/slider-brand/brand-3.jpeg" style="width: relative; height: relative" alt="">
+            </div>
+        </div>
+    </div>
     <!--  Feature & Special Section Start -->
     <section class="section ec-exe-spe-section section-space-ptb-100 section-space-mt section-space-mb-100"
         style="background-image: url('{{ asset('tlandingPage/assets/images/special-product/background.jpg') }}');">

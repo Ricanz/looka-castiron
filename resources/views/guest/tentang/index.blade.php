@@ -33,9 +33,6 @@
                                             @endif
                                         </span>
                                     </div>
-                                    <div class="ec-pro-actions">
-                                        <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Baca Selengkapnya</button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -56,11 +53,8 @@
                     <div class="ec-banner-left col-sm-6">
                         <div class="ec-banner-block ec-banner-block-1 col-sm-12">
                             <div class="banner-block">
-                                <img src="{{asset('tlandingPage/assets/images/banner/23.png')}}" alt="" />
+                                <img src="{{ asset('tlandingPage/assets/images/brand/brand-1.jpeg') }}" alt="" />
                                 <div class="banner-content">
-                                    <span class="ec-banner-stitle">lenovo tablets</span>
-                                    <span class="ec-banner-title">UP to 70% OFF</span>
-                                    <span class="ec-banner-btn"><a href="#" class="btn-primary">Shop Now</a></span>
                                 </div>
                             </div>
                         </div>
@@ -68,11 +62,8 @@
                     <div class="ec-banner-right col-sm-6">
                         <div class="ec-banner-block ec-banner-block-2 col-sm-12">
                             <div class="banner-block">
-                                <img src="{{asset('tlandingPage/assets/images/banner/24.png')}}" alt="" />
+                                <img src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}" alt="" />
                                 <div class="banner-content">
-                                    <span class="ec-banner-stitle">Xiaoyi YI 1080p</span>
-                                    <span class="ec-banner-title">WiFi IP Camera 36</span>
-                                    <span class="ec-banner-btn"><a href="#" class="btn-primary">Shop Now</a></span>
                                 </div>
                             </div>
                         </div>
@@ -85,17 +76,56 @@
 
 
     <!--  offer Section Start -->
-    <section class="section ec-offer-section section-space-mt section-space-mb">
-        <h2 class="d-none">Offer</h2>
+    <section class="section ec-services-section">
+        <h2 class="d-none">Services</h2>
         <div class="container">
-            <div class="ec-offer-inner ofr-img">
-                <!-- <img src="{{asset('tlandingPage/assets/images/offer-image/offer_bg.png')}}" alt="" class="offer_bg" /> -->
-                <div class="col-sm-6 ec-offer-content">
-                    <div class="ec-offer-content-inner">
-                        <h2 class="ec-offer-stitle">black friday</h2>
-                        <h2 class="ec-offer-title">up to 60 % off</h2>
-                        <span class="ec-offer-desc">Select accessories for your favourites gadgets</span>
-                        <span class="ec-offer-btn"><a href="#" class="btn btn-primary">Shop Now</a></span>
+            <div class="row">
+                <div class="ec_ser_content ec_ser_content_1 col-sm-12 col-md-3">
+                    <div class="ec_ser_inner">
+                        <div class="ec-service-image">
+                            <img src="{{ asset('tlandingPage/assets/images/icons/service_5_1.svg') }}"
+                                class="svg_img" alt="" />
+                        </div>
+                        <div class="ec-service-desc">
+                            <h2>Free shipping</h2>
+                            <p>Free shipping on all US orders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ec_ser_content ec_ser_content_2 col-sm-12 col-md-3">
+                    <div class="ec_ser_inner">
+                        <div class="ec-service-image">
+                            <img src="{{ asset('tlandingPage/assets/images/icons/service_2.svg') }}"
+                                class="svg_img" alt="" />
+                        </div>
+                        <div class="ec-service-desc">
+                            <h2>money gaurntee</h2>
+                            <p>30 days money back guarantee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ec_ser_content ec_ser_content_3 col-sm-12 col-md-3">
+                    <div class="ec_ser_inner">
+                        <div class="ec-service-image">
+                            <img src="{{ asset('tlandingPage/assets/images/icons/service_3.svg') }}"
+                                class="svg_img" alt="" />
+                        </div>
+                        <div class="ec-service-desc">
+                            <h2>online support</h2>
+                            <p>We support online 24/7 on day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ec_ser_content ec_ser_content_4 col-sm-12 col-md-3">
+                    <div class="ec_ser_inner">
+                        <div class="ec-service-image">
+                            <img src="{{ asset('tlandingPage/assets/images/icons/service_5_4.svg') }}"
+                                class="svg_img" alt="" />
+                        </div>
+                        <div class="ec-service-desc">
+                            <h2>Member Discount</h2>
+                            <p>Onevery order over $120.00</p>
+                        </div>
                     </div>
                 </div>
             </div>

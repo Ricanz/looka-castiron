@@ -1,114 +1,10 @@
 <x-guest-layout>
 
-    <!--  offer Section Start -->
-    <section class="section ec-offer-section section-space-mt section-space-mb">
-        <h2 class="d-none">Offer</h2>
-        <div class="container">
-            <div class="ec-offer-inner ofr-img">
-                <!-- <img src="{{asset('tlandingPage/assets/images/offer-image/offer_bg.png')}}" alt="" class="offer_bg" /> -->
-                <div class="col-sm-6 ec-offer-content">
-                    <div class="ec-offer-content-inner">
-                        <h2 class="ec-offer-stitle">black friday</h2>
-                        <h2 class="ec-offer-title">up to 60 % off</h2>
-                        <span class="ec-offer-desc">Select accessories for your favourites gadgets</span>
-                        <span class="ec-offer-btn"><a href="#" class="btn btn-primary">Shop Now</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- offer Section End -->
     <!--  category Section Start -->
     <section class="section ec-category-section section-space-mb">
         <div class="container">
             <div class="row">
-                <div class="ec_cat_slider">
-                    <div class="ec_cat_content">
-                        <div class="ec_cat_inner">
-                            <a href="#">
-                                <h2 class="d-none">Category</h2>
-                                <div class="ec-cat-image">
-                                    <img src="{{asset('tlandingPage/assets/images/category-image/8.svg')}}" class="svg_img cat_svg" alt="" />
-                                </div>
-                                <div class="ec-cat-desc">
-                                    <span class="ec-section-title">Laptops & PC</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content">
-                        <div class="ec_cat_inner">
-                            <a href="#">
-                                <div class="ec-cat-image">
-                                    <img src="{{asset('tlandingPage/assets/images/category-image/9.svg')}}" class="svg_img cat_svg" alt="" />
-                                </div>
-                                <div class="ec-cat-desc">
-                                    <span class="ec-section-title">Smartwatches</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content">
-                        <div class="ec_cat_inner">
-                            <a href="#">
-                                <div class="ec-cat-image">
-                                    <img src="{{asset('tlandingPage/assets/images/category-image/10.svg')}}" class="svg_img cat_svg" alt="" />
-                                </div>
-                                <div class="ec-cat-desc">
-                                    <span class="ec-section-title">Cameras</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content">
-                        <div class="ec_cat_inner">
-                            <a href="#">
-                                <div class="ec-cat-image">
-                                    <img src="{{asset('tlandingPage/assets/images/category-image/11.svg')}}" class="svg_img cat_svg" alt="" />
-                                </div>
-                                <div class="ec-cat-desc">
-                                    <span class="ec-section-title">Console Games</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content">
-                        <div class="ec_cat_inner">
-                            <a href="#">
-                                <div class="ec-cat-image">
-                                    <img src="{{asset('tlandingPage/assets/images/category-image/12.svg')}}" class="svg_img cat_svg" alt="" />
-                                </div>
-                                <div class="ec-cat-desc">
-                                    <span class="ec-section-title">Headphones</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content">
-                        <div class="ec_cat_inner">
-                            <a href="#">
-                                <div class="ec-cat-image">
-                                    <img src="{{asset('tlandingPage/assets/images/category-image/13.svg')}}" class="svg_img cat_svg" alt="" />
-                                </div>
-                                <div class="ec-cat-desc">
-                                    <span class="ec-section-title">Virtual Reality</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content">
-                        <div class="ec_cat_inner">
-                            <a href="#">
-                                <div class="ec-cat-image">
-                                    <img src="{{asset('tlandingPage/assets/images/category-image/14.svg')}}" class="svg_img cat_svg" alt="" />
-                                </div>
-                                <div class="ec-cat-desc">
-                                    <span class="ec-section-title">Cameras</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <h1>Katalog</h1>
             </div>
         </div>
     </section>
@@ -187,11 +83,8 @@
                     <div class="ec-banner-left col-sm-6">
                         <div class="ec-banner-block ec-banner-block-1 col-sm-12">
                             <div class="banner-block">
-                                <img src="{{asset('tlandingPage/assets/images/banner/23.png')}}" alt="" />
+                                <img src="{{ asset('tlandingPage/assets/images/brand/brand-1.jpeg') }}" alt="" />
                                 <div class="banner-content">
-                                    <span class="ec-banner-stitle">lenovo tablets</span>
-                                    <span class="ec-banner-title">UP to 70% OFF</span>
-                                    <span class="ec-banner-btn"><a href="#" class="btn-primary">Shop Now</a></span>
                                 </div>
                             </div>
                         </div>
@@ -199,11 +92,8 @@
                     <div class="ec-banner-right col-sm-6">
                         <div class="ec-banner-block ec-banner-block-2 col-sm-12">
                             <div class="banner-block">
-                                <img src="{{asset('tlandingPage/assets/images/banner/24.png')}}" alt="" />
+                                <img src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}" alt="" />
                                 <div class="banner-content">
-                                    <span class="ec-banner-stitle">Xiaoyi YI 1080p</span>
-                                    <span class="ec-banner-title">WiFi IP Camera 36</span>
-                                    <span class="ec-banner-btn"><a href="#" class="btn-primary">Shop Now</a></span>
                                 </div>
                             </div>
                         </div>

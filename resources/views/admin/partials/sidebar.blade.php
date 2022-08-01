@@ -24,60 +24,12 @@
 
                 <!-- Vendors -->
                 <li class="has-sub">
-                    <a class="sidenav-item-link" href="javascript:void(0)">
+                    <a class="sidenav-item-link" href="{{url('admin/aboutUs')}}">
                         <i class="mdi mdi-account-group-outline"></i>
-                        <span class="nav-text">Vendors</span> <b class="caret"></b>
+                        <span class="nav-text">Tentang Kami</span> 
                     </a>
-                    <div class="collapse">
-                        <ul class="sub-menu" id="vendors" data-parent="#sidebar-menu">
-                            <li class="">
-                                <a class="sidenav-item-link" href="vendor-card.html">
-                                    <span class="nav-text">Vendor Grid</span>
-                                </a>
-                            </li>
-
-                            <li class="">
-                                <a class="sidenav-item-link" href="vendor-list.html">
-                                    <span class="nav-text">Vendor List</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a class="sidenav-item-link" href="vendor-profile.html">
-                                    <span class="nav-text">Vendors Profile</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </li>
 
-                <!-- Users -->
-                <li class="has-sub">
-                    <a class="sidenav-item-link" href="javascript:void(0)">
-                        <i class="mdi mdi-account-group"></i>
-                        <span class="nav-text">Users</span> <b class="caret"></b>
-                    </a>
-                    <div class="collapse">
-                        <ul class="sub-menu" id="users" data-parent="#sidebar-menu">
-                            <li>
-                                <a class="sidenav-item-link" href="user-card.html">
-                                    <span class="nav-text">User Grid</span>
-                                </a>
-                            </li>
-
-                            <li class="">
-                                <a class="sidenav-item-link" href="user-list.html">
-                                    <span class="nav-text">User List</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a class="sidenav-item-link" href="user-profile.html">
-                                    <span class="nav-text">Users Profile</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr>
-                </li>
 
                 <!-- Category -->
                 <li class="has-sub {{ request()->is('admin/kategori*') ? 'active expand' : '' }} ">
@@ -183,33 +135,6 @@
                             <li class="{{ request()->is('banner') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('banner.index')}}">
                                     <span class="nav-text">List Banner</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                {{-- Transaksi --}}
-                <li class="has-sub {{ request()->is('') ? 'active expand' : '' }}">
-                    <a class="sidenav-item-link" href="javascript:void(0)">
-                        <i class="mdi mdi-cart"></i>
-                        <span class="nav-text">Orders</span> <b class="caret"></b>
-                    </a>
-                    <div class="collapse {{ request()->is('') ? 'show' : '' }}">
-                        <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
-                            <li class="{{ request()->is('Produk-grid') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="">
-                                    <span class="nav-text">Add Product</span>
-                                </a>
-                            </li>
-                            <li class="{{ request()->is('') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="">
-                                    <span class="nav-text">List Product</span>
-                                </a>
-                            </li>
-                            <li class="{{ request()->is('') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="">
-                                    <span class="nav-text">Grid Product</span>
                                 </a>
                             </li>
                         </ul>

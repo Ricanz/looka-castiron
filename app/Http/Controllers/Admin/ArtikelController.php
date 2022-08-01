@@ -109,6 +109,7 @@ class ArtikelController extends Controller
         $artikel->judul = $request->judul;
         $artikel->deskripsi = $request->deskripsi;
         $artikel->slug = str_replace(' ', '-', strtolower($request->judul));
+        $artikel->status = $request->status;
         $artikel->save();
         return redirect()->route('artikel.index')
                 ->with('success', 'Artikel Berhasil Diubah');
@@ -123,7 +124,6 @@ class ArtikelController extends Controller
     public function destroy($id)
     {
         $artikel = Artikel::findOrFail($id);
-        // dd($artikel);
         Storage::delete("public/artikel/$artikel->gambar");
         $artikel->delete();
         return redirect()->route('artikel.index')

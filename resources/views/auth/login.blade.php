@@ -5,9 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Cakrawa;a - Admin Login.">
+    <meta name="title" content="Looka Cast Iron - Admin Login.">
+    <meta name="description" content="Looka Cast Iron - Admin Login.">
 
-    <title>Cakrawala - Admin Login.</title>
+    <title>Looka Cast Iron - Admin Login.</title>
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +33,8 @@
                 <div class="card">
                     <div class="card-header bg-primary">
                         <div class="ec-brand">
-                            <a href="/" title="Toko Cakrawala">
-                                <img class="ec-brand-icon" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}" alt="Toko Cakrawala" />
+                            <a href="/" title="Looka Cast Iron">
+                                {{-- <img class="ec-brand-icon" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}" alt="Looka Cast Iron" /> --}}
                             </a>
                         </div>
                     </div>

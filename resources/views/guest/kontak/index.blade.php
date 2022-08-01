@@ -1,19 +1,10 @@
 <x-guest-layout>
 
         <!--  offer Section Start -->
-        <section class="section ec-offer-section section-space-mt section-space-mb">
-            <h2 class="d-none">Offer</h2>
+        <section class="section ec-category-section section-space-mb">
             <div class="container">
-                <div class="ec-offer-inner ofr-img">
-                    <!-- <img src="{{asset('tlandingPage/assets/images/offer-image/offer_bg.png')}}" alt="" class="offer_bg" /> -->
-                    <div class="col-sm-6 ec-offer-content">
-                        <div class="ec-offer-content-inner">
-                            <h2 class="ec-offer-stitle">black friday</h2>
-                            <h2 class="ec-offer-title">up to 60 % off</h2>
-                            <span class="ec-offer-desc">Select accessories for your favourites gadgets</span>
-                            <span class="ec-offer-btn"><a href="#" class="btn btn-primary">Shop Now</a></span>
-                        </div>
-                    </div>
+                <div class="row">
+                    <h1>Kontak Kami</h1>
                 </div>
             </div>
         </section>
@@ -49,40 +40,7 @@
                                             </span>
                                         </div>
                                         <div class="ec-pro-actions">
-                                            <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Baca Selengkapnya</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ec-fs-product">
-                                <div class="ec-fs-pro-inner ec-product-inner">
-                                    <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
-                                        <div class="ec-fs-pro-image">
-                                            <a href="product-left-sidebar.html" class="image"><img class="main-image"
-                                                    src="{{asset('tlandingPage/assets/images/special-product/2_1.jpg')}}" alt="Product" /></a>
-                                        </div>
-                                    </div>
-                                    <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Wireless Earphone with Mic neckband </a></h5>
-                                        <h6 class="ec-pro-stitle"><a href="shop-left-sidebar-col-3.html">Multimedia</a></h6>
-                                        <div class="ec-pro-rat-price">
-                                            <span class="ec-price">
-                                                <span class="new-price">$480.00</span>
-                                                <span class="old-price">$700.00</span>
-                                            </span>
-                                        </div>
-                                        <div class="ec-fs-pro-progress">
-                                            <span class="ec-fs-pro-progress-desc"><span>Solid:
-                                                    <b>0</b></span><span>Available: <b>200</b></span></span>
-                                            <span class="ec-fs-pro-progressbar"></span>
-                                        </div>
-                                        <div class="countdowntimer">
-                                            <span class="ec-fs-count-desc"> Hurry up ! offers ends in:</span>
-                                            <span id="ec-fs-count-2"></span>
-                                        </div>
-                                        <div class="ec-pro-actions">
-                                            <button title="Add To Cart" class="add-to-cart btn btn-primary">Add To
-                                                Cart</button>
+                                            <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Hubungi Kami</button>
                                         </div>
                                     </div>
                                 </div>

@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
                                         <div class="ec-fs-pro-image">
-                                            <a class="image"> <img class="main-image" src="{{asset($item->gambar)}}" /> </a>
+                                            <img class="main-image" src="{{asset($item->gambar)}}" />
                                         </div>
                                     </div>
                                 </div>

@@ -18,10 +18,10 @@
                             <div class="ec-fs-pro-inner ec-product-inner">
                                 <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
                                     <div class="ec-fs-pro-image">
-                                        @if ($artikel != null)
+                                        @if ($artikel !== null)
                                         <a href="#" class="image"><img class="main-image"
                                             src="{{asset($artikel->gambar)}}" alt="Artikel" /></a>
-                                        @endif                                       
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">

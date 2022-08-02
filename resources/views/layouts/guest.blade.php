@@ -2,11 +2,12 @@
 <html lang="en">
 
 @include('guest.partials.header')
-@include('sweetalert::alert')
+
 <!--Start of Tawk.to Script-->
 <body>
 
   <!-- ======= Header ======= -->
+  @include('sweetalert::alert')
   @include('guest.partials.navbar')
 
   <!-- ======= Hero Section ======= -->

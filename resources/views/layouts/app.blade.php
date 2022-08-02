@@ -2,13 +2,13 @@
 <html lang="en" dir="ltr">
 
 @include('admin.partials.head')
-@include('sweetalert::alert')
+
 
 <body class="ec-header-fixed ec-sidebar-fixed ec-sidebar-light ec-header-light" id="body">
 
     <!--  WRAPPER  -->
     <div class="wrapper">
-
+        @include('sweetalert::alert')
         @include('admin.partials.sidebar')
 
         <!--  PAGE WRAPPER -->

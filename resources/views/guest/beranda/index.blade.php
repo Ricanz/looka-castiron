@@ -8,10 +8,18 @@
                     <div class="row">
                         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 align-self-center">
                             <div class="ec-slide-content slider-animation">
-                                <h2 class="ec-slide-stitle">{{ $item->sub_judul }}</h2>
-                                <h1 class="ec-slide-title">{{ $item->judul }}</h1>
-                                <p>{{ $item->deskripsi }}</p>
-                                <a href="{{ $item->tombol_link }}" class="btn btn-lg btn-secondary">{{ $item->tombol_text }}</a>
+                                @if ($item->sub_judul != null)
+                                    <h2 class="ec-slide-stitle">{{ $item->sub_judul }}</h2>
+                                @endif
+                                @if ($item->judul != null)
+                                    <h1 class="ec-slide-title">{{ $item->judul }}</h1>
+                                @endif
+                                @if ($item->deskripsi != null)
+                                    <p>{{ $item->deskripsi }}</p>
+                                @endif
+                                @if ($item->tombol_link != null)
+                                    <a href="{{ $item->tombol_link }}" class="btn btn-lg btn-secondary">{{ $item->tombol_text }}</a> 
+                                @endif
                             </div>
                         </div>
                     </div>

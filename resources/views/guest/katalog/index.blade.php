@@ -83,16 +83,16 @@
                     <div class="ec-banner-left col-sm-6">
                         <div class="ec-banner-block ec-banner-block-1 col-sm-12">
                             <div class="banner-block">
-                                <img src="{{ asset('tlandingPage/assets/images/brand/brand-1.jpeg') }}" alt="" />
+                                <img src="{{ asset('tlandingPage/assets/images/looka/16.png') }}" alt="" />
                                 <div class="banner-content">
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
                     <div class="ec-banner-right col-sm-6">
                         <div class="ec-banner-block ec-banner-block-2 col-sm-12">
                             <div class="banner-block">
-                                <img src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}" alt="" />
+                                <img src="{{ asset('tlandingPage/assets/images/looka/15.png') }}" alt="" />
                                 <div class="banner-content">
                                 </div>
                             </div>

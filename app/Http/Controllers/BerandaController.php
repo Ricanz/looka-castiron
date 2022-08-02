@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\AboutUs;
 use App\Models\Artikel;
 use App\Models\Banner;
+use App\Models\Kategori;
 use App\Models\Produk;
 use App\Models\Testimonial;
 use App\Models\Kontak;
@@ -24,9 +25,17 @@ class BerandaController extends Controller
     }
     public function kategori_produk($id)
     {
-        $Produk = Produk::where('kategori_id',$id)->get();
-        // dd($testimonial);
-        return view('guest.katalog.index',compact('Produk'));
+        $Produk = Produk::where('kategori_id', $id)->where('status', 'aktif')->with('kategori')->get();
+        $produk_terbaru = Produk::with('kategori')
+                        ->where('status', 'aktif')
+                        ->orderBy('created_at', 'desc')
+                        ->take(5)->get();
+        $produk_terlaris = Produk::with('kategori')
+        ->where('status', 'aktif')
+        ->orderBy('created_at', 'asc')
+        ->take(5)->get();
+        $kategori = Kategori::where('id', $id)->first();
+        return view('guest.katalog.kategori',compact('Produk', 'produk_terbaru', 'produk_terlaris', 'kategori'));
     }
     public function tentang_view()
     {

@@ -67,12 +67,12 @@
                         <div class="header-search">
                             <form class="ec-search-group-form" action="#">
                                 <div class="ec-search-select-inner">
-                                    <div class="ec-search-cat-title">All</div>
+                                    {{-- <div class="ec-search-cat-title">All</div>
                                     <ul class="ec-search-cat-block">
                                         <li><a href="#">Cloths</a></li>
                                         <li><a href="#">Bag</a></li>
                                         <li><a href="#">Shoes</a></li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                                 <input class="form-control" placeholder="Search Here..." type="text">
                                 <button class="search_submit" type="submit"><i class="ecicon eci-search"></i></button>

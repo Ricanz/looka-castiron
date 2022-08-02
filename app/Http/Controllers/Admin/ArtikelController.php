@@ -47,8 +47,8 @@ class ArtikelController extends Controller
         if ($request->gambar) {
             $extention = $request->gambar->extension();
             $file_name = time() . '.' . $extention;
-            $txt = "storage/artikel/". $file_name;
-            $request->gambar->storeAs('public/artikel', $file_name);
+            $txt = "storage/Artikel/". $file_name;
+            $request->gambar->storeAs('public/Artikel', $file_name);
         } else {
             $txt = null;
         }
@@ -103,8 +103,8 @@ class ArtikelController extends Controller
         if ($request->gambar != null) {
             $extention = $request->gambar->extension();
             $file_name = time() . '.' . $extention;
-            $txt = "storage/artikel/". $file_name;
-            $request->gambar->storeAs('public/artikel', $file_name);
+            $txt = "storage/Artikel/". $file_name;
+            $request->gambar->storeAs('public/Artikel', $file_name);
             $artikel->gambar = $txt;
         }
 
@@ -126,7 +126,7 @@ class ArtikelController extends Controller
     public function destroy($id)
     {
         $artikel = Artikel::findOrFail($id);
-        Storage::delete("public/artikel/$artikel->gambar");
+        Storage::delete("public/Artikel/$artikel->gambar");
         $artikel->delete();
         return redirect()->route('artikel.index')
             ->with('delete', 'Artikel Berhasil Dihapus');

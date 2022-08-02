@@ -30,7 +30,7 @@
                                     <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
                                         <h3 class="ec-pro-title" align="left"><a href="product-left-sidebar.html">{{ $item->judul }}</a></h3>
                                         <div class="countdowntimer">
-                                            <span class="ec-fs-count-desc" align="justify"> 
+                                            <span class="ec-fs-count-desc" align="justify">
                                                 {{ Str::limit($item->deskripsi, 320) }}
                                             </span>
                                         </div>
@@ -39,12 +39,12 @@
                                     <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
                                         <div class="ec-fs-pro-image">
                                             <a href="product-left-sidebar.html" class="image"><img class="main-image"
-                                                    src="{{ $item->gambar }}" alt="Product" /></a>
+                                                    src="{{ asset($item->gambar) }}" alt="Product" /></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         @endforeach
                     </div>
                     <!--  Special Section End -->

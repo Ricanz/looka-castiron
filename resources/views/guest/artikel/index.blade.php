@@ -59,12 +59,12 @@
             <div class="ec-insta-wrapper">
                 <div class="ec-insta-outer">
                     <div class="insta-auto">
-                        <h2 class="d-none">Instagram</h2>
+                        <h2 class="d-none">Galleries</h2>
                         <!-- instagram item -->
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
                                 <a href="#" target="_blank"><img
-                                        src="{{ asset('tlandingPage/assets/images/slider-brand/brand-1.jpeg') }}" alt="">
+                                        src="{{ asset('tlandingPage/assets/images/looka/1.jpg') }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
                                 <a href="#" target="_blank"><img
-                                        src="{{ asset('tlandingPage/assets/images/slider-brand/brand-2.jpeg') }}" alt="">
+                                        src="{{ asset('tlandingPage/assets/images/looka/9.jpg') }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -80,7 +80,7 @@
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
                                 <a href="#" target="_blank"><img
-                                        src="{{ asset('tlandingPage/assets/images/slider-brand/brand-3.jpeg') }}" alt="">
+                                        src="{{ asset('tlandingPage/assets/images/looka/2.jpg') }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
                                 <a href="#" target="_blank"><img
-                                        src="{{ asset('tlandingPage/assets/images/slider-brand/brand-4.jpeg') }}" alt="">
+                                        src="{{ asset('tlandingPage/assets/images/looka/7.jpg') }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
                                 <a href="#" target="_blank"><img
-                                        src="{{ asset('tlandingPage/assets/images/slider-brand/brand-5.jpeg') }}" alt="">
+                                        src="{{ asset('tlandingPage/assets/images/looka/3.jpg') }}" alt="">
                                 </a>
                             </div>
                         </div>

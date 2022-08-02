@@ -39,9 +39,9 @@
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                             </span>
                                         </div>
-                                        <div class="ec-pro-actions">
+                                        {{-- <div class="ec-pro-actions">
                                             <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Hubungi Kami</button>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                             </div>
@@ -59,20 +59,29 @@
                             <div class="ec-fs-product">
                                 <div class="ec-fs-pro-inner ec-product-inner">
                                     <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Form Hubungan</a></h5>
-                                        <form action="{{route('contact_store')}}" method="POST">
-                                        <div class="countdowntimer">
-                                            <label for="">Nama Lengkap</label>
-                                            <input class="form-control" placeholder="Masukkan nama lengkap" type="text" name="name" value="{{old('name')}}">
-                                            <label for="">Email*</label>
-                                            <input class="form-control" placeholder="Masukkan email" type="email" name="email" value="{{old('email')}}">
-                                            <label for="">No Telepon / Whatsapp*</label>
-                                            <input class="form-control" placeholder="Masukkan nomor" type="number" name="phone" value="{{old('phone')}}">
-                                            <label for="">Kritik / Saran / Masukan *</label>
-                                            <textarea class="form-control" placeholder="Masukkan Kritik / Saran / Masukan" name="message" value="{{old('message')}}" cols="30" rows="10"></textarea>
+                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Hubungi Kami</a></h5>
+                                        <form action="{{route('kontak.store')}}" method="POST">
+                                        <div class="body">
+                                            @csrf
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Nama :</label>
+                                                <input type="text" class="form-control" name="name" placeholder="*Nama" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">E-Mail :</label>
+                                                <input type="text" class="form-control" name="email" placeholder="*E-Mail" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Telepon :</label>
+                                                <input type="number" class="form-control" name="phone" placeholder="*Telepon" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Pesan:</label>
+                                                <textarea class="form-control" name="message" placeholder="*Pesan" required></textarea>
+                                            </div>
                                         </div>
                                         <div class="ec-pro-actions">
-                                            <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Kirim</button>
+                                            <button type="submit" title="Kirim" class="add-to-cart btn btn-primary">Kirim</button>
                                         </div>
                                         </form>
                                     </div>

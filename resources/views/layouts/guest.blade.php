@@ -2,6 +2,7 @@
 <html lang="en">
 
 @include('guest.partials.header')
+@include('sweetalert::alert')
 <!--Start of Tawk.to Script-->
 <body>
 

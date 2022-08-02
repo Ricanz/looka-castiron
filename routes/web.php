@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\KategoriController;
 use App\Http\Controllers\Admin\ProdukController;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\KontakController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,7 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
     Route::resource('artikel', ArtikelController::class);
     Route::resource('banner', BannerController::class);
     Route::resource('aboutUs', AboutUsController::class);
+
 });
 
 
@@ -48,7 +50,7 @@ Route::get('products/{id}', [BerandaController::class, 'kategori_produk'])->name
 Route::get('search', [BerandaController::class, 'search'])->name('search');
 Route::get('produk/detail/{slug}', [BerandaController::class, 'detail_produk'])->name('detail_produk');
 Route::get('artikel/detail/{slug}', [BerandaController::class, 'detail_artikel'])->name('detail_artikel');
-
+Route::resource('kontak', KontakController::class);
 // Route::group(['middleware' => ['auth']], function () {
 //     Route::resource('admin/artikel', ArtikelController::class);
 //     Route::resource('admin/banner', BannerController::class);

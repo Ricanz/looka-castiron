@@ -24,6 +24,34 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-2 ec-footer-info">
+                            {{-- <div class="ec-footer-widget">
+                                <h4 class="ec-footer-heading">Menu</h4>
+                                <div class="ec-footer-links">
+                                    <ul class="align-items-center">
+                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">Tentang Kami</a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/products') }}">Katalog</a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/article') }}">Artikel </a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/contact') }}">Kontak</a></li>
+                                    </ul>
+                                </div>
+                            </div> --}}
+                        </div>
+                        <div class="col-sm-12 col-lg-2 ec-footer-account">
+                            <div class="ec-footer-widget">
+                                <h4 class="ec-footer-heading">Menu</h4>
+                                <div class="ec-footer-links">
+                                    <ul class="align-items-center">
+                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">Tentang Kami</a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/products') }}">Katalog</a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/article') }}">Artikel </a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/contact') }}">Kontak</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 ec-footer-news">
                             <div class="ec-footer-widget ec-footer-social">
                                 <h4 class="ec-footer-heading">Follow Us</h4>
                                 <div class="ec-footer-links">
@@ -39,63 +67,6 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-12 col-lg-2 ec-footer-info">
-                            <div class="ec-footer-widget">
-                                <h4 class="ec-footer-heading">Menu</h4>
-                                <div class="ec-footer-links">
-                                    <ul class="align-items-center">
-                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">Tentang Kami</a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/products') }}">Katalog</a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/article') }}">Artikel </a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/contact') }}">Kontak</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-lg-2 ec-footer-account">
-                            <div class="ec-footer-widget">
-                                <h4 class="ec-footer-heading">Customer Service</h4>
-                                <div class="ec-footer-links">
-                                    <ul class="align-items-center">
-                                        <li class="ec-footer-link"><a href="#">Site Map</a></li>
-                                        <li class="ec-footer-link"><a href="wishlist.html">Wish List</a></li>
-                                        <li class="ec-footer-link"><a href="#">Brands</a></li>
-                                        <li class="ec-footer-link"><a href="offer.html">Gift Certificates</a></li>
-                                        <li class="ec-footer-link"><a href="#">Affiliate</a></li>
-                                        <li class="ec-footer-link"><a href="offer.html">Specials</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-lg-4 ec-footer-news">
-                            <div class="ec-footer-widget">
-                                <h4 class="ec-footer-heading">Newsletter</h4>
-                                <div class="ec-footer-links">
-                                    <ul class="align-items-center">
-                                        <li class="ec-footer-link">Sign up for our e-mail to get latest news.</li>
-                                    </ul>
-                                    <div class="ec-subscribe-form">
-                                        <form id="ec-newsletter-form" name="ec-newsletter-form" method="post"
-                                            action="#">
-                                            <div id="ec_news_signup" class="ec-form">
-                                                <input class="ec-email" type="email" required=""
-                                                    placeholder="Enter your email" name="ec-email" value="" />
-                                                <button id="ec-news-btn" class="button btn-primary" type="submit"
-                                                    name="subscribe" value="">subscribe</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            {{-- <div class="ec-footer-widget ec-share">
-                                <ul>
-                                    <li class="ec-share-link"><a href="#"><img src="{{asset('tlandingPage/assets/images/icons/iphone.png')}}"
-                                                alt="" /></a></li>
-                                    <li class="ec-share-link"><a href="#"><img src="{{asset('tlandingPage/assets/images/icons/google.png')}}"
-                                                alt="" /></a></li>
-                                </ul>
-                            </div> --}}
                         </div>
                     </div>
                 </div>

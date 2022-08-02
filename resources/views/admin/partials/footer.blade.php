@@ -3,7 +3,7 @@
     <div class="copyright bg-white">
         <p>
             Copyright &copy; <span id="ec-year"></span><a class="text-primary"
-                href="https://themeforest.net/user/ashishmaraviya" target="_blank"> Ekka Admin
+                href="https://themeforest.net/user/ashishmaraviya" target="_blank"> Looka Cast Iron
                 Dashboard</a>. All Rights Reserved.
         </p>
     </div>

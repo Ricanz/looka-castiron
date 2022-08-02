@@ -135,21 +135,17 @@
                                     <div class="ec-fs-pro-image">
                                         <a href="product-left-sidebar.html" class="image"><img
                                                 class="main-image"
-                                                src="{{ asset('tlandingPage/assets/images/special-product/1_1.jpg') }}"
+                                                src="{{ asset('tlandingPage/assets/images/looka/3.jpg') }}"
                                                 alt="Product" /></a>
                                     </div>
                                 </div>
                                 <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Creative Iron
+                                    <h5 class="ec-pro-title"><a href="/">Creative Iron
                                             Store</a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
-                                            {{-- {{ Str::limit($tentang->deskripsi, 150) }} --}}
+                                            {{ Str::limit($tentang->deskripsi, 150) }}
                                         </span>
-                                    </div>
-                                    <div class="ec-pro-actions">
-                                        <button title="Baca Selengkapnya" class="add-to-cart btn btn-primary">Baca
-                                            Selengkapnya</button>
                                     </div>
                                 </div>
                             </div>
@@ -368,8 +364,8 @@
                                 class="svg_img" alt="" />
                         </div>
                         <div class="ec-service-desc">
-                            <h2>Free shipping</h2>
-                            <p>Free shipping on all US orders</p>
+                            <h2>kualitas</h2>
+                            <p>memilih iron kualitas terbaik yang cocok untuk makanan</p>
                         </div>
                     </div>
                 </div>
@@ -380,8 +376,8 @@
                                 class="svg_img" alt="" />
                         </div>
                         <div class="ec-service-desc">
-                            <h2>money gaurntee</h2>
-                            <p>30 days money back guarantee</p>
+                            <h2>kontak kami</h2>
+                            <p>seller dapat dihubungi anytime</p>
                         </div>
                     </div>
                 </div>
@@ -392,8 +388,8 @@
                                 class="svg_img" alt="" />
                         </div>
                         <div class="ec-service-desc">
-                            <h2>online support</h2>
-                            <p>We support online 24/7 on day</p>
+                            <h2>online shopping</h2>
+                            <p>temukan kami di online shop kesayangan kalian</p>
                         </div>
                     </div>
                 </div>
@@ -404,8 +400,8 @@
                                 class="svg_img" alt="" />
                         </div>
                         <div class="ec-service-desc">
-                            <h2>Member Discount</h2>
-                            <p>Onevery order over $120.00</p>
+                            <h2>harga terjangkau</h2>
+                            <p>harga dan kualitas sejajar</p>
                         </div>
                     </div>
                 </div>

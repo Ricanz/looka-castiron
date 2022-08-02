@@ -87,8 +87,8 @@
                                 class="svg_img" alt="" />
                         </div>
                         <div class="ec-service-desc">
-                            <h2>Free shipping</h2>
-                            <p>Free shipping on all US orders</p>
+                            <h2>kualitas</h2>
+                            <p>memilih iron kualitas terbaik yang cocok untuk makanan</p>
                         </div>
                     </div>
                 </div>
@@ -99,8 +99,8 @@
                                 class="svg_img" alt="" />
                         </div>
                         <div class="ec-service-desc">
-                            <h2>money gaurntee</h2>
-                            <p>30 days money back guarantee</p>
+                            <h2>kontak kami</h2>
+                            <p>seller dapat dihubungi anytime</p>
                         </div>
                     </div>
                 </div>
@@ -111,8 +111,8 @@
                                 class="svg_img" alt="" />
                         </div>
                         <div class="ec-service-desc">
-                            <h2>online support</h2>
-                            <p>We support online 24/7 on day</p>
+                            <h2>online shopping</h2>
+                            <p>temukan kami di online shop kesayangan kalian</p>
                         </div>
                     </div>
                 </div>
@@ -123,8 +123,8 @@
                                 class="svg_img" alt="" />
                         </div>
                         <div class="ec-service-desc">
-                            <h2>Member Discount</h2>
-                            <p>Onevery order over $120.00</p>
+                            <h2>harga terjangkau</h2>
+                            <p>harga dan kualitas sejajar</p>
                         </div>
                     </div>
                 </div>

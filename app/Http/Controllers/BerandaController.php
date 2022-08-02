@@ -59,8 +59,8 @@ class BerandaController extends Controller
 
     public function article_view()
     {
-        $articles = Artikel::where('status', 'aktif')->paginate(10);
-        return view('guest.artikel.index', compact('articles'));
+        $artikel = Artikel::where('status', 'aktif')->paginate(10);
+        return view('guest.artikel.index', compact('artikel'));
     }
 
     public function contact_view()

@@ -44,7 +44,7 @@ class ArtikelController extends Controller
             'gambar' => 'required'
         ]);
 
-        if ($request->gambar) {
+        if (isset($request->gambar)) {
             $extention = $request->gambar->extension();
             $file_name = time() . '.' . $extention;
             $txt = "storage/Artikel/". $file_name;
@@ -100,7 +100,7 @@ class ArtikelController extends Controller
     {
         $artikel = Artikel::findOrFail($id);
 
-        if ($request->gambar != null) {
+        if (isset($request->gambar)) {
             $extention = $request->gambar->extension();
             $file_name = time() . '.' . $extention;
             $txt = "storage/Artikel/". $file_name;

@@ -50,7 +50,7 @@
                                     <div class="col-md-12">
                                         <label for="inputEmail4" class="form-label">Judul</label>
                                         <input type="text" name="judul" class="form-control slug-title" id="judul" >
-                                        
+
                                     </div>
                                     <div class="col-md-12">
                                         <label for="inputEmail4" class="form-label">Isi</label>

@@ -97,7 +97,7 @@
                             <div class="banner-block">
                                 <img src="{{ asset('tlandingPage/assets/images/looka/4.jpg') }}" alt="" />
                                 <div class="banner-content">
-                                </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                                             Store</a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
-                                            {{ Str::limit($tentang->deskripsi, 150) }}
+                                            {{-- {{ Str::limit($tentang->deskripsi, 150) }} --}}
                                         </span>
                                     </div>
                                 </div>
@@ -240,7 +240,7 @@
                             <div class="banner-block">
                                 <img src="{{ asset('tlandingPage/assets/images/looka/16.png') }}" alt="" />
                                 <div class="banner-content">
-                                </div> 
+                                </div>
                             </div>
                         </div>
                     </div>

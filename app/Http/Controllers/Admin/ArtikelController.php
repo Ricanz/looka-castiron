@@ -41,14 +41,13 @@ class ArtikelController extends Controller
         $request->validate([
             'judul' => 'required',
             'deskripsi' => 'required',
-            'gambar' => 'required'
         ]);
 
         if (isset($request->gambar)) {
             $extention = $request->gambar->extension();
             $file_name = time() . '.' . $extention;
-            $txt = "storage/Artikel/". $file_name;
-            $request->gambar->storeAs('public/Artikel', $file_name);
+            $txt = "storage/artikel/" . $file_name;
+            $request->gambar->storeAs('public/artikel', $file_name);
         } else {
             $txt = null;
         }
@@ -103,9 +102,11 @@ class ArtikelController extends Controller
         if (isset($request->gambar)) {
             $extention = $request->gambar->extension();
             $file_name = time() . '.' . $extention;
-            $txt = "storage/Artikel/". $file_name;
-            $request->gambar->storeAs('public/Artikel', $file_name);
+            $txt = "storage/artikel/" . $file_name;
+            $request->gambar->storeAs('public/artikel', $file_name);
             $artikel->gambar = $txt;
+        } else {
+            $txt = null;
         }
 
         $artikel->judul = $request->judul;

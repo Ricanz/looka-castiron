@@ -144,7 +144,7 @@
                                             Store</a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
-                                            {{-- {{ Str::limit($tentang->deskripsi, 150) }} --}}
+                                            {{ Str::limit($tentang->deskripsi, 150) }}
                                         </span>
                                     </div>
                                 </div>

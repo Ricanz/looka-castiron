@@ -23,7 +23,7 @@
                                 <h2 class="ec-title">Artikel Looka Cast Iron</h2>
                             </div>
                         </div>
-                        @foreach ($articles as $item)
+                        @foreach ($artikel as $item)
                         <div class="ec-spe-products mb-4">
                             <div class="ec-fs-product">
                                 <div class="ec-fs-pro-inner ec-product-inner">

@@ -36,11 +36,11 @@
                                         </div>
                                         <a href="{{ url('/artikel/detail').'/'.$item->slug }}" class="btn btn-primary">Baca Selengkapnya</a>
                                     </div>
-                                    {{-- <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6"> --}}
-                                        {{-- <div class="ec-fs-pro-image"> --}}
-                                            <a class="image"><img class="main-image" src="{{asset($item->gambar)}}" alt="Product" /></a>
-                                        {{-- </div> --}}
-                                    {{-- </div> --}}
+                                    <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
+                                        <div class="ec-fs-pro-image">
+                                            <a class="image"> <img class="main-image" src="{{asset($item->gambar)}}" /> </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

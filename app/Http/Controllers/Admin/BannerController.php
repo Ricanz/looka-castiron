@@ -48,7 +48,7 @@ class BannerController extends Controller
             $txt = "storage/banner/" . $file_name;
             $request->banner->storeAs('public/banner', $file_name);
         } else {
-            $file_name = null;
+            $txt = null;
         }
         $banner = Banner::create([
             'judul' => $request->judul,

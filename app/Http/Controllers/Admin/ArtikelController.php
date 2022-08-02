@@ -49,6 +49,8 @@ class ArtikelController extends Controller
             $file_name = time() . '.' . $extention;
             $txt = "storage/artikel/". $file_name;
             $request->gambar->storeAs('public/artikel', $file_name);
+        } else {
+            $txt = null;
         }
 
         $artikel = Artikel::create([

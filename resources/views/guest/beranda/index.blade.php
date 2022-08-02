@@ -234,6 +234,33 @@
         </div>
     </section>
     <!-- offer Section End -->
+    <section class="ec-banner section section-space-p">
+        <h2 class="d-none">Banner</h2>
+        <div class="container">
+            <div class="row m-tb-minus-15">
+                <div class="ec-banners">
+                    <div class="ec-banner-left col-sm-6">
+                        <div class="ec-banner-block ec-banner-block-1 col-sm-12">
+                            <div class="banner-block">
+                                <img src="{{ asset('tlandingPage/assets/images/looka/16.png') }}" alt="" />
+                                <div class="banner-content">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ec-banner-right col-sm-6">
+                        <div class="ec-banner-block ec-banner-block-2 col-sm-12">
+                            <div class="banner-block">
+                                <img src="{{ asset('tlandingPage/assets/images/looka/15.png') }}" alt="" />
+                                <div class="banner-content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ec testimonial Start -->
     <section class="section ec-test-section section-space-ptb-100 section-space-mt section-space-mb"

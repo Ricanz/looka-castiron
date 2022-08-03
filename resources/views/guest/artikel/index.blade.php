@@ -28,7 +28,7 @@
                             <div class="ec-fs-product">
                                 <div class="ec-fs-pro-inner ec-product-inner">
                                     <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                        <h3 class="ec-pro-title" align="left"><a href="product-left-sidebar.html">{{ $item->judul }}</a></h3>
+                                        <h3 class="ec-pro-title" align="left"><a href="{{ url('/artikel/detail').'/'.$item->slug }}">{{ $item->judul }}</a></h3>
                                         <div class="countdowntimer">
                                             <span class="ec-fs-count-desc" align="justify">
                                                 {{ Str::limit($item->deskripsi, 320) }}

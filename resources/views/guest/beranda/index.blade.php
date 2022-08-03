@@ -141,7 +141,7 @@
                             <div class="ec-fs-pro-inner ec-product-inner">
                                 <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
                                     <div class="ec-fs-pro-image">
-                                        <a href="product-left-sidebar.html" class="image"><img
+                                        <a href="{{ url('about-us') }}" class="image"><img
                                                 class="main-image"
                                                 src="{{ asset('tlandingPage/assets/images/looka/3.jpg') }}"
                                                 alt="Product" /></a>
@@ -193,7 +193,7 @@
                                         </div>
                                         <h5 class="ec-pro-title"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{$item->nama}}</a></h5>
                                         <h6 class="ec-pro-stitle"><a
-                                                href="shop-left-sidebar-col-3.html">{{$item->kategori->nama}}</a>
+                                                href="{{ url('/products').'/'.$item->kategori->id }}">{{$item->kategori->nama}}</a>
                                         </h6>
                                         <div class="ec-pro-rat-price">
                                             <div class="ec-pro-rat-pri-inner">
@@ -204,13 +204,12 @@
                                                     <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star fill"></i>
-                                                    <i class="ecicon eci-star-o"></i>
-                                                    <i class="ecicon eci-star-o"></i>
+                                                    <i class="ecicon eci-star fill"></i>
+                                                    <i class="ecicon eci-star fill"></i>
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="pro-hidden-block">
-
                                             <div class="ec-pro-desc" align="left">{{ Str::limit($item->deskripsi, 200) }}
                                             </div>
                                         </div>

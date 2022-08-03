@@ -28,12 +28,12 @@
                                 <div class="ec-fs-pro-inner ec-product-inner">
                                     <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
                                         <div class="ec-fs-pro-image">
-                                            <a href="product-left-sidebar.html" class="image"><img class="main-image"
+                                            <a href="#" class="image"><img class="main-image"
                                                     src="{{asset('tlandingPage/assets/images/special-product/1_1.jpg')}}" alt="Product" /></a>
                                         </div>
                                     </div>
                                     <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Creative Iron Store</a></h5>
+                                        <h5 class="ec-pro-title"><a href="#">Creative Iron Store</a></h5>
                                         <div class="countdowntimer">
                                             <span class="ec-fs-count-desc" align="justify">
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -59,7 +59,7 @@
                             <div class="ec-fs-product">
                                 <div class="ec-fs-pro-inner ec-product-inner">
                                     <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Hubungi Kami</a></h5>
+                                        <h5 class="ec-pro-title"><a href="#">Hubungi Kami</a></h5>
                                         <form action="{{route('kontak.store')}}" method="POST">
                                         <div class="body">
                                             @csrf

@@ -35,13 +35,13 @@
                                     </div>
                                     <div class="ec-offer-content-inner">
                                         @isset($produk->tokopedia_link)
-                                        <span class="ec-offer-btn"><a href="{{$produk->tokopedia_link}}" target="_blank" title="Baca Selengkapnya" class="btn btn-success me-4">Tokopedia</a></span>
+                                        <span class="ec-offer-btn mb-2"><a href="{{$produk->tokopedia_link}}" target="_blank" title="Baca Selengkapnya" class="btn btn-success me-4">Tokopedia</a></span>
                                         @endisset
                                         @isset($produk->shopee_link)
-                                        <span class="ec-offer-btn"><a href="{{$produk->shopee_link}}" target="_blank" title="Baca Selengkapnya" class="btn btn-warning me-4">Shopee</a></span>
+                                        <span class="ec-offer-btn mb-2"><a href="{{$produk->shopee_link}}" target="_blank" title="Baca Selengkapnya" class="btn btn-warning me-4">Shopee</a></span>
                                         @endisset
                                         @isset($produk->lazada_link)
-                                        <span class="ec-offer-btn"><a href="{{$produk->lazada_link}}" target="_blank" title="Baca Selengkapnya" class="btn btn-primary me-4">Lazada</a></span>
+                                        <span class="ec-offer-btn mb-2"><a href="{{$produk->lazada_link}}" target="_blank" title="Baca Selengkapnya" class="btn btn-primary me-4">Lazada</a></span>
                                         @endisset
                                     </div>
                                 </div>

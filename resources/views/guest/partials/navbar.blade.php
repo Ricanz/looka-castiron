@@ -17,23 +17,15 @@
                         <!-- Ec Header Logo End -->
 
                         <!-- Ec Header Search Start -->
-                        <div class="align-self-center ec-header-search">
+                        {{-- <div class="align-self-center ec-header-search">
                             <div class="header-search">
                                 <form class="ec-search-group-form" action="{{route('search')}}" method="GET">
-                                    {{-- <div class="ec-search-select-inner">
-                                        <div class="ec-search-cat-title">All</div>
-                                        <ul class="ec-search-cat-block">
-                                            <li><a href="#">Cloths</a></li>
-                                            <li><a href="#">Bag</a></li>
-                                            <li><a href="#">Shoes</a></li>
-                                        </ul>
-                                    </div> --}}
                                     <input class="form-control" placeholder="Cari Produk..." type="text" name="cari" value="{{old('cari')}}">
                                     <button class="search_submit" type="submit"><i
                                             class="ecicon eci-search"></i></button>
                                 </form>
                             </div>
-                        </div>
+                        </div> --}}
                         <!-- Ec Header Search End -->
 
                         <!-- Ec Header Button Start -->
@@ -53,32 +45,20 @@
                 <div class="row ">
 
                     <!-- Ec Header Logo Start -->
-                    <div class="col">
-                        <div class="header-logo">
-                            <a href="/"><img src="{{ asset('tlandingPage/assets/images/logo/logo-5.png') }}"
-                                    alt="Site Logo" /><img class="dark-logo"
-                                    src="{{ asset('tlandingPage/assets/images/logo/dark-logo-5.png') }}" alt="Site Logo"
-                                    style="display: none;" /></a>
-                        </div>
-                    </div>
                     <!-- Ec Header Logo End -->
                     <!-- Ec Header Search Start -->
                     <div class="col align-self-center ec-header-search">
                         <div class="header-search">
-                            <form class="ec-search-group-form" action="#">
-                                <div class="ec-search-select-inner">
-                                    <div class="ec-search-cat-title">All</div>
-                                    <ul class="ec-search-cat-block">
-                                        <li><a href="{{ url('/') }}">Beranda</a></li>
-                                        <li><a href="{{ url('/about-us') }}">Tentang</a></li>
-                                        <li><a href="{{ url('/products') }}">Katalog</a></li>
-                                        <li><a href="{{ url('/article') }}">Artikel</a></li>
-                                        <li><a href="{{ url('/contact') }}">Kontak</a></li>
-                                    </ul>
-                                </div>
-                                <input class="form-control" placeholder="Search Here..." type="text">
-                                <button class="search_submit" type="submit"><i class="ecicon eci-search"></i></button>
-                            </form>
+                            <div class="ec-search-select-inner">
+                                <div class="ec-search-cat-title">All</div>
+                                <ul class="ec-search-cat-block">
+                                    <li><a href="{{ url('/') }}">Beranda</a></li>
+                                    <li><a href="{{ url('/about-us') }}">Tentang</a></li>
+                                    <li><a href="{{ url('/products') }}">Katalog</a></li>
+                                    <li><a href="{{ url('/article') }}">Artikel</a></li>
+                                    <li><a href="{{ url('/contact') }}">Kontak</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <!-- Ec Header Search End -->

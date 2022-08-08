@@ -21054,12 +21054,17 @@ ul.slick-dots {
 .ec_ser_inner .ec-service-image {
   margin-right: 15px;
   position: relative;
+  width: 40%;
 }
 .ec_ser_inner .ec-service-image svg {
   width: 54px;
   height: 54px;
   fill: #202020;
 }
+
+.ec_ser_inner .ec-service-image img {
+    width: 100%;
+  }
 
 .ec-service-desc h2, .ec-service-desc .h2 {
   font-size: 18px;

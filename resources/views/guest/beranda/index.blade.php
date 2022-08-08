@@ -367,7 +367,7 @@
                 <div class="ec_ser_content ec_ser_content_1 col-sm-12 col-md-3">
                     <div class="ec_ser_inner">
                         <div class="ec-service-image">
-                            <img src="{{ asset('tlandingPage/assets/images/icons/service_5_1.svg') }}"
+                            <img src="{{ asset('tlandingPage/assets/images/icons/foodgrade.webp') }}"
                                 class="svg_img" alt="" />
                         </div>
                         <div class="ec-service-desc">
@@ -391,7 +391,7 @@
                 <div class="ec_ser_content ec_ser_content_3 col-sm-12 col-md-3">
                     <div class="ec_ser_inner">
                         <div class="ec-service-image">
-                            <img src="{{ asset('tlandingPage/assets/images/icons/service_3.svg') }}"
+                            <img src="{{ asset('tlandingPage/assets/images/icons/check.png') }}"
                                 class="svg_img" alt="" />
                         </div>
                         <div class="ec-service-desc">

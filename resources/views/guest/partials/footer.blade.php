@@ -51,7 +51,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4 ec-footer-news">
+                        <div class="col-sm-12 col-lg-2 ec-footer-account">
+                            <div class="ec-footer-widget">
+                                <h4 class="ec-footer-heading">Online Shop</h4>
+                                <div class="ec-footer-links">
+                                    <ul class="align-items-center">
+                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">
+                                            <img src="{{ asset('tlandingPage/assets/images/shopee-logo.png') }}" alt="">
+                                        </a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">
+                                            <img src="{{ asset('tlandingPage/assets/images/tokopedia-logo.png') }}" alt="">
+                                        </a></li>
+                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">
+                                            <img src="{{ asset('tlandingPage/assets/images/lazada-logo.jpeg') }}" alt="">
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-2 ec-footer-news">
                             <div class="ec-footer-widget ec-footer-social">
                                 <h4 class="ec-footer-heading">Follow Us</h4>
                                 <div class="ec-footer-links">

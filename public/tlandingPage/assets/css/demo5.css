@@ -15990,7 +15990,7 @@ li {
 /*------  Common CSS  ------*/
 .ec-cp-style .cp-panel,
 .ec-cp-style .cp-button {
-  background-color: #0d4fcf;
+  background-color: #fdd330;
 }
 
 .ec-cp-style .cp-panel,
@@ -15998,7 +15998,7 @@ li {
 .ec-cp-style .cp-panel .h2,
 .ec-cp-style .cp-panel p,
 .ec-cp-style .cp-button i {
-  color: #fff;
+  color: black;
 }
 
 @-webkit-keyframes rotateF {

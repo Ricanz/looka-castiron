@@ -5,7 +5,7 @@
         <!-- Chat Button For Whatsapp -->
         <a id="cp-whatsapp" href="#" class="cp-list" data-number="919099153528" data-message="Please help me! I have got wrong product from your website." target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/chat-pro/cp-whatsapp.png')}}" alt=""/>
+                <img src="{{('tlandingPage/assets/images/whatsapp.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>Whatsapp</h2>
@@ -15,7 +15,7 @@
         <!-- Chat Button For Instagram -->
         <a class="cp-list" href="https://www.instagram.com/_k_e_t_a_n_/" target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/chat-pro/cp-instagram.png')}}" alt=""/>
+                <img src="{{('tlandingPage/assets/images/instagram.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>Instagram</h2>
@@ -25,7 +25,7 @@
         <!-- Chat Button For LinkedIn -->
         <a class="cp-list" href="https://www.linkedin.com/messaging/thread/6599949383096205313/" target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/chat-pro/cp-linkedin.png')}}" alt=""/>
+                <img src="{{('tlandingPage/assets/images/linkedin.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>LinkedIn</h2>
@@ -35,7 +35,7 @@
         <!-- Chat Button For Twitter -->
         <a class="cp-list" href="https://twitter.com/messages/1899733261-2826370326/" target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/chat-pro/cp-twitter.png')}}" alt=""/>
+                <img src="{{('tlandingPage/assets/images/twitter.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>Twitter</h2>

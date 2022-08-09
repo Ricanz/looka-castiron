@@ -3,7 +3,7 @@
     <div class="cp-panel">	
         <!-- Chat Button For Facebook Messenger -->
         <!-- Chat Button For Whatsapp -->
-        <a id="cp-whatsapp" href="#" class="cp-list" data-number="919099153528" data-message="Please help me! I have got wrong product from your website." target="_blank">
+        <a id="cp-whatsapp" href="#" class="cp-list" data-number="082136361350" data-message="Halo... saya ingin menanyakan sesuatu" target="_blank">
             <div class="cp-image">
                 <img src="{{('tlandingPage/assets/images/whatsapp.png')}}" alt=""/>
             </div>	
@@ -13,7 +13,7 @@
             </div>
         </a>
         <!-- Chat Button For Instagram -->
-        <a class="cp-list" href="https://www.instagram.com/_k_e_t_a_n_/" target="_blank">
+        <a class="cp-list" href="https://www.instagram.com/looka.castiron/" target="_blank">
             <div class="cp-image">
                 <img src="{{('tlandingPage/assets/images/instagram.png')}}" alt=""/>
             </div>	
@@ -23,7 +23,7 @@
             </div>
         </a>
         <!-- Chat Button For LinkedIn -->
-        <a class="cp-list" href="https://www.linkedin.com/messaging/thread/6599949383096205313/" target="_blank">
+        <a class="cp-list" href="https://www.instagram.com/looka.castiron/" target="_blank">
             <div class="cp-image">
                 <img src="{{('tlandingPage/assets/images/linkedin.png')}}" alt=""/>
             </div>	
@@ -33,7 +33,7 @@
             </div>
         </a>
         <!-- Chat Button For Twitter -->
-        <a class="cp-list" href="https://twitter.com/messages/1899733261-2826370326/" target="_blank">
+        <a class="cp-list" href="https://www.instagram.com/looka.castiron/" target="_blank">
             <div class="cp-image">
                 <img src="{{('tlandingPage/assets/images/twitter.png')}}" alt=""/>
             </div>	
@@ -43,7 +43,7 @@
             </div>
         </a>
         <!-- Chat Button For Shopee -->
-        <a class="cp-list" href="https://twitter.com/messages/1899733261-2826370326/" target="_blank">
+        <a class="cp-list" href="https://shopee.co.id/looka.castiron?categoryId=100636&itemId=12902595184" target="_blank">
             <div class="cp-image">
                 <img src="{{('tlandingPage/assets/images/shopee-s.png')}}" alt=""/>
             </div>	
@@ -53,7 +53,7 @@
             </div>
         </a>
         <!-- Chat Button For Tokopedia -->
-        <a class="cp-list" href="https://twitter.com/messages/1899733261-2826370326/" target="_blank">
+        <a class="cp-list" href="https://www.tokopedia.com/megadunia" target="_blank">
             <div class="cp-image">
                 <img src="{{('tlandingPage/assets/images/tokopedia-s.png')}}" alt=""/>
             </div>	
@@ -64,7 +64,7 @@
         </a>
 
         <!-- Chat Button For Lazada -->
-        <a class="cp-list" href="https://twitter.com/messages/1899733261-2826370326/" target="_blank">
+        <a class="cp-list" href="https://www.lazada.co.id/shop/looka-castiron/?spm=a2o4j.pdp_revamp.seller.1.32e130c3wHPF0H&itemId=6232286715&channelSource=pdp" target="_blank">
             <div class="cp-image">
                 <img src="{{('tlandingPage/assets/images/lazaa-s.png')}}" alt=""/>
             </div>	

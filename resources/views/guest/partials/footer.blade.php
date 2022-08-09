@@ -9,16 +9,16 @@
                                 <div class="ec-footer-logo"><a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/looka-logo.jpeg') }}"
                                             alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/dark-logo-5.png')}}"
                                             alt="Site Logo" style="display: none;" /></a></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <h4 class="ec-footer-heading">Ask Me questions</h4>
+                                <p>Creative Iron Store Looka Cast Iron</p>
+                                <h4 class="ec-footer-heading">Hubungi kami!</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
                                         <li class="ec-footer-link">
                                             <span class="call-img"><img src="{{asset('tlandingPage/assets/images/icons/call_5.svg')}}"
                                                     class="svg_img foo_img" alt="" /></span>
                                             <span class="call-desc">
-                                                <span>Got questions? Call us 24/7!</span>
-                                                <span><a href="tel:+80080018588">(800) 8001-8588</a>, <a href="tel:+0600874548">(0600) 874 548</a></span>
+                                                <span>Hubungi kami! 24/7!</span>
+                                                <span><a href="tel:+6282136361350">+6282136361350</a></span>
                                             </span>
                                         </li>
                                     </ul>
@@ -56,13 +56,13 @@
                                 <h4 class="ec-footer-heading">Online Shop</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">
+                                        <li class="ec-footer-link"><a href="https://shopee.co.id/looka.castiron?categoryId=100636&itemId=12902595184">
                                             <img src="{{ asset('tlandingPage/assets/images/shopee-logo.png') }}" alt="">
                                         </a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">
+                                        <li class="ec-footer-link"><a href="https://www.tokopedia.com/megadunia">
                                             <img src="{{ asset('tlandingPage/assets/images/tokopedia-logo.png') }}" alt="">
                                         </a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">
+                                        <li class="ec-footer-link"><a href="https://www.lazada.co.id/shop/looka-castiron/?spm=a2o4j.pdp_revamp.seller.1.32e130c3wHPF0H&itemId=6232286715&channelSource=pdp">
                                             <img src="{{ asset('tlandingPage/assets/images/lazada-logo.jpeg') }}" alt="">
                                         </a></li>
                                     </ul>
@@ -74,13 +74,13 @@
                                 <h4 class="ec-footer-heading">Follow Us</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="list-inline-item"><a href="#"><i class="ecicon eci-facebook"></i></a>
+                                        <li class="list-inline-item"><a href="https://www.instagram.com/looka.castiron/"><i class="ecicon eci-facebook"></i></a>
                                         </li>
-                                        <li class="list-inline-item"><a href="#"><i
+                                        <li class="list-inline-item"><a href="https://www.instagram.com/looka.castiron/"><i
                                                     class="ecicon eci-instagram"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="ecicon eci-linkedin"></i></a>
+                                        <li class="list-inline-item"><a href="https://www.instagram.com/looka.castiron/"><i class="ecicon eci-linkedin"></i></a>
                                         </li>
-                                        <li class="list-inline-item"><a href="#"><i class="ecicon eci-twitter"></i></a>
+                                        <li class="list-inline-item"><a href="https://www.instagram.com/looka.castiron/"><i class="ecicon eci-twitter"></i></a>
                                         </li>
                                     </ul>
                                 </div>

@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="col-md-12 mt-2">
                                         <label for="inputEmail4" class="form-label">Isi</label>
-                                        <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="10">{{ $artikel->deskripsi }}</textarea>
+                                        <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="10">{!! $artikel->deskripsi !!}</textarea>
                                     </div>
                                     <div class="col-md-12">
                                         <label for="inputEmail4" class="form-label">Judul</label>

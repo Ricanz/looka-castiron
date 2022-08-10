@@ -49,12 +49,14 @@
                                 <div class="ec-vendor-upload-detail row g-3">
                                     <div class="col-md-6 mb-2">
                                         <label for="inputEmail4" class="form-label">Nama Produk</label>
-                                        <input type="text" name="nama" class="form-control slug-title" id="inputEmail4">
+                                        <input type="text" name="nama" class="form-control slug-title"
+                                            id="inputEmail4">
                                     </div>
                                     <div class="col-md-6 mb-2">
                                         <label class="form-label">Harga <span>( In IDR
                                                 )</span></label>
-                                        <input type="number" min="0" name="harga" class="form-control" id="price1">
+                                        <input type="number" min="0" name="harga" class="form-control"
+                                            id="price1">
                                     </div>
                                     <div class="col-md-12 mb-2">
                                         <label class="form-label">Kategori</label>
@@ -95,4 +97,13 @@
             </div>
         </div>
     </div>
+    @push('scripts')
+        <script>
+            tinymce.init({
+                selector: 'textarea',
+                plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+                toolbar_mode: 'floating',
+            });
+        </script>
+    @endpush
 </x-app-layout>

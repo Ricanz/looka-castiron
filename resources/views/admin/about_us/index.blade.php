@@ -42,7 +42,7 @@
                                 <div class="ec-vendor-upload-detail row g-3">
                                     <div class="col-md-12">
                                         <label for="inputEmail4" class="form-label">Deskripsi</label>
-                                        <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="10">{{ $data->deskripsi }}</textarea>
+                                        <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="10">{!! $data->deskripsi !!}</textarea>
                                     </div>
                                     <div class="col-md-12">
                                         <button type="submit" class="btn btn-primary mt-3">Simpan</button>

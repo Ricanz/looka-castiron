@@ -71,7 +71,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <label class="form-label">Deskripsi</label>
-                                        <textarea class="form-control" name="deskripsi" rows="4">{{ $data->deskripsi }}</textarea>
+                                        <textarea class="form-control" name="deskripsi" rows="4">{!! $data->deskripsi !!}</textarea>
                                     </div>
                                     <div class="col-md-8">
                                         <label for="inputEmail4" class="form-label">Status</label>

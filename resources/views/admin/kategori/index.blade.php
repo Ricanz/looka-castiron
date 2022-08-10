@@ -17,15 +17,15 @@
                             <div class="form-group row">
                                 <label for="text" class="col-12 col-form-label">Nama Kategori</label>
                                 <div class="col-12">
-                                    <input id="text" name="nama" class="form-control here slug-title" type="text">
+                                    <input id="text" name="nama" class="form-control here slug-title"
+                                        type="text">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-12 col-form-label">Deskripsi</label>
                                 <div class="col-12">
-                                    <textarea id="fulldescription" name="deskripsi" cols="40" rows="4"
-                                        class="form-control"></textarea>
+                                    <textarea id="fulldescription" name="deskripsi" cols="40" rows="4" class="form-control"></textarea>
                                 </div>
                             </div>
 
@@ -56,11 +56,11 @@
                             <tbody>
                                 @foreach ($Kategori as $item)
                                     <tr>
-                                        <td>{{$loop->iteration}}</td>
-                                        <td>{{$item->nama}}</td>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $item->nama }}</td>
                                         <td>
                                             <span class="ec-sub-cat-list">
-                                                <span class="ec-sub-cat-tag">{{$item->deskripsi}}</span>
+                                                <span class="ec-sub-cat-tag">{!! $item->deskripsi !!}</span>
                                             </span>
                                         </td>
                                         <td>
@@ -75,10 +75,12 @@
 
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item">
-                                                        <form action="{{route('kategori.destroy', $item->id)}}" method="POST">
+                                                        <form action="{{ route('kategori.destroy', $item->id) }}"
+                                                            method="POST">
                                                             @csrf
-                                                            @method("DELETE")
-                                                            <button type="submit" class="btn show_confirm">Hapus</button>
+                                                            @method('DELETE')
+                                                            <button type="submit"
+                                                                class="btn show_confirm">Hapus</button>
                                                         </form>
                                                     </a>
                                                 </div>
@@ -97,24 +99,22 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
     <script>
-
         $('.show_confirm').click(function(event) {
-            var form =  $(this).closest("form");
+            var form = $(this).closest("form");
             var name = $(this).data("name");
             event.preventDefault();
             swal({
-                title: `Hapus Data?`,
-                text: "Jika data terhapus, data akan hilang selamanya!",
-                icon: "warning",
-                buttons: true,
-                dangerMode: true,
-            })
-            .then((willDelete) => {
-              if (willDelete) {
-                form.submit();
-              }
-            });
+                    title: `Hapus Data?`,
+                    text: "Jika data terhapus, data akan hilang selamanya!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        form.submit();
+                    }
+                });
         });
-
     </script>
 </x-app-layout>

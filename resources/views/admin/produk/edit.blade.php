@@ -31,14 +31,12 @@
                                             <div class="avatar-edit">
                                                 <input type='file' id="imageUpload" name="gambar"
                                                     class="ec-image-upload" accept=".png, .jpg, .jpeg" />
-                                                <label for="imageUpload"><img
-                                                        src="{{ asset($Produk->gambar) }}"
+                                                <label for="imageUpload"><img src="{{ asset($Produk->gambar) }}"
                                                         class="svg_img header_svg" alt="edit" /></label>
                                             </div>
                                             <div class="avatar-preview ec-preview">
                                                 <div class="imagePreview ec-div-preview">
-                                                    <img class="ec-image-preview"
-                                                        src="{{ asset($Produk->gambar) }}"
+                                                    <img class="ec-image-preview" src="{{ asset($Produk->gambar) }}"
                                                         alt="edit" />
                                                 </div>
                                             </div>
@@ -63,9 +61,8 @@
                                         <label class="form-label">Kategori</label>
                                         <select name="kategori_id" id="Categories" class="form-select">
                                             @foreach ($Kategori as $item)
-                                                <option @if ($Produk->kategori_id ==  $item->id)
-                                                    selected
-                                                @endif value="{{ $item->id }}">{{ $item->nama }}</option>
+                                                <option @if ($Produk->kategori_id == $item->id) selected @endif
+                                                    value="{{ $item->id }}">{{ $item->nama }}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -86,7 +83,7 @@
                                     </div>
                                     <div class="col-md-12 mb-2">
                                         <label class="form-label">Deskripsi</label>
-                                        <textarea class="form-control" name="deskripsi" rows="4">{{ $Produk->deskripsi }}</textarea>
+                                        <textarea class="form-control" name="deskripsi" rows="4">{!! $Produk->deskripsi !!}</textarea>
                                     </div>
                                     <div class="col-md-12 mb-2">
                                         <label class="form-label">Status</label>
@@ -107,4 +104,13 @@
             </div>
         </div>
     </div>
+    @push('scripts')
+        <script>
+            tinymce.init({
+                selector: 'textarea',
+                plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+                toolbar_mode: 'floating',
+            });
+        </script>
+    @endpush
 </x-app-layout>

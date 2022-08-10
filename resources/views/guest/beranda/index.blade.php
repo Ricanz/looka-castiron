@@ -15,7 +15,7 @@
                                     <h1 class="ec-slide-title">{{ $item->judul }}</h1>
                                 @endif
                                 @if ($item->deskripsi != null)
-                                    <p>{{ $item->deskripsi }}</p>
+                                    <p>{!! $item->deskripsi !!}</p>
                                 @endif
                                 @if ($item->tombol_link != null)
                                     <a href="{{ $item->tombol_link }}" class="btn btn-lg btn-secondary">{{ $item->tombol_text }}</a> 
@@ -80,7 +80,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-hidden-block">
-                                            <div class="ec-pro-desc">{{ Str::limit($item->deskripsi, 150) }}</div>
+                                            <div class="ec-pro-desc">{!! Str::limit($item->deskripsi, 150) !!}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -152,7 +152,7 @@
                                             Store</a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
-                                            {{ Str::limit($tentang->deskripsi, 150) }}
+                                            {!! Str::limit($tentang->deskripsi, 150) !!}
                                         </span>
                                     </div>
                                 </div>
@@ -210,7 +210,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-hidden-block">
-                                            <div class="ec-pro-desc" align="left">{{ Str::limit($item->deskripsi, 200) }}
+                                            <div class="ec-pro-desc" align="left">{!! Str::limit($item->deskripsi, 200) !!}
                                             </div>
                                         </div>
                                     </div>
@@ -293,7 +293,7 @@
                                                 <i class="ecicon eci-star fill"></i>
                                             @endfor
                                         </div>
-                                        <div class="ec-test-desc">{{ $item->deskripsi }}</div>
+                                        <div class="ec-test-desc">{!! $item->deskripsi !!}</div>
 
                                     </div>
                                 </div>

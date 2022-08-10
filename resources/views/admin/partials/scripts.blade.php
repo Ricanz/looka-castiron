@@ -29,5 +29,6 @@
 
 <!-- Ekka Custom -->
 <script src="{{asset('tadmin/assets/js/ekka.js')}}"></script>
-
+<script src="https://cdn.tiny.cloud/1/pbt8hv1pilzu9hy3yh33hvz7bnbdtjda34vxywwge56tcjou/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+@stack('scripts')
 @yield('scripts')

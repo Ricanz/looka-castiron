@@ -42,7 +42,7 @@
                                                 <td>{{ $item->nama }}</td>
                                                 <td>{{ $item->harga }}</td>
                                                 <td>{{ $item->kategori->nama }}</td>
-                                                <td>{{ Str::limit($item->deskripsi, 150) }}</td>
+                                                <td>{!! Str::limit($item->deskripsi, 150) !!}</td>
                                                 <td>{{ $item->status }}</td>
                                                 <td>{{ $item->created_at->format('d-m-Y') }}</td>
                                                 <td>Admin</td>

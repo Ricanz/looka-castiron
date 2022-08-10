@@ -35,7 +35,7 @@
                                         <div class="card-bottom">
                                             <h3>{{ $item->nama }}</h3>
                                             <p class="mb-2">{{ $item->instansi }}</p>
-                                            <h3>{{ $item->deskripsi }}</h3>
+                                            <h3>{!! $item->deskripsi !!}</h3>
                                         </div>
                                         <div class="card-action">
                                             <a href="{{ route('testimonial.edit', $item->id) }}" class="card-edit">

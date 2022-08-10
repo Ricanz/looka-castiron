@@ -28,7 +28,7 @@
                                     <h5 class="ec-pro-title"><a href="#"></a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
-                                            {{ $artikel->deskripsi }}
+                                            {!! $artikel->deskripsi !!}
                                         </span>
                                     </div>
                                 </div>

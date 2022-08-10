@@ -31,7 +31,7 @@
                                         <h3 class="ec-pro-title" align="left"><a href="{{ url('/artikel/detail').'/'.$item->slug }}">{{ $item->judul }}</a></h3>
                                         <div class="countdowntimer">
                                             <span class="ec-fs-count-desc" align="justify">
-                                                {{ Str::limit($item->deskripsi, 320) }}
+                                                {!! Str::limit($item->deskripsi, 320) !!}
                                             </span>
                                         </div>
                                         <a href="{{ url('/artikel/detail').'/'.$item->slug }}" class="btn btn-primary">Baca Selengkapnya</a>

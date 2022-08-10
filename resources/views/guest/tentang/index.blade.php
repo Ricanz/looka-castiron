@@ -29,7 +29,7 @@
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
                                             @if ($tentang != null)
-                                            {{ $tentang->deskripsi }}
+                                            {!! $tentang->deskripsi !!}
                                             @endif
                                         </span>
                                     </div>

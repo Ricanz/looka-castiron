@@ -60,7 +60,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-hidden-block">
-                                            <div class="ec-pro-desc" align='left'>{{ Str::limit($item->deskripsi, 150) }}</div>
+                                            <div class="ec-pro-desc" align='left'>{!! Str::limit($item->deskripsi, 150) !!}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@
                                         </div>
                                     </div>
                                     <div class="pro-hidden-block">
-                                        <div class="ec-pro-desc" align='left'>{{ Str::limit($item->deskripsi, 150) }}</div>
+                                        <div class="ec-pro-desc" align='left'>{!! Str::limit($item->deskripsi, 150) !!}</div>
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +200,7 @@
                                         </div>
                                     </div>
                                     <div class="pro-hidden-block">
-                                        <div class="ec-pro-desc" align='left'>{{ Str::limit($item->deskripsi, 150) }}</div>
+                                        <div class="ec-pro-desc" align='left'>{!! Str::limit($item->deskripsi, 150) !!}</div>
                                     </div>
                                 </div>
                             </div>

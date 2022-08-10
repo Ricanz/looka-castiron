@@ -34,13 +34,13 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>
-                                            <img class="tbl-thumb" src="{{asset($item->gambar)}}"alt="Banner Image" />
+                                            <img class="tbl-thumb" src="{{ asset($item->gambar) }}"alt="Banner Image" />
                                         </td>
-                                        <td>{{$item->judul}}</td>
-                                        <td>{{$item->sub_judul}}</td>
-                                        <td>{{$item->deskripsi}}</td>
-                                        <td>{{$item->status}}</td>
-                                        <td>{{$item->created_at->format('d-m-Y')}}</td>
+                                        <td>{{ $item->judul }}</td>
+                                        <td>{{ $item->sub_judul }}</td>
+                                        <td>{!! $item->deskripsi !!}</td>
+                                        <td>{{ $item->status }}</td>
+                                        <td>{{ $item->created_at->format('d-m-Y') }}</td>
                                         <td>
                                             <div class="btn-group mb-1">
                                                 <button type="button" class="btn btn-outline-success">Info</button>
@@ -51,12 +51,15 @@
                                                     <span class="sr-only">Info</span>
                                                 </button>
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="{{route('banner.edit',$item->id)}}">Edit</a>
+                                                    <a class="dropdown-item"
+                                                        href="{{ route('banner.edit', $item->id) }}">Edit</a>
                                                     <a class="dropdown-item">
-                                                        <form action="{{route('banner.destroy', $item->id)}}" method="POST">
+                                                        <form action="{{ route('banner.destroy', $item->id) }}"
+                                                            method="POST">
                                                             @csrf
-                                                            @method("DELETE")
-                                                            <button type="submit" class="btn show_confirm">Hapus</button>
+                                                            @method('DELETE')
+                                                            <button type="submit"
+                                                                class="btn show_confirm">Hapus</button>
                                                         </form>
                                                     </a>
                                                 </div>
@@ -76,24 +79,22 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
     <script>
-
         $('.show_confirm').click(function(event) {
-            var form =  $(this).closest("form");
+            var form = $(this).closest("form");
             var name = $(this).data("name");
             event.preventDefault();
             swal({
-                title: `Hapus Data?`,
-                text: "Jika data terhapus, data akan hilang selamanya!",
-                icon: "warning",
-                buttons: true,
-                dangerMode: true,
-            })
-            .then((willDelete) => {
-              if (willDelete) {
-                form.submit();
-              }
-            });
+                    title: `Hapus Data?`,
+                    text: "Jika data terhapus, data akan hilang selamanya!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        form.submit();
+                    }
+                });
         });
-
     </script>
 </x-app-layout>

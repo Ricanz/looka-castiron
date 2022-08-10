@@ -5,7 +5,7 @@
         <!-- Chat Button For Whatsapp -->
         <a id="cp-whatsapp" href="#" class="cp-list" data-number="082136361350" data-message="Halo... saya ingin menanyakan sesuatu" target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/whatsapp.png')}}" alt=""/>
+                <img src="{{asset('tlandingPage/assets/images/whatsapp.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>Whatsapp</h2>
@@ -15,7 +15,7 @@
         <!-- Chat Button For Instagram -->
         <a class="cp-list" href="https://www.instagram.com/looka.castiron/" target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/instagram.png')}}" alt=""/>
+                <img src="{{asset('tlandingPage/assets/images/instagram.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>Instagram</h2>
@@ -25,7 +25,7 @@
         <!-- Chat Button For LinkedIn -->
         <a class="cp-list" href="https://www.instagram.com/looka.castiron/" target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/linkedin.png')}}" alt=""/>
+                <img src="{{asset('tlandingPage/assets/images/linkedin.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>LinkedIn</h2>
@@ -35,7 +35,7 @@
         <!-- Chat Button For Twitter -->
         <a class="cp-list" href="https://www.instagram.com/looka.castiron/" target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/twitter.png')}}" alt=""/>
+                <img src="{{asset('tlandingPage/assets/images/twitter.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>Twitter</h2>
@@ -45,7 +45,7 @@
         <!-- Chat Button For Shopee -->
         <a class="cp-list" href="https://shopee.co.id/looka.castiron?categoryId=100636&itemId=12902595184" target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/shopee-s.png')}}" alt=""/>
+                <img src="{{asset('tlandingPage/assets/images/shopee-s.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>Shopee</h2>
@@ -55,7 +55,7 @@
         <!-- Chat Button For Tokopedia -->
         <a class="cp-list" href="https://www.tokopedia.com/megadunia" target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/tokopedia-s.png')}}" alt=""/>
+                <img src="{{asset('tlandingPage/assets/images/tokopedia-s.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>Tokopedia</h2>
@@ -66,7 +66,7 @@
         <!-- Chat Button For Lazada -->
         <a class="cp-list" href="https://www.lazada.co.id/shop/looka-castiron/?spm=a2o4j.pdp_revamp.seller.1.32e130c3wHPF0H&itemId=6232286715&channelSource=pdp" target="_blank">
             <div class="cp-image">
-                <img src="{{('tlandingPage/assets/images/lazaa-s.png')}}" alt=""/>
+                <img src="{{asset('tlandingPage/assets/images/lazaa-s.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
                 <h2>Lazada</h2>
@@ -77,7 +77,7 @@
     <!--/ End Floating Panel Container -->
     <!-- Start Right Floating Button -->
     <div class="cp-button cp-right-bottom">
-        <img src="{{('tlandingPage/assets/images/chat-pro/chat.png')}}" alt="icon"/>
+        <img src="{{asset('tlandingPage/assets/images/chat-pro/chat.png')}}" alt="icon"/>
     </div>
     <!--/ End Right Floating Button -->
 </div>

@@ -17,7 +17,7 @@ class BerandaController extends Controller
     public function index()
     {
         $testimonial = Testimonial::where('status', 'aktif')->take(3)->get();
-        $produkTerbaru = Produk::where('status', 'aktif')->latest()->paginate(5);
+        $produkTerbaru = Produk::where('status', 'aktif')->latest()->take(4)->get();
         $products = Produk::where('status', 'aktif')->with('kategori')->paginate(12);
         $banner = Banner::where('status', 'aktif')->get();
         $tentang = AboutUs::where('id', 1)->first();
@@ -29,11 +29,11 @@ class BerandaController extends Controller
         $produk_terbaru = Produk::with('kategori')
                         ->where('status', 'aktif')
                         ->orderBy('created_at', 'desc')
-                        ->take(5)->get();
+                        ->take(4)->get();
         $produk_terlaris = Produk::with('kategori')
         ->where('status', 'aktif')
         ->orderBy('created_at', 'asc')
-        ->take(5)->get();
+        ->take(4)->get();
         $kategori = Kategori::where('id', $id)->first();
         return view('guest.katalog.kategori',compact('Produk', 'produk_terbaru', 'produk_terlaris', 'kategori'));
     }
@@ -49,11 +49,11 @@ class BerandaController extends Controller
         $produk_terbaru = Produk::with('kategori')
                         ->where('status', 'aktif')
                         ->orderBy('created_at', 'desc')
-                        ->take(5)->get();
+                        ->take(4)->get();
         $produk_terlaris = Produk::with('kategori')
         ->where('status', 'aktif')
         ->orderBy('created_at', 'asc')
-        ->take(5)->get();
+        ->take(4)->get();
         return view('guest.katalog.index',compact('Produk', 'produk_terbaru', 'produk_terlaris'));
     }
 
@@ -77,11 +77,11 @@ class BerandaController extends Controller
         $produk_terbaru = Produk::with('kategori')
                         ->where('status', 'aktif')
                         ->orderBy('created_at', 'desc')
-                        ->take(5)->get();
+                        ->take(4)->get();
         $produk_terlaris = Produk::with('kategori')
         ->where('status', 'aktif')
         ->orderBy('created_at', 'asc')
-        ->take(5)->get();
+        ->take(4)->get();
         return view('guest.katalog.index',compact('Produk', 'produk_terbaru', 'produk_terlaris', 'produk_cari'));
     }
 

@@ -17,7 +17,7 @@ class BerandaController extends Controller
     public function index()
     {
         $testimonial = Testimonial::where('status', 'aktif')->take(3)->get();
-        $produkTerbaru = Produk::where('status', 'aktif')->latest()->take(4)->get();
+        $produkTerbaru = Produk::where('status', 'aktif')->latest()->take(2)->get();
         $products = Produk::where('status', 'aktif')->with('kategori')->paginate(12);
         $banner = Banner::where('status', 'aktif')->get();
         $tentang = AboutUs::where('id', 1)->first();

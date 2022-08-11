@@ -65,7 +65,8 @@ class BerandaController extends Controller
 
     public function contact_view()
     {
-        return view('guest.kontak.index');
+        $about = AboutUs::where('id', 1)->first();
+        return view('guest.kontak.index', compact('about'));
     }
 
     public function search(Request $request)

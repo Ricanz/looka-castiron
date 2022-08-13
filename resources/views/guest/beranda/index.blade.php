@@ -75,7 +75,7 @@
                                         <div class="ec-pro-rat-price">
                                             <div class="ec-pro-rat-pri-inner">
                                                 <span class="ec-price">
-                                                    <span class="new-price">{{ $item->harga }}</span>
+                                                    <span class="new-price">{{ "Rp. ".$item->harga }}</span>
                                                 </span>
                                             </div>
                                         </div>
@@ -152,7 +152,7 @@
                                             Store</a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
-                                            {{-- {!! Str::limit($tentang->deskripsi, 150) !!} --}}
+                                            {!! Str::limit($tentang->deskripsi, 150) !!}
                                         </span>
                                     </div>
                                 </div>
@@ -198,7 +198,7 @@
                                         <div class="ec-pro-rat-price">
                                             <div class="ec-pro-rat-pri-inner">
                                                 <span class="ec-price">
-                                                    <span class="new-price">{{$item->harga}}</span>
+                                                    <span class="new-price">{{"Rp. ".$item->harga}}</span>
                                                 </span>
                                                 <span class="ec-pro-rating">
                                                     <i class="ecicon eci-star fill"></i>

@@ -18,7 +18,7 @@
                                     <p>{!! $item->deskripsi !!}</p>
                                 @endif
                                 @if ($item->tombol_link != null)
-                                    <a href="{{ $item->tombol_link }}" class="btn btn-lg btn-secondary">{{ $item->tombol_text }}</a> 
+                                    <a href="{{ $item->tombol_link }}" class="btn btn-lg btn-secondary">{{ $item->tombol_text }}</a>
                                 @endif
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                                             Store</a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
-                                            {!! Str::limit($tentang->deskripsi, 150) !!}
+                                            {{-- {!! Str::limit($tentang->deskripsi, 150) !!} --}}
                                         </span>
                                     </div>
                                 </div>

@@ -25,7 +25,6 @@
                                     </div>
                                 </div>
                                 <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                    <h5 class="ec-pro-title"><a href="#">Harga Rp. {{ $produk->harga }}</a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
                                             @if ($produk != null)
@@ -33,7 +32,8 @@
                                             @endif
                                         </span>
                                     </div>
-                                    <div class="ec-offer-content-inner">
+                                    <h5 class="ec-pro-title"><a href="#">Harga Rp. {{ $produk->harga }}</a></h5>
+                                    <div class="ec-offer-content-start">
                                         @isset($produk->tokopedia_link)
                                         <span class="ec-offer-btn mb-2"><a href="{{$produk->tokopedia_link}}" target="_blank" title="Baca Selengkapnya" class="btn btn-success me-4">Tokopedia</a></span>
                                         @endisset
@@ -84,7 +84,7 @@
         </div>
     </section>
 
-    
+
     <section class="section ec-services-section">
         <h2 class="d-none">Services</h2>
         <div class="container">

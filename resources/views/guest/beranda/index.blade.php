@@ -168,7 +168,6 @@
                             <h2 class="ec-title">Produk Terbaru</h2>
                         </div>
                     </div>
-
                     <div class="ec-exe-products product-mt-minus-15">
                         @foreach ($produkTerbaru as $item)
                             <div class="ec-product-content">

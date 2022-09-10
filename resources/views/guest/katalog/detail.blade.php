@@ -19,9 +19,9 @@
     <meta name="author" content="looka">
      
     <!-- site Favicon -->
-    <link rel="icon" href="{{asset('tlandingPage/assets/images/favicon/favicon.png')}}" sizes="32x32" />
-    <link rel="apple-touch-icon" href="{{asset('tlandingPage/assets/images/favicon/favicon.png')}}" />
-    <meta name="msapplication-TileImage" content="{{asset('tlandingPage/assets/images/favicon/favicon.png')}}" />
+   <link rel="icon" href="{{asset('tlandingPage/assets/images/favicon/looka-logo.jpeg')}}" sizes="32x32" />
+   {{-- <link rel="apple-touch-icon" href="{{asset('tlandingPage/assets/images/favicon/looka-logo.jpeg')}}" /> --}}
+   <meta name="msapplication-TileImage" content="{{asset('tlandingPage/assets/images/favicon/looka-logo.jpeg')}}" />
 
     <!-- css Icon Font -->
     <link rel="stylesheet" href="{{asset('tlandingPage/assets/css/vendor/ecicons.min.css')}}" />

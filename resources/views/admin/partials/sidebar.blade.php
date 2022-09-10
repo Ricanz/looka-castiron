@@ -66,11 +66,11 @@
                                     <span class="nav-text">List Produk</span>
                                 </a>
                             </li>
-                            {{-- <li class="{{ request()->is('Produk-grid') ? 'active' : '' }}">
-                                <a class="sidenav-item-link" href="">
-                                    <span class="nav-text">Grid Product</span>
+                            <li class="{{ request()->is('gallery') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{ route('gallery.index') }}">
+                                    <span class="nav-text">Gallery</span>
                                 </a>
-                            </li> --}}
+                            </li>
                         </ul>
                     </div>
                 </li>

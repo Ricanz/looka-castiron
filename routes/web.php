@@ -4,6 +4,7 @@
 use App\Http\Controllers\Admin\AboutUsController;
 use App\Http\Controllers\Admin\ArtikelController;
 use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\KategoriController;
 use App\Http\Controllers\Admin\ProdukController;
 use App\Http\Controllers\Admin\TestimonialController;
@@ -35,7 +36,7 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
     Route::resource('artikel', ArtikelController::class);
     Route::resource('banner', BannerController::class);
     Route::resource('aboutUs', AboutUsController::class);
-
+    Route::resource('gallery', GalleryController::class);
 });
 
 

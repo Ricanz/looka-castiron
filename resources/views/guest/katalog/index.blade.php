@@ -55,7 +55,7 @@
                                         <div class="ec-pro-rat-price">
                                             <div class="ec-pro-rat-pri-inner">
                                                 <span class="ec-price">
-                                                    <span class="new-price">{{ $item->harga }}</span>
+                                                    {{-- <span class="new-price">{{ $item->harga }}</span> --}}
                                                 </span>
                                             </div>
                                         </div>
@@ -146,7 +146,7 @@
                                     <div class="ec-pro-rat-price">
                                         <div class="ec-pro-rat-pri-inner">
                                             <span class="ec-price">
-                                                <span class="new-price">{{ $item->harga }}</span>
+                                                {{-- <span class="new-price">{{ $item->harga }}</span> --}}
                                             </span>
                                         </div>
                                     </div>
@@ -195,7 +195,7 @@
                                     <div class="ec-pro-rat-price">
                                         <div class="ec-pro-rat-pri-inner">
                                             <span class="ec-price">
-                                                <span class="new-price">{{ $item->harga }}</span>
+                                                {{-- <span class="new-price">{{ $item->harga }}</span> --}}
                                             </span>
                                         </div>
                                     </div>

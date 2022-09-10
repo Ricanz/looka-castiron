@@ -84,47 +84,31 @@
                                     <div class="single-product-scroll">
                                         <div class="single-product-cover">
                                             <div class="single-slide zoom-image-hover">
-                                                <img class="img-responsive" src="https://lookacastiron.com/tlandingPage/assets/images/looka/15.png"
+                                                <img class="img-responsive" src="{{ asset($produk->gambar) }}"
                                                     alt="">
                                             </div>
-                                            <div class="single-slide zoom-image-hover">
-                                                <img class="img-responsive" src="https://lookacastiron.com/storage/Produk/Produk_084021.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="single-slide zoom-image-hover">
-                                                <img class="img-responsive" src="https://lookacastiron.com/storage/Produk/Produk_084021.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="single-slide zoom-image-hover">
-                                                <img class="img-responsive" src="https://lookacastiron.com/storage/Produk/Produk_084021.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="single-slide zoom-image-hover">
-                                                <img class="img-responsive" src="https://lookacastiron.com/storage/Produk/Produk_084021.png"
-                                                    alt="">
-                                            </div>
+                                            @if ($gallery)
+                                                @foreach ($gallery as $item)
+                                                <div class="single-slide zoom-image-hover">
+                                                    <img class="img-responsive" src="{{ asset($item->image) }}"
+                                                        alt="">
+                                                </div>
+                                                @endforeach
+                                            @endif
                                         </div>
                                         <div class="single-nav-thumb">
                                             <div class="single-slide">
-                                                <img class="img-responsive" src="https://lookacastiron.com/storage/Produk/Produk_084021.png"
+                                                <img class="img-responsive" src="{{ asset($produk->gambar) }}"
                                                     alt="">
                                             </div>
-                                            <div class="single-slide">
-                                                <img class="img-responsive" src="https://lookacastiron.com/storage/Produk/Produk_084021.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="single-slide">
-                                                <img class="img-responsive" src="https://lookacastiron.com/storage/Produk/Produk_084021.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="single-slide">
-                                                <img class="img-responsive" src="https://lookacastiron.com/storage/Produk/Produk_084021.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="single-slide">
-                                                <img class="img-responsive" src="https://lookacastiron.com/storage/Produk/Produk_084021.png"
-                                                    alt="">
-                                            </div>
+                                            @if ($gallery)
+                                                @foreach ($gallery as $item)
+                                                <div class="single-slide">
+                                                    <img class="img-responsive" src="{{ asset($item->image) }}"
+                                                        alt="">
+                                                </div>
+                                                @endforeach
+                                            @endif
                                         </div>
                                     </div>
                                 </div>

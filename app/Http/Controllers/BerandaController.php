@@ -9,6 +9,7 @@ use App\Models\Kategori;
 use App\Models\Produk;
 use App\Models\Testimonial;
 use App\Models\Kontak;
+use App\Models\ProductGallery;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
@@ -90,7 +91,8 @@ class BerandaController extends Controller
         $products = Produk::where('status', 'aktif')->with('kategori')->latest()->limit(8)->get();
         $produk = Produk::where('slug', $slug)->where('status', 'aktif')->first();
         $category = Kategori::all();
-        return view('guest.katalog.detail', compact('produk', 'products', 'category'));
+        $gallery = ProductGallery::where('product_id', $produk->id)->get();
+        return view('guest.katalog.detail', compact('produk', 'products', 'category', 'gallery'));
     }
 
     public function detail_artikel($slug){

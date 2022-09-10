@@ -56,27 +56,61 @@
     <!-- Feature & Special Section End -->
     <!-- offer Section End -->
 
-    <section class="ec-banner section section-space-p">
-        <h2 class="d-none">Banner</h2>
+    <section class="section ec-product-tab section-space-p">
         <div class="container">
-            <div class="row m-tb-minus-15">
-                <div class="ec-banners">
-                    <div class="ec-banner-left col-sm-6">
-                        <div class="ec-banner-block ec-banner-block-1 col-sm-12">
-                            <div class="banner-block">
-                                <img src="{{ asset('tlandingPage/assets/images/looka/16.png') }}" alt="" />
-                                <div class="banner-content">
-                                </div>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-md-12 section-title-block">
+                    <div class="section-title">
+                        <h2 class="ec-title">Semua Produk Looka Cast Iron</h2>
+                        <h6 class="ec-sub-title">Kualitas iron terbaik, ada DI SINI!!</h6>
+
                     </div>
-                    <div class="ec-banner-right col-sm-6">
-                        <div class="ec-banner-block ec-banner-block-2 col-sm-12">
-                            <div class="banner-block">
-                                <img src="{{ asset('tlandingPage/assets/images/looka/15.png') }}" alt="" />
-                                <div class="banner-content">
+                </div>
+
+            </div>
+            <div class="row m-tb-minus-15">
+                <div class="col">
+                    <div class="tab-content">
+                        <div class="row">
+                            @foreach ($products as $item)
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
+                                <div class="ec-product-inner">
+                                    <div class="ec-product-hover"></div>
+                                    <div class="ec-pro-image-outer">
+                                        <div class="ec-pro-image">
+                                            <a href="{{ url('/produk/detail').'/'.$item->slug }}" class="image">
+                                                <img class="main-image"
+                                                    src="{{ asset($item->gambar) }}"
+                                                    alt="Product" />
+                                                <img class="hover-image"
+                                                    src="{{ asset($item->gambar) }}"
+                                                    alt="Product" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ec-pro-content">
+                                        <div class="ec-pro-option">
+                                            <div class="ec-pro-opt-inner">
+                                                <a href="{{ url('/produk/detail').'/'.$item->slug }}" class="btn btn-primary">Lihat Produk</a>
+                                            </div>
+                                        </div>
+                                        <h5 class="ec-pro-title"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{ $item->nama }}</a></h5>
+                                        <h6 class="ec-pro-stitle"><a href="#">{{ $item->kategori->nama }}</a>
+                                        </h6>
+                                        <div class="ec-pro-rat-price">
+                                            <div class="ec-pro-rat-pri-inner">
+                                                <span class="ec-price">
+                                                    <span class="new-price">{{ $item->harga }}</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="pro-hidden-block">
+                                            <div class="ec-pro-desc" align='left'>{!! Str::limit($item->deskripsi, 150) !!}</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

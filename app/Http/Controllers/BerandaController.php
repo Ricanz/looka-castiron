@@ -87,8 +87,9 @@ class BerandaController extends Controller
     }
 
     public function detail_produk($slug){
+        $products = Produk::where('status', 'aktif')->with('kategori')->latest()->limit(8)->get();
         $produk = Produk::where('slug', $slug)->where('status', 'aktif')->first();
-        return view('guest.katalog.detail', compact('produk'));
+        return view('guest.katalog.detail', compact('produk', 'products'));
     }
 
     public function detail_artikel($slug){

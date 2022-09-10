@@ -122,6 +122,7 @@ class ProdukController extends Controller
             $Produk->harga = $request->harga;
             $Produk->slug = str_replace(' ', '-', strtolower($request->nama));
             $Produk->shopee_link = $request->shopee_link;
+            $Produk->tokopedia_link = $request->tokopedia_link;
             $Produk->lazada_link = $request->lazada_link;
             $Produk->kategori_id = $request->kategori_id;
             $Produk->status = $request->status;

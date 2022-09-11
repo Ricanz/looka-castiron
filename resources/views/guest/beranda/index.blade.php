@@ -29,6 +29,50 @@
         </div>
     </div>
     <!-- Main Slider End -->
+    
+    <!--  Feature & Special Section Start -->
+    <section class="section ec-exe-spe-section section-space-ptb-100 section-space-mt section-space-mb-100"
+        style="background-image: url('{{asset('tlandingPage/assets/images/special-product/background.jpg')}}');">
+        <div class="container">
+            <div class="row">
+                <!--  Special Section Start -->
+                <div class="ec-spe-section col-lg-12 col-md-12 col-sm-12 margin-b-30">
+                    <div class="col-md-12 text-left">
+                        <div class="section-title mb-6">
+                            <h2 class="ec-title">Looka Cast Iron</h2>
+                        </div>
+                    </div>
+
+                    <div class="ec-spe-products">
+                        <div class="ec-fs-product">
+                            <div class="ec-fs-pro-inner ec-product-inner">
+                                <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
+                                    <div class="ec-fs-pro-image">
+                                        @if ($tentang != null)
+                                        <a href="#" class="image"><img class="main-image"
+                                            src="{{asset($tentang->gambar)}}" alt="Product" /></a>
+                                        @endif                                       
+                                    </div>
+                                </div>
+                                <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
+                                    <h5 class="ec-pro-title"><a href="#">Creative Iron Store</a></h5>
+                                    <div class="countdowntimer">
+                                        <span class="ec-fs-count-desc" align="justify">
+                                            @if ($tentang != null)
+                                            {!! $tentang->deskripsi !!}
+                                            @endif
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Feature & Special Section End -->
 
     <!-- Product tab Area Start -->
     <section class="section ec-product-tab section-space-p">
@@ -123,54 +167,25 @@
         </div>
     </section>
     <!-- ec Banner Section End -->
-    <!--  Feature & Special Section Start -->
-    <section class="section ec-exe-spe-section section-space-ptb-100 section-space-mt section-space-mb-100"
-        style="background-image: url('{{ asset('tlandingPage/assets/images/special-product/background.jpg') }}');">
+    <!-- Product tab Area Start -->
+    <section class="section ec-product-tab section-space-p">
         <div class="container">
             <div class="row">
-                <!--  Special Section Start -->
-                <div class="ec-spe-section col-lg-6 col-md-12 col-sm-12 margin-b-30">
-                    <div class="col-md-12 text-left">
-                        <div class="section-title mb-6">
-                            <h2 class="ec-title">Looka Cast Iron</h2>
-                        </div>
-                    </div>
+                <div class="col-md-12 section-title-block">
+                    <div class="section-title">
+                        <h2 class="ec-title">Produk Lainnya</h2>
+                        <h6 class="ec-sub-title">Produk lainnya yang mungkin kamu cari.</h6>
 
-                    <div class="ec-spe-products">
-                        <div class="ec-fs-product">
-                            <div class="ec-fs-pro-inner ec-product-inner">
-                                <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
-                                    <div class="ec-fs-pro-image">
-                                        <a href="{{ url('about-us') }}" class="image"><img
-                                                class="main-image"
-                                                src="{{ asset('tlandingPage/assets/images/looka/3.jpg') }}"
-                                                alt="Product" /></a>
-                                    </div>
-                                </div>
-                                <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                    <h5 class="ec-pro-title"><a href="/">Creative Iron
-                                            Store</a></h5>
-                                    <div class="countdowntimer">
-                                        <span class="ec-fs-count-desc" align="justify">
-                                            {!! Str::limit($tentang->deskripsi, 150) !!}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <!--  Special Section End -->
-                <!--  Feature Section Start -->
-                <div class="ec-exe-section col-lg-6 col-md-12 col-sm-12">
-                    <div class="col-md-12 text-left">
-                        <div class="section-title mb-6">
-                            <h2 class="ec-title">Produk Terbaru</h2>
-                        </div>
-                    </div>
-                    <div class="ec-exe-products product-mt-minus-15">
-                        @foreach ($produkTerbaru as $item)
-                            <div class="ec-product-content">
+
+            </div>
+            <div class="row m-tb-minus-15">
+                <div class="col">
+                    <div class="tab-content">
+                        <div class="row">
+                            @foreach ($randomProducts as $item)
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
                                 <div class="ec-product-inner">
                                     <div class="ec-product-hover"></div>
                                     <div class="ec-pro-image-outer">
@@ -188,45 +203,36 @@
                                     <div class="ec-pro-content">
                                         <div class="ec-pro-option">
                                             <div class="ec-pro-opt-inner">
+                                                <a href="{{ url('/produk/detail').'/'.$item->slug }}" class="btn btn-primary">Lihat Produk</a>
                                             </div>
                                         </div>
-                                        <h5 class="ec-pro-title"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{$item->nama}}</a></h5>
-                                        <h6 class="ec-pro-stitle"><a
-                                                href="{{ url('/products').'/'.$item->kategori->id }}">{{$item->kategori->nama}}</a>
+                                        <h5 class="ec-pro-title"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{ $item->nama }}</a></h5>
+                                        <h6 class="ec-pro-stitle"><a href="{{ url('/produk/detail').'/'.$item->slug }}">{{ $item->kategori->nama }}</a>
                                         </h6>
                                         <div class="ec-pro-rat-price">
                                             <div class="ec-pro-rat-pri-inner">
                                                 <span class="ec-price">
-                                                    {{-- <span class="new-price">{{"Rp. ".$item->harga}}</span> --}}
-                                                </span>
-                                                <span class="ec-pro-rating">
-                                                    <i class="ecicon eci-star fill"></i>
-                                                    <i class="ecicon eci-star fill"></i>
-                                                    <i class="ecicon eci-star fill"></i>
-                                                    <i class="ecicon eci-star fill"></i>
-                                                    <i class="ecicon eci-star fill"></i>
+                                                    {{-- <span class="new-price">{{ "Rp. ".$item->harga }}</span> --}}
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="pro-hidden-block">
-                                            <div class="ec-pro-desc" align="left">{!! Str::limit($item->deskripsi, 200) !!}
-                                            </div>
+                                            <div class="ec-pro-desc">{!! Str::limit($item->deskripsi, 150) !!}</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        @endforeach
+                            @endforeach
+                        </div>
                     </div>
                 </div>
-                <!--  Feature Section End -->
-
             </div>
         </div>
     </section>
-    <!-- Feature & Special Section End -->
+    <!-- ec Product tab Area End -->
 
     <!--  offer Section Start -->
-    <section class="section ec-offer-section section-space-mt section-space-mb">
+    {{-- <section class="section ec-offer-section section-space-mt section-space-mb">
         <div class="ec-main-slider section">
             <div class="ec-slider">
                 <div class="ec-slide-item d-flex slide-1">
@@ -234,9 +240,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- offer Section End -->
-    <section class="ec-banner section section-space-p">
+    {{-- <section class="ec-banner section section-space-p">
         <h2 class="d-none">Banner</h2>
         <div class="container">
             <div class="row m-tb-minus-15">
@@ -262,7 +268,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- ec testimonial Start -->
     <section class="section ec-test-section section-space-ptb-100 section-space-mt section-space-mb"
@@ -304,60 +310,6 @@
         </div>
     </section>
     <!-- ec testimonial end -->
-
-    <!-- Ec Instagram Start -->
-    <section class="section ec-instagram-section section-space-pt mb-4">
-        <div class="ec-insta-wrapper">
-            <div class="ec-insta-outer">
-                <div class="insta-auto">
-                    <h2 class="d-none">Galleries</h2>
-                    <!-- instagram item -->
-                    <div class="ec-insta-item">
-                        <div class="ec-insta-inner">
-                            <a href="#" target="_blank"><img
-                                    src="{{ asset('tlandingPage/assets/images/looka/1.jpg') }}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- instagram item -->
-                    <div class="ec-insta-item">
-                        <div class="ec-insta-inner">
-                            <a href="#" target="_blank"><img
-                                    src="{{ asset('tlandingPage/assets/images/looka/9.jpg') }}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- instagram item -->
-                    <div class="ec-insta-item">
-                        <div class="ec-insta-inner">
-                            <a href="#" target="_blank"><img
-                                    src="{{ asset('tlandingPage/assets/images/looka/2.jpg') }}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- instagram item -->
-                    <div class="ec-insta-item">
-                        <div class="ec-insta-inner">
-                            <a href="#" target="_blank"><img
-                                    src="{{ asset('tlandingPage/assets/images/looka/7.jpg') }}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- instagram item -->
-                    <div class="ec-insta-item">
-                        <div class="ec-insta-inner">
-                            <a href="#" target="_blank"><img
-                                    src="{{ asset('tlandingPage/assets/images/looka/3.jpg') }}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- instagram item -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Ec Instagram End -->
-
     <!--  services Section Start -->
     <section class="section ec-services-section">
         <h2 class="d-none">Services</h2>
@@ -415,4 +367,57 @@
         </div>
     </section>
     <!--services Section End -->
+
+    <!-- Ec Instagram Start -->
+    <section class="section ec-instagram-section section-space-pt mb-4">
+        <div class="ec-insta-wrapper">
+            <div class="ec-insta-outer">
+                <div class="insta-auto">
+                    <h2 class="d-none">Galleries</h2>
+                    <!-- instagram item -->
+                    <div class="ec-insta-item">
+                        <div class="ec-insta-inner">
+                            <a href="#" target="_blank"><img
+                                    src="{{ asset('tlandingPage/assets/images/looka/1.jpg') }}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- instagram item -->
+                    <div class="ec-insta-item">
+                        <div class="ec-insta-inner">
+                            <a href="#" target="_blank"><img
+                                    src="{{ asset('tlandingPage/assets/images/looka/9.jpg') }}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- instagram item -->
+                    <div class="ec-insta-item">
+                        <div class="ec-insta-inner">
+                            <a href="#" target="_blank"><img
+                                    src="{{ asset('tlandingPage/assets/images/looka/2.jpg') }}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- instagram item -->
+                    <div class="ec-insta-item">
+                        <div class="ec-insta-inner">
+                            <a href="#" target="_blank"><img
+                                    src="{{ asset('tlandingPage/assets/images/looka/7.jpg') }}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- instagram item -->
+                    <div class="ec-insta-item">
+                        <div class="ec-insta-inner">
+                            <a href="#" target="_blank"><img
+                                    src="{{ asset('tlandingPage/assets/images/looka/3.jpg') }}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- instagram item -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ec Instagram End -->
 </x-guest-layout>

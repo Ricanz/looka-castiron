@@ -205,7 +205,7 @@
                         <div class="ec-pro-content">
                             <h5 class="ec-pro-title"><a href="{{ $item->slug }}">{{ $item->nama }}</a></h5>
                             <div class="ec-pro-list-desc">
-                                {!! Str::limit($item->deskripsi, 150, '...') !!}
+                                {!! Str::limit($item->short_desc, 150, '...') !!}
                             </div>
                             {{-- <span class="ec-price">
                                 <span class="new-price">$22.00</span>

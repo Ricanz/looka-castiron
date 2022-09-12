@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('gambar');
             $table->string('slug');
             $table->longText('deskripsi');
+            $table->string('short_desc')->nullable();
             $table->string('shopee_link')->nullable();
             $table->string('tokopedia_link')->nullable();
             $table->string('lazada_link')->nullable();

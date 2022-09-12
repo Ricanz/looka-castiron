@@ -20,7 +20,8 @@ class Produk extends Model
         'tokopedia_link',
         'lazada_link',
         'kategori_id',
-        'status'
+        'status',
+        'short_desc'
     ];
 
     public function kategori()

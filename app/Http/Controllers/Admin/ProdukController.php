@@ -17,7 +17,7 @@ class ProdukController extends Controller
      */
     public function index()
     {
-        $products = Produk::all();
+        $products = Produk::orderByDesc('id')->get();
         return view('admin.produk.index', compact('products'));
     }
 
@@ -48,7 +48,7 @@ class ProdukController extends Controller
             'gambar' => 'required',
         ]);
 
-        // dd($request->all());
+        // dd(substr(strip_tags($request->deskripsi), 0, 255));
 
         $date = date("his");
         $extension = $request->file('gambar')->extension();
@@ -67,6 +67,7 @@ class ProdukController extends Controller
             'lazada_link' => $request->lazada_link,
             'kategori_id' => $request->kategori_id,
             'status' => 'aktif',
+            'short_desc' => substr(strip_tags($request->deskripsi), 0, 255)
         ]);
         return redirect()->route('produk.index')
             ->with('success', 'Produk Berhasil Ditambahkan');
@@ -126,6 +127,7 @@ class ProdukController extends Controller
             $Produk->lazada_link = $request->lazada_link;
             $Produk->kategori_id = $request->kategori_id;
             $Produk->status = $request->status;
+            $Produk->short_desc = substr(strip_tags($request->deskripsi), 0, 255);
             $Produk->save();
         }
 

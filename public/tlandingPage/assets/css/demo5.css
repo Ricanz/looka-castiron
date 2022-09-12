@@ -3069,8 +3069,8 @@ textarea.form-control.is-invalid {
 }
 
 .btn-primary {
-  color: #ffffff;
-  background-color: #3474d4;
+  color: black !important;
+  background-color: #fdd330 !important;
   border-color: #3474d4;
 }
 .btn-primary:hover {
@@ -3080,7 +3080,7 @@ textarea.form-control.is-invalid {
 }
 .btn-primary:focus {
   color: #ffffff;
-  background-color: #3474d4;
+  background-color: #fdd330;
   border-color: #3474d4;
 }
 .btn-primary:active {

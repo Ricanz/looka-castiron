@@ -1,43 +1,5 @@
     <!-- Header start  -->
     <header class="ec-header">
-        <!-- Ec Header Bottom  Start -->
-        <div class="ec-header-bottom d-none d-lg-block">
-            <div class="container position-relative">
-                <div class="row">
-                    <div class="ec-flex">
-                        <!-- Ec Header Logo Start -->
-                        <div class="align-self-center ec-header-logo ">
-                            <div class="header-logo">
-                                <a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/looka-logo.jpeg') }}"
-                                        alt="Site Logo" /><img class="dark-logo"
-                                        src="{{ asset('tlandingPage/assets/images/logo/dark-logo-5.png') }}"
-                                        alt="Site Logo" style="display: none;" /></a>
-                            </div>
-                        </div>
-                        <!-- Ec Header Logo End -->
-
-                        <!-- Ec Header Search Start -->
-                        {{-- <div class="align-self-center ec-header-search">
-                            <div class="header-search">
-                                <form class="ec-search-group-form" action="{{route('search')}}" method="GET">
-                                    <input class="form-control" placeholder="Cari Produk..." type="text" name="cari" value="{{old('cari')}}">
-                                    <button class="search_submit" type="submit"><i
-                                            class="ecicon eci-search"></i></button>
-                                </form>
-                            </div>
-                        </div> --}}
-                        <!-- Ec Header Search End -->
-
-                        <!-- Ec Header Button Start -->
-                        <div class="align-self-center ec-offer">
-                            <div class="ec-offer-content-inner">
-                                <span class="ec-offer-btn"><a href="{{ url('/contact') }}" class="btn btn-primary">HUBUNGI KAMI</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Ec Header Button End -->
         <!-- Header responsive Bottom  Start -->
         <div class="ec-header-bottom d-lg-none">
@@ -100,7 +62,7 @@
                     </div>
                     <div class="col ec-spe-offer-block">
                         <div class="ec-spe-offer-link">
-                            <a href="#" class="ec-spe-offer-title">Creative Iron Store</a>
+                            <a href="https://wa.me/6282136361350" target="blank" class="ec-spe-offer-title">Hubungi Kami</a>
                         </div>
                     </div>
                 </div>

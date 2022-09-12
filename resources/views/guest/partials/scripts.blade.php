@@ -64,7 +64,7 @@
         </a>
 
         <!-- Chat Button For Lazada -->
-        <a class="cp-list" href="https://www.lazada.co.id/shop/looka-castiron/?spm=a2o4j.pdp_revamp.seller.1.32e130c3wHPF0H&itemId=6232286715&channelSource=pdp" target="_blank">
+        <a class="cp-list" href="https://wa.me/6282136361350" target="blank">
             <div class="cp-image">
                 <img src="{{asset('tlandingPage/assets/images/lazaa-s.png')}}" alt=""/>
             </div>	

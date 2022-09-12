@@ -33,12 +33,12 @@
             </div>
         </a>
         <!-- Chat Button For Twitter -->
-        <a class="cp-list" href="https://www.instagram.com/looka.castiron/" target="_blank">
+        <a class="cp-list" href="https://www.tiktok.com/@looka.castiron?_t=8VcoeTpgtrG&_r=1s" target="_blank">
             <div class="cp-image">
-                <img src="{{asset('tlandingPage/assets/images/twitter.png')}}" alt=""/>
+                <img src="{{asset('tlandingPage/assets/images/tiktok.png')}}" alt=""/>
             </div>	
             <div class="cp-content">
-                <h2>Twitter</h2>
+                <h2>Tiktok</h2>
                 <p>easily chat over Twitter</p>
             </div>
         </a>
@@ -71,6 +71,17 @@
             <div class="cp-content">
                 <h2>Lazada</h2>
                 <p>Visit us on Lazada</p>
+            </div>
+        </a>
+
+        <!-- Chat Button For Maps -->
+        <a class="cp-list" href="https://goo.gl/maps/4FEZg32t2UnDyM5H8" target="blank">
+            <div class="cp-image">
+                <img src="{{asset('tlandingPage/assets/images/maps.png')}}" alt=""/>
+            </div>	
+            <div class="cp-content">
+                <h2>Google Maps</h2>
+                <p>Visit us!</p>
             </div>
         </a>
     </div>

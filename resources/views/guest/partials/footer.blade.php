@@ -9,7 +9,6 @@
                                 <div class="ec-footer-logo"><a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/logo-looka.png') }}"
                                             alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/logo-looka.png')}}"
                                             alt="Site Logo" style="display: none;" /></a></div>
-                                <p>Creative Iron Store Looka Cast Iron</p>
                                 <h4 class="ec-footer-heading">Hubungi kami!</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">

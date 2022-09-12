@@ -17551,7 +17551,7 @@ body.ec-open:before {
   margin-bottom: 12px;
 }
 .ec-footer-logo img {
-  width: 130px;
+  width: 200px !important;
 }
 
 .ec-subscribe-form {

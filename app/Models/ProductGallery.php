@@ -13,6 +13,8 @@ class ProductGallery extends Model
         'id',
         'product_id',
         'image',
+        'sequence',
+        'role',
         'created_at',
         'updated_at'
     ];

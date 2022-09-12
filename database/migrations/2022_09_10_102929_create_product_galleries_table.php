@@ -15,9 +15,10 @@ return new class extends Migration
     {
         Schema::create('product_galleries', function (Blueprint $table) {
             $table->id();
-            $table->integer('product_id');
+            $table->integer('product_id')->nullable();
             $table->string('image');
             $table->integer('sequence');
+            $table->string('role')->default('produk');
             $table->timestamps();
         });
     }

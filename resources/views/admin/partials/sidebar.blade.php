@@ -29,6 +29,13 @@
                         <span class="nav-text">Tentang Kami</span> 
                     </a>
                 </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="{{url('admin/footer-gallery')}}">
+                        <i class="mdi mdi-camera"></i>
+                        <span class="nav-text">Footer Gallery</span> 
+                    </a>
+                </li>
+
 
 
                 <!-- Category -->

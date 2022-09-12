@@ -37,6 +37,10 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
     Route::resource('banner', BannerController::class);
     Route::resource('aboutUs', AboutUsController::class);
     Route::resource('gallery', GalleryController::class);
+    Route::get('/footer-gallery', [GalleryController::class, 'footer_gallery'])->name('footer_gallery');
+    Route::get('/footer-gallery/create', [GalleryController::class, 'create_footer_gallery'])->name('create_footer_gallery');
+    Route::post('/footer-gallery/submit', [GalleryController::class, 'store_footer_gallery'])->name('store_footer_gallery');
+    Route::post('/footer-gallery/destroy', [GalleryController::class, 'footer_gallery_destroy'])->name('footer_gallery_destroy');
 });
 
 

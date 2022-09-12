@@ -60,46 +60,15 @@
                     <div class="insta-auto">
                         <h2 class="d-none">Galleries</h2>
                         <!-- instagram item -->
-                        <div class="ec-insta-item">
-                            <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img
-                                        src="{{ asset('tlandingPage/assets/images/looka/1.jpg') }}" alt="">
-                                </a>
+                        @foreach ($footer_gallery as $item)
+                            <div class="ec-insta-item">
+                                <div class="ec-insta-inner">
+                                    <a href="#" target="_blank"><img
+                                            src="{{ asset($item->image) }}" alt="">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <!-- instagram item -->
-                        <div class="ec-insta-item">
-                            <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img
-                                        src="{{ asset('tlandingPage/assets/images/looka/9.jpg') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- instagram item -->
-                        <div class="ec-insta-item">
-                            <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img
-                                        src="{{ asset('tlandingPage/assets/images/looka/2.jpg') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- instagram item -->
-                        <div class="ec-insta-item">
-                            <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img
-                                        src="{{ asset('tlandingPage/assets/images/looka/7.jpg') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- instagram item -->
-                        <div class="ec-insta-item">
-                            <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img
-                                        src="{{ asset('tlandingPage/assets/images/looka/3.jpg') }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- instagram item -->
+                        @endforeach
                     </div>
                 </div>
             </div>

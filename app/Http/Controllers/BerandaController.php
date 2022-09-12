@@ -23,7 +23,8 @@ class BerandaController extends Controller
         $randomProducts = Produk::where('status', 'aktif')->with('kategori')->inRandomOrder()->paginate(12);
         $banner = Banner::where('status', 'aktif')->get();
         $tentang = AboutUs::where('id', 1)->first();
-        return view('guest.beranda.index', compact('testimonial','produkTerbaru', 'products', 'banner', 'tentang', 'randomProducts'));
+        $footer_gallery = ProductGallery::where('role', 'footer')->get();
+        return view('guest.beranda.index', compact('testimonial','produkTerbaru', 'products', 'banner', 'tentang', 'randomProducts', 'footer_gallery'));
     }
     public function kategori_produk($id)
     {
@@ -62,13 +63,15 @@ class BerandaController extends Controller
     public function article_view()
     {
         $artikel = Artikel::where('status','=', 'aktif')->take(10)->get();
-        return view('guest.artikel.index', compact('artikel'));
+        $footer_gallery = ProductGallery::where('role', 'footer')->get();
+        return view('guest.artikel.index', compact('artikel', 'footer_gallery'));
     }
 
     public function contact_view()
     {
         $about = AboutUs::where('id', 1)->first();
-        return view('guest.kontak.index', compact('about'));
+        $footer_gallery = ProductGallery::where('role', 'footer')->get();
+        return view('guest.kontak.index', compact('about', 'footer_gallery'));
     }
 
     public function search(Request $request)
@@ -92,7 +95,7 @@ class BerandaController extends Controller
         $products = Produk::where('status', 'aktif')->with('kategori')->latest()->limit(8)->get();
         $produk = Produk::where('slug', $slug)->where('status', 'aktif')->first();
         $category = Kategori::all();
-        $gallery = ProductGallery::where('product_id', $produk->id)->get();
+        $gallery = ProductGallery::where('product_id', $produk->id)->where('role', 'produk')->get();
         return view('guest.katalog.detail', compact('produk', 'products', 'category', 'gallery'));
     }
 

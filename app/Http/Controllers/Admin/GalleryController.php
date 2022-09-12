@@ -18,7 +18,7 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        $gallery = ProductGallery::all();
+        $gallery = ProductGallery::where('role', 'produk')->get();
         return view('admin.produk.gallery', compact('gallery'));
     }
 
@@ -53,6 +53,7 @@ class GalleryController extends Controller
             'product_id' => $request->product_id,
             'image' => $txt,
             'sequence' => $seq != null ? $seq+1 : 1,
+            'role' => 'produk',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
@@ -112,5 +113,50 @@ class GalleryController extends Controller
         $gallery->delete();
         return redirect()->route('gallery.index')
             ->with('delete', 'Produk Berhasil Dihapus');
+    }
+    
+    public function footer_gallery(){
+        $gallery = ProductGallery::where('role', 'footer')->get();
+        return view('admin.footer.gallery', compact('gallery'));
+    }
+
+    public function create_footer_gallery(){
+        return view('admin.footer.create-gallery');
+    }
+
+    public function store_footer_gallery(Request $request){
+        $seq = ProductGallery::where('product_id', $request->product_id)->latest()->pluck('sequence')->first();
+        
+        $date = date("his");
+        $extension = $request->file('gambar')->extension();
+        $file_name = "Gallery_$date.$extension";
+        $txt = "storage/Gallery/" . $file_name;
+        $path = $request->file('gambar')->storeAs('public/Gallery', $file_name);
+
+        $gallery = ProductGallery::create([
+            'product_id' => $request->product_id,
+            'image' => $txt,
+            'sequence' => $seq != null ? $seq+1 : 1,
+            'role' => 'footer',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+
+        if($gallery){
+            return redirect()->route('footer_gallery')
+                ->with('success', 'Gallery Berhasil Ditambahkan');
+        }
+
+        dd("tidak berhasil, periksa kembali!");
+    }
+
+    public function footer_gallery_destroy(Request $request)
+    {
+        $id = $request->id;
+        $gallery = ProductGallery::findOrFail($id);
+        Storage::delete("public/Gallery/$gallery->gambar");
+        $gallery->delete();
+        return redirect()->route('footer_gallery')
+            ->with('delete', 'Gallery Berhasil Dihapus');
     }
 }

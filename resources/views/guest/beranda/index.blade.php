@@ -291,8 +291,8 @@
                                     <div class="ec-test-img"><img alt="testimonial" title="testimonial"
                                             src="{{ asset($item->foto) }}" /></div>
                                     <div class="ec-test-content">
-                                        <div class="ec-test-name">{{ $item->nama }}</div>
-                                        <div class="ec-test-designation">{{ $item->instansi }}</div>
+                                        {{-- <div class="ec-test-name">{{ $item->nama }}</div> --}}
+                                        {{-- <div class="ec-test-designation">{{ $item->instansi }}</div> --}}
                                         <div class="ec-test-rating">
                                             @for ($i = 0; $i < $item->rating; $i++)
                                                 <i class="ecicon eci-star fill"></i>

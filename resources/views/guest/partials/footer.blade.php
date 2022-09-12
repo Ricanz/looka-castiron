@@ -6,8 +6,8 @@
                     <div class="row">
                         <div class="col-sm-12 col-lg-4 ec-footer-contact">
                             <div class="ec-footer-widget">
-                                <div class="ec-footer-logo"><a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/looka-logo.jpeg') }}"
-                                            alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/dark-logo-5.png')}}"
+                                <div class="ec-footer-logo"><a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/logo-looka.png') }}"
+                                            alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/logo-looka.png')}}"
                                             alt="Site Logo" style="display: none;" /></a></div>
                                 <p>Creative Iron Store Looka Cast Iron</p>
                                 <h4 class="ec-footer-heading">Hubungi kami!</h4>

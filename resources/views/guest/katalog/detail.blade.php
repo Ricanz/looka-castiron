@@ -227,8 +227,8 @@
                     <div class="row">
                         <div class="col-sm-12 col-lg-4 ec-footer-contact">
                             <div class="ec-footer-widget">
-                                <div class="ec-footer-logo"><a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/looka-logo.jpeg') }}"
-                                            alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/dark-logo-5.png')}}"
+                                <div class="ec-footer-logo"><a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/logo-looka.png') }}"
+                                            alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/logo-looka.png')}}"
                                             alt="Site Logo" style="display: none;" /></a></div>
                                 <p>Creative Iron Store Looka Cast Iron</p>
                                 <h4 class="ec-footer-heading">Hubungi kami!</h4>
@@ -237,7 +237,9 @@
                                         <li class="ec-footer-link">
                                             <span class="call-desc">
                                                 <span>Hubungi kami! 24/7!</span>
-                                                <span><a href="tel:+6282136361350">+6282136361350</a></span>
+                                                <span><a href="https://wa.me/6282136361350" target="blank">+6282136361350</a></span>
+                                                <span><a style="text-transform: lowercase;">email : ironcastd@gmail.com</a></span>
+                                                <span><a>alamat : <br> Bakalan Indah RT: 02 / RW: 02, Ceper, Klaten, Jawa Tengah.</a></span>
                                             </span>
                                         </li>
                                     </ul>

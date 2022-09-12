@@ -42,7 +42,7 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
         $seq = ProductGallery::where('product_id', $request->product_id)->latest()->pluck('sequence')->first();
-        dd($seq);
+        
         $date = date("his");
         $extension = $request->file('gambar')->extension();
         $file_name = "Produk_$date.$extension";

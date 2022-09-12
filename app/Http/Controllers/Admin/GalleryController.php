@@ -129,9 +129,9 @@ class GalleryController extends Controller
         
         $date = date("his");
         $extension = $request->file('gambar')->extension();
-        $file_name = "Gallery_$date.$extension";
-        $txt = "storage/Gallery/" . $file_name;
-        $path = $request->file('gambar')->storeAs('public/Gallery', $file_name);
+        $file_name = "Produk_$date.$extension";
+        $txt = "storage/Produk/" . $file_name;
+        $path = $request->file('gambar')->storeAs('public/Produk', $file_name);
 
         $gallery = ProductGallery::create([
             'product_id' => $request->product_id,
@@ -154,7 +154,7 @@ class GalleryController extends Controller
     {
         $id = $request->id;
         $gallery = ProductGallery::findOrFail($id);
-        Storage::delete("public/Gallery/$gallery->gambar");
+        Storage::delete("public/Produk/$gallery->gambar");
         $gallery->delete();
         return redirect()->route('footer_gallery')
             ->with('delete', 'Gallery Berhasil Dihapus');

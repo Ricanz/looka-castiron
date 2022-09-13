@@ -21054,7 +21054,7 @@ ul.slick-dots {
 .ec_ser_inner .ec-service-image {
   margin-right: 15px;
   position: relative;
-  width: 40%;
+  /* width: 40%; */
 }
 .ec_ser_inner .ec-service-image svg {
   width: 54px;

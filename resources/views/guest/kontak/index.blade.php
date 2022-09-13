@@ -116,61 +116,61 @@
         <!-- Ec Instagram End -->
 
         <!--  services Section Start -->
-        
-    <section class="section ec-services-section">
-        <h2 class="d-none">Services</h2>
-        <div class="container">
-            <div class="row">
-                <div class="ec_ser_content ec_ser_content_1 col-sm-12 col-md-3">
-                    <div class="ec_ser_inner">
-                        <div class="ec-service-image">
-                            <img src="{{ asset('tlandingPage/assets/images/icons/foodgrade.webp') }}"
-                                class="svg_img" alt="" />
-                        </div>
-                        <div class="ec-service-desc">
-                            <h2>kualitas</h2>
-                            <p>memilih iron kualitas terbaik yang cocok untuk makanan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ec_ser_content ec_ser_content_2 col-sm-12 col-md-3">
-                    <div class="ec_ser_inner">
-                        <div class="ec-service-image">
-                            <img src="{{ asset('tlandingPage/assets/images/icons/service_2.svg') }}"
-                                class="svg_img" alt="" />
-                        </div>
-                        <div class="ec-service-desc">
-                            <h2>kontak kami</h2>
-                            <p>seller dapat dihubungi anytime</p>
+    
+        <section class="section ec-services-section">
+            <h2 class="d-none">Services</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="ec_ser_content ec_ser_content_1 col-sm-12 col-md-3">
+                        <div class="ec_ser_inner">
+                            <div class="ec-service-image">
+                                <img src="{{ asset('tlandingPage/assets/images/icons/food-grade.svg') }}"
+                                    class="svg_img" alt="" />
+                            </div>
+                            <div class="ec-service-desc">
+                                <h2>Food Grade</h2>
+                                <p>LOOKA CASTIRON sudah memiliki Sertifikat ISO MJT 130421240448 (Quality Product) & Sertifikat ISO QM MJT130421240448 (QUality Management) jadi aman untuk makanan</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="ec_ser_content ec_ser_content_3 col-sm-12 col-md-3">
-                    <div class="ec_ser_inner">
-                        <div class="ec-service-image">
-                            <img src="{{ asset('tlandingPage/assets/images/icons/check.png') }}"
-                                class="svg_img" alt="" />
-                        </div>
-                        <div class="ec-service-desc">
-                            <h2>online shopping</h2>
-                            <p>temukan kami di online shop kesayangan kalian</p>
+                    <div class="ec_ser_content ec_ser_content_2 col-sm-12 col-md-3">
+                        <div class="ec_ser_inner">
+                            <div class="ec-service-image">
+                                <img src="{{ asset('tlandingPage/assets/images/icons/ready-stock.svg') }}"
+                                    class="svg_img" alt="" />
+                            </div>
+                            <div class="ec-service-desc">
+                                <h2>Ready Stok</h2>
+                                <p>Ketersediaan Hot Plade Ready Stock, jadi bisa langsung dikirim ke pembeli.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="ec_ser_content ec_ser_content_4 col-sm-12 col-md-3">
-                    <div class="ec_ser_inner">
-                        <div class="ec-service-image">
-                            <img src="{{ asset('tlandingPage/assets/images/icons/service_5_4.svg') }}"
-                                class="svg_img" alt="" />
+                    <div class="ec_ser_content ec_ser_content_3 col-sm-12 col-md-3">
+                        <div class="ec_ser_inner">
+                            <div class="ec-service-image">
+                                <img src="{{ asset('tlandingPage/assets/images/icons/price.svg') }}"
+                                    class="svg_img" alt="" />
+                            </div>
+                            <div class="ec-service-desc">
+                                <h2>Harga</h2>
+                                <p>LOOKA CASTIRON memiliki harga yang terjangkau karena langsung dari produsen.</p>
+                            </div>
                         </div>
-                        <div class="ec-service-desc">
-                            <h2>harga terjangkau</h2>
-                            <p>harga dan kualitas sejajar</p>
+                    </div>
+                    <div class="ec_ser_content ec_ser_content_4 col-sm-12 col-md-3">
+                        <div class="ec_ser_inner">
+                            <div class="ec-service-image">
+                                <img src="{{ asset('tlandingPage/assets/images/icons/factory.svg') }}"
+                                    class="svg_img" alt="" />
+                            </div>
+                            <div class="ec-service-desc">
+                                <h2>Factory</h2>
+                                <p>LOOKA CASTIRON memproduksi hot plate langsung dari pabrik, jadi melewati Quality Control sebelum diterima pembeli.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
         <!--services Section End -->
 </x-guest-layout>

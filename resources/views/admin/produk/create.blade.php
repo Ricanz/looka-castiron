@@ -77,7 +77,7 @@
                                             id="quantity1">
                                     </div>
                                     <div class="col-md-6 mb-2">
-                                        <label class="form-label">Link Lazada</label>
+                                        <label class="form-label">No Whatsapp</label>
                                         <input type="text" min="0" class="form-control" name="lazada_link"
                                             id="quantity1">
                                     </div>

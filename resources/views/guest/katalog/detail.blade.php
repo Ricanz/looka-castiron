@@ -122,17 +122,17 @@
                                             {{-- <span class="ec-single-ps-title">Kunjungi kami</span> --}}
                                             @if ($produk->shopee_link != null)
                                                 <div class="ec-single-cart ">
-                                                    <a href="{{ $produk->shopee_link }}" class="btn btn-warning">Shopee</a>
+                                                    <a href="{{ $produk->shopee_link }}" target="blank" class="btn btn-warning">Shopee</a>
                                                 </div>
                                             @endif
                                             @if ($produk->tokopedia_link != null)
                                                 <div class="ec-single-cart ">
-                                                    <a href="{{ $produk->tokopedia_link }}" class="btn btn-success">Tokopedia</a>
+                                                    <a href="{{ $produk->tokopedia_link }}" target="blank" class="btn btn-success">Tokopedia</a>
                                                 </div>
                                             @endif
                                             @if ($produk->lazada_link != null)
                                                 <div class="ec-single-cart ">
-                                                    <a href="{{ $produk->lazada_link }}" class="btn btn-primary">Lazada</a>
+                                                    <a href="{{ url('https://wa.me/').$produk->lazada_link }}" target="blank" class="btn btn-primary">Whatsapp</a>
                                                 </div>
                                             @endif
                                         </div>

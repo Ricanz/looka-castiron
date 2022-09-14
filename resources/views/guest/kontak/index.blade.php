@@ -128,8 +128,8 @@
                                     class="svg_img" alt="" />
                             </div>
                             <div class="ec-service-desc">
-                                <h2>Food Grade</h2>
-                                <p>LOOKA CASTIRON sudah memiliki Sertifikat ISO MJT 130421240448 (Quality Product) & Sertifikat ISO QM MJT130421240448 (QUality Management) jadi aman untuk makanan</p>
+                                <h2 align="center">Food Grade</h2>
+                                <p align="center">LOOKA CASTIRON sudah memiliki Sertifikat ISO MJT 130421240448 (Quality Product) & Sertifikat ISO QM MJT130421240448 (Quality Management) jadi aman untuk makanan.</p>
                             </div>
                         </div>
                     </div>
@@ -140,8 +140,8 @@
                                     class="svg_img" alt="" />
                             </div>
                             <div class="ec-service-desc">
-                                <h2>Ready Stok</h2>
-                                <p>Ketersediaan Hot Plade Ready Stock, jadi bisa langsung dikirim ke pembeli.</p>
+                                <h2 align="center">Ready Stok</h2>
+                                <p align="center">Ketersediaan Hot Plade Ready Stock, jadi bisa langsung dikirim ke pembeli.</p>
                             </div>
                         </div>
                     </div>
@@ -152,8 +152,8 @@
                                     class="svg_img" alt="" />
                             </div>
                             <div class="ec-service-desc">
-                                <h2>Harga</h2>
-                                <p>LOOKA CASTIRON memiliki harga yang terjangkau karena langsung dari produsen.</p>
+                                <h2 align="center">Harga</h2>
+                                <p align="center">LOOKA CASTIRON memiliki harga yang terjangkau karena langsung dari produsen.</p>
                             </div>
                         </div>
                     </div>
@@ -164,8 +164,8 @@
                                     class="svg_img" alt="" />
                             </div>
                             <div class="ec-service-desc">
-                                <h2>Factory</h2>
-                                <p>LOOKA CASTIRON memproduksi hot plate langsung dari pabrik, jadi melewati Quality Control sebelum diterima pembeli.</p>
+                                <h2 align="center">Factory</h2>
+                                <p align="center">LOOKA CASTIRON memproduksi hot plate langsung dari pabrik, jadi melewati Quality Control sebelum diterima pembeli.</p>
                             </div>
                         </div>
                     </div>

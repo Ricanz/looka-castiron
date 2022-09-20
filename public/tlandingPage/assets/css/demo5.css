@@ -19325,7 +19325,7 @@ select::-ms-expand {
 }
 .ec-slide-content .ec-slide-title {
   font-size: 60px;
-  color: #212121;
+  color: white !important;
   margin-bottom: 22px;
   letter-spacing: 4px;
   font-weight: 700;
@@ -19358,7 +19358,7 @@ select::-ms-expand {
 }
 .ec-slide-content p {
   font-size: 19px;
-  color: #777;
+  color: white;
   line-height: 28px;
   letter-spacing: 0.5px;
   max-width: 87%;
@@ -21745,7 +21745,7 @@ section.ec-instagram-section {
   }
 
   .ec-main-slider .slide-1, .ec-main-slider .slide-2, .ec-main-slider .slide-3 {
-    height: 60vh;
+    /* height: 60vh; */
   }
 
   .ec-insta-inner img {
@@ -22601,7 +22601,7 @@ section.ec-instagram-section {
   }
   .ec-main-slider .slide-1 .ec-slide-content, .ec-main-slider .slide-2 .ec-slide-content, .ec-main-slider .slide-3 .ec-slide-content {
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.7); */
     border-radius: 15px;
   }
 

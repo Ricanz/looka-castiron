@@ -113,7 +113,7 @@
                 <div class="ec-spe-section col-lg-6 col-md-12 col-sm-12 margin-b-30">
                     <div class="col-md-12 text-left">
                         <div class="section-title mb-6">
-                            <h2 class="ec-title">Produk Terlariss</h2>
+                            <h2 class="ec-title">Produk Terlaris</h2>
                         </div>
                     </div>
 

@@ -33,7 +33,7 @@
                                         </div>
                                     </div>
                                     <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                        <h5 class="ec-pro-title"><a href="#">Creative Iron Store</a></h5>
+                                        <h5 class="ec-pro-title"><a href="#">LOOKA CASTIRON</a></h5>
                                         <div class="countdowntimer">
                                             <span class="ec-fs-count-desc" align="justify">
                                                 {!! Str::limit($about->deskripsi, 150) !!}

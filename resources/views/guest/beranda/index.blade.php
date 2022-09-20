@@ -81,7 +81,7 @@
                 <div class="col-md-12 section-title-block">
                     <div class="section-title">
                         <h2 class="ec-title">Produk Terlaris</h2>
-                        <h6 class="ec-sub-title">Paling banyak dicari dan dibeli dengan kualitas SUPER terbaik</h6>
+                        <h6 class="ec-sub-title">Supplier Hot Plate terlengkap dan terpercaya “ Safe Lifetime & Cheap ”</h6>
 
                     </div>
                 </div>

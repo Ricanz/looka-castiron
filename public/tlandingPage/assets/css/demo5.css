@@ -21226,7 +21226,7 @@ section.ec-test-section {
   padding-top: 53px;
 }
 .ec-test-inner .ec-test-img {
-  border-radius: 100%;
+  /* border-radius: 100%; */
   overflow: hidden;
   width: 80px;
   height: 80px;

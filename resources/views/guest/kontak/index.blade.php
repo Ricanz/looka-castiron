@@ -140,7 +140,7 @@
                                     class="svg_img" alt="" />
                             </div>
                             <div class="ec-service-desc">
-                                <h2 align="center">Ready Stok</h2>
+                                <h2 align="center">Ready Stock</h2>
                                 <p align="center">Ketersediaan Hot Plate Ready Stock, jadi bisa langsung dikirim ke pembeli.</p>
                             </div>
                         </div>

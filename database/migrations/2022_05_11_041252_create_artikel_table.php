@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('gambar');
             $table->string('slug');
             $table->text('deskripsi');
+            $table->string('short_desc');
             $table->enum('status', ['aktif', 'inaktif'])->default('aktif');
             $table->timestamps();
         });

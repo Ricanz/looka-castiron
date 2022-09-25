@@ -57,6 +57,7 @@ class ArtikelController extends Controller
             'gambar' => $txt,
             'deskripsi' => $request->deskripsi,
             'slug' => str_replace(' ', '-', strtolower($request->judul)),
+            'short_desc' => substr(strip_tags($request->deskripsi), 0, 255)
 
         ]);
         if($artikel){
@@ -111,6 +112,7 @@ class ArtikelController extends Controller
 
         $artikel->judul = $request->judul;
         $artikel->deskripsi = $request->deskripsi;
+        $artikel->short_desc = substr(strip_tags($request->deskripsi), 0, 255);
         $artikel->slug = str_replace(' ', '-', strtolower($request->judul));
         $artikel->status = $request->status;
         $artikel->save();

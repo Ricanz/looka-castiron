@@ -73,4 +73,14 @@
     </div>
     </div>
     </div>
+    
+    @push('scripts')
+        <script>
+            tinymce.init({
+                selector: 'textarea',
+                plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+                toolbar_mode: 'floating',
+            });
+        </script>
+    @endpush
 </x-app-layout>

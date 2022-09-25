@@ -62,7 +62,7 @@ class BerandaController extends Controller
 
     public function article_view()
     {
-        $artikel = Artikel::where('status','=', 'aktif')->take(10)->get();
+        $artikel = Artikel::where('status','=', 'aktif')->orderByDesc('id')->take(10)->get();
         $footer_gallery = ProductGallery::where('role', 'footer')->get();
         return view('guest.artikel.index', compact('artikel', 'footer_gallery'));
     }

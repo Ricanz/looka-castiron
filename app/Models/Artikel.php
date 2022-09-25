@@ -13,6 +13,7 @@ class Artikel extends Model
         'judul',
         'gambar',
         'deskripsi',
+        'short_desc',
         'slug',
         'status'
     ];

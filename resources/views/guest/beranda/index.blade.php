@@ -290,14 +290,14 @@
                                 <div class="ec-test-inner">
                                     <div class="ec-test-img"><img alt="testimonial" title="testimonial"
                                             src="{{ asset($item->foto) }}" /></div>
-                                    <div class="ec-test-content">
+                                    {{-- <div class="ec-test-content">
                                         <div class="ec-test-rating">
                                             @for ($i = 0; $i < $item->rating; $i++)
                                                 <i class="ecicon eci-star fill"></i>
                                             @endfor
                                         </div>
                                         <div class="ec-test-desc">{!! $item->deskripsi !!}</div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </li>
                         @endforeach

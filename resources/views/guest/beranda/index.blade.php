@@ -278,7 +278,7 @@
                 <div class="col-md-12 section-title-block">
                     <div class="section-title">
                         <h2 class="ec-title">Partnership</h2>
-                        <h6 class="ec-sub-title">Kata mereka tentang toko kami</h6>
+                        {{-- <h6 class="ec-sub-title">Kata mereka tentang toko kami</h6> --}}
                     </div>
                 </div>
             </div>

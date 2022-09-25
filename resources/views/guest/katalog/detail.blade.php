@@ -238,7 +238,10 @@
                                                 <span>Hubungi kami! 24/7!</span>
                                                 <span><a href="https://wa.me/6282136361350" target="blank">+6282136361350</a></span>
                                                 <span><a style="text-transform: lowercase;">email : ironcastd@gmail.com</a></span>
-                                                <span><a>alamat : <br> Bakalan Indah RT: 02 / RW: 02, Ceper, Klaten, Jawa Tengah.</a></span>
+                                                <span><a>alamat :</a></span>
+                                                <span><a>Bakalan Indah</a></span>
+                                                <span><a>RT: 02 / RW: 02</a></span>
+                                                <span><a>Ceper, Klaten, Jawa Tengah.</a></span>
                                             </span>
                                         </li>
                                     </ul>

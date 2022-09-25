@@ -277,7 +277,7 @@
             <div class="row">
                 <div class="col-md-12 section-title-block">
                     <div class="section-title">
-                        <h2 class="ec-title">Client Testimonials</h2>
+                        <h2 class="ec-title">Partnership</h2>
                         <h6 class="ec-sub-title">Kata mereka tentang toko kami</h6>
                     </div>
                 </div>
@@ -332,7 +332,7 @@
                         </div>
                         <div class="ec-service-desc">
                             <h2 align="center">Ready Stock</h2>
-                            <p align="center">Ketersediaan Hot Plate Ready Stock, jadi bisa langsung dikirim ke pembeli.</p>
+                            <p align="center">Ketersediaan hot plate ready stock, jadi bisa langsung dikirim ke pembeli.</p>
                         </div>
                     </div>
                 </div>

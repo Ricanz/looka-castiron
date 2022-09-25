@@ -289,7 +289,7 @@
                             <li class="ec-test-item">
                                 <div class="ec-test-inner">
                                     <div class="ec-test-img"><img alt="testimonial" title="testimonial"
-                                            src="{{ asset($item->foto) }}" width="100%"/></div>
+                                            src="{{ asset($item->foto) }}" width="200px"/></div>
                                     {{-- <div class="ec-test-content">
                                         <div class="ec-test-rating">
                                             @for ($i = 0; $i < $item->rating; $i++)

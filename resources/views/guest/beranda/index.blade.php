@@ -291,15 +291,12 @@
                                     <div class="ec-test-img"><img alt="testimonial" title="testimonial"
                                             src="{{ asset($item->foto) }}" /></div>
                                     <div class="ec-test-content">
-                                        {{-- <div class="ec-test-name">{{ $item->nama }}</div> --}}
-                                        {{-- <div class="ec-test-designation">{{ $item->instansi }}</div> --}}
                                         <div class="ec-test-rating">
                                             @for ($i = 0; $i < $item->rating; $i++)
                                                 <i class="ecicon eci-star fill"></i>
                                             @endfor
                                         </div>
                                         <div class="ec-test-desc">{!! $item->deskripsi !!}</div>
-
                                     </div>
                                 </div>
                             </li>
@@ -335,7 +332,7 @@
                         </div>
                         <div class="ec-service-desc">
                             <h2 align="center">Ready Stok</h2>
-                            <p align="center">Ketersediaan Hot Plade Ready Stock, jadi bisa langsung dikirim ke pembeli.</p>
+                            <p align="center">Ketersediaan Hot Plate Ready Stock, jadi bisa langsung dikirim ke pembeli.</p>
                         </div>
                     </div>
                 </div>

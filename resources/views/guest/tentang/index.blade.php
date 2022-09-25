@@ -102,7 +102,7 @@
                         </div>
                         <div class="ec-service-desc">
                             <h2 align="center">Ready Stok</h2>
-                            <p align="center">Ketersediaan Hot Plade Ready Stock, jadi bisa langsung dikirim ke pembeli.</p>
+                            <p align="center">Ketersediaan Hot Plate Ready Stock, jadi bisa langsung dikirim ke pembeli.</p>
                         </div>
                     </div>
                 </div>

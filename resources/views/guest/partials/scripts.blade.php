@@ -9,7 +9,7 @@
             </div>	
             <div class="cp-content">
                 <h2>Whatsapp</h2>
-                <p>directlly chat on Whatsapp</p>
+                <p>directly chat on Whatsapp</p>
             </div>
         </a>
         <!-- Chat Button For Instagram -->

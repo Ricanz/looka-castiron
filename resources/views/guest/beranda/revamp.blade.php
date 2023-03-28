@@ -54,9 +54,71 @@
     </section>
     <!-- Feature & Special Section End -->
 
+    <section class="section ec-test-section section-space-ptb-100 section-space-mt section-space-mb"
+        style="background-image: url('{{ asset('tlandingPage/assets/images/testimonial/testimonial_bg.jpg') }}');">
+        <div class="container">
+            <div class="row mb-10">
+                <div class="col-md-12 text-left">
+                    <div class="section-title mb-6">
+                        <h2 class="ec-title">Tentang Kami</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ec-test-outer">
+                    <ul id="" class="partnership">
+                        <li class="ec-test-item col-sm-3">
+                            <div class="ec-test-inner">
+                                <div class="ec-test-img mb-3">
+                                    <img alt="testimonial" title="testimonial"
+                                        src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px"/>
+                                </div>
+                                <div class="content">
+                                    <p class="text-center">Content Writing</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ec-test-item col-sm-3">
+                            <div class="ec-test-inner">
+                                <div class="ec-test-img mb-3">
+                                    <img alt="testimonial" title="testimonial"
+                                        src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px"/>
+                                </div>
+                                <div class="content">
+                                    <p class="text-center">Content Writing</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ec-test-item col-sm-3">
+                            <div class="ec-test-inner">
+                                <div class="ec-test-img mb-3">
+                                    <img alt="testimonial" title="testimonial"
+                                        src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px"/>
+                                </div>
+                                <div class="content">
+                                    <p class="text-center">Content Writing</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ec-test-item col-sm-3">
+                            <div class="ec-test-inner">
+                                <div class="ec-test-img mb-3">
+                                    <img alt="testimonial" title="testimonial"
+                                        src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px"/>
+                                </div>
+                                <div class="content">
+                                    <p class="text-center">Content Writing</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--  services Section Start -->
-    <section class="section ec-services-section">
+    {{-- <section class="section ec-services-section">
         <h2 class="d-none">Services</h2>
         <div class="container">
             <div class="row">
@@ -110,18 +172,17 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--services Section End -->
 
     <!-- ec testimonial Start -->
-    <section class="section ec-test-section section-space-ptb-100 section-space-mt section-space-mb"
+    {{-- <section class="section ec-test-section section-space-ptb-100 section-space-mt section-space-mb"
         style="background-image: url('{{ asset('tlandingPage/assets/images/testimonial/testimonial_bg.jpg') }}');">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 section-title-block">
-                    <div class="section-title">
-                        <h2 class="ec-title">Partnership</h2>
-                        {{-- <h6 class="ec-sub-title">Kata mereka tentang toko kami</h6> --}}
+                <div class="col-md-12 text-left">
+                    <div class="section-title mb-6">
+                        <h2 class="ec-title">Tentang Kami</h2>
                     </div>
                 </div>
             </div>
@@ -133,14 +194,6 @@
                                 <div class="ec-test-inner">
                                     <div class="ec-test-img"><img alt="testimonial" title="testimonial"
                                             src="{{ asset($item->foto) }}" width="200px"/></div>
-                                    {{-- <div class="ec-test-content">
-                                        <div class="ec-test-rating">
-                                            @for ($i = 0; $i < $item->rating; $i++)
-                                                <i class="ecicon eci-star fill"></i>
-                                            @endfor
-                                        </div>
-                                        <div class="ec-test-desc">{!! $item->deskripsi !!}</div>
-                                    </div> --}}
                                 </div>
                             </li>
                         @endforeach
@@ -148,7 +201,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- ec testimonial end -->
 
     <!-- Product tab Area Start -->

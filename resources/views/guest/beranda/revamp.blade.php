@@ -60,7 +60,7 @@
             <div class="row mb-10">
                 <div class="col-md-12 text-left">
                     <div class="section-title mb-6">
-                        <h2 class="ec-title">Tentang Kami</h2>
+                        <h2 class="ec-title">Kenapa kami?</h2>
                     </div>
                 </div>
             </div>

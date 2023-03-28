@@ -24668,10 +24668,11 @@ section.ec-instagram-section {
 }
 
 /* Revamp .*/
-.about-image {
-    height: 80%;
-}
 
 .main-image {
     border-radius: 15px;
+}
+
+.about-content {
+    margin-left: 20px;
 }

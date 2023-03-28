@@ -210,7 +210,7 @@
             <div class="row">
                 <div class="col-md-12 text-left" style="margin-bottom: 25px">
                     <div class="section-title">
-                        <h2 class="ec-title">Produk Terlaris</h2>
+                        <h2 class="ec-title">Our Product</h2>
                     </div>
                 </div>
 

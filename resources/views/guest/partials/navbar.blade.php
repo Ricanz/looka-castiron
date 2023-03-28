@@ -29,27 +29,13 @@
         </div>
         <!-- Header responsive Bottom  End -->
         <!-- EC Main Menu Start -->
-        <div id="ec-main-menu-desk" class="sticky-nav">
+        <div id="ec-main-menu-desk mb-2" class="sticky-nav">
             <div class="container position-relative">
                 <div class="row">
-                    <div class="col ec-category-block">
-                        <div class="ec-cat-menu">
-                            <div class="ec-category-toggle">
-                                <span class="ec-category-icon"></span>
-                                <span class="ec-category-title">Semua Kategori</span>
-                            </div>
-                            <div class="ec-category-content">
-                                <div id="ec-category-menu" class="ec-category-menu">
-                                    <ul class="ec-category-wrapper">
-                                        @foreach ($kategori as $item)
-                                            <li><a title="" class="ec-cat-menu-link" href="{{route('kategori_produk',$item->id)}}">{{$item->nama}}</a></li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col ec-main-menu-block align-self-center d-none d-lg-block p-0">
+                        <div class="ec-main-menu">
+                            <img class="header-logo" src="{{ asset('tlandingPage/assets/images/favicon/logo-looka.png') }}"alt="">
+                        </div>
                         <div class="ec-main-menu">
                             <ul>
                                 <li><a href="{{ url('/') }}">Beranda</a></li>
@@ -58,11 +44,6 @@
                                 <li><a href="{{ url('/article') }}">Artikel</a></li>
                                 <li><a href="{{ url('/contact') }}">Kontak</a></li>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="col ec-spe-offer-block">
-                        <div class="ec-spe-offer-link">
-                            <a href="https://wa.me/6282136361350" target="blank" class="ec-spe-offer-title">Hubungi Kami</a>
                         </div>
                     </div>
                 </div>

@@ -56,13 +56,9 @@ Route::get('search', [BerandaController::class, 'search'])->name('search');
 Route::get('produk/detail/{slug}', [BerandaController::class, 'detail_produk'])->name('detail_produk');
 Route::get('artikel/detail/{slug}', [BerandaController::class, 'detail_artikel'])->name('detail_artikel');
 Route::resource('kontak', KontakController::class);
-// Route::group(['middleware' => ['auth']], function () {
-//     Route::resource('admin/artikel', ArtikelController::class);
-//     Route::resource('admin/banner', BannerController::class);
-//     Route::resource('admin/kategori', KategoriController::class);
-//     Route::resource('admin/produk', ProdukController::class);
-//     Route::resource('admin/testimonial', TestimonialController::class);
-// });
+
+// Route Dev
+Route::get('/revamp', [BerandaController::class, 'v2']);
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

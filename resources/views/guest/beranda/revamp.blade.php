@@ -21,7 +21,7 @@
                 <div class="ec-spe-section col-lg-12 col-md-12 col-sm-12 margin-b-30">
                     <div class="col-md-12 text-left">
                         <div class="section-title mb-6">
-                            <h2 class="ec-title">Looka Cast Iron</h2>
+                            <h2 class="ec-title">Tentang Kami</h2>
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@
                         <div class="ec-fs-product">
                             <div class="ec-fs-pro-inner ec-product-inner">
                                 <div class="ec-fs-pro-image-outer col-lg-6 col-md-6 col-sm-6">
-                                    <div class="ec-fs-pro-image">
+                                    <div class="ec-fs-pro-image about-image">
                                         @if ($tentang != null)
                                         <a href="#" class="image"><img class="main-image"
                                             src="{{asset($tentang->gambar)}}" alt="Product" /></a>
@@ -37,7 +37,6 @@
                                     </div>
                                 </div>
                                 <div class="ec-pro-content col-lg-6 col-md-6 col-sm-6">
-                                    <h5 class="ec-pro-title"><a href="#">LOOKA CASTIRON</a></h5>
                                     <div class="countdowntimer">
                                         <span class="ec-fs-count-desc" align="justify">
                                             @if ($tentang != null)

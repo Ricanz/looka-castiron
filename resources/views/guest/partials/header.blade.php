@@ -5,26 +5,34 @@
 
     <title>Looka Cast Iron</title>
     <meta name="keywords" content="hotplate, shopping, food" />
-    <meta name="description" content="Looka Castiron adalah toko penyedia hotplate dengan kualitas terbaik dan harga terjangkau">
+    <meta name="description"
+        content="Looka Castiron adalah toko penyedia hotplate dengan kualitas terbaik dan harga terjangkau">
     <meta name="author" content="looka">
 
-   <!-- site Favicon -->
-   <link rel="icon" href="{{asset('tlandingPage/assets/images/favicon/looka-logo.jpeg')}}" sizes="32x32" />
-   {{-- <link rel="apple-touch-icon" href="{{asset('tlandingPage/assets/images/favicon/looka-logo.jpeg')}}" /> --}}
-   <meta name="msapplication-TileImage" content="{{asset('tlandingPage/assets/images/favicon/looka-logo.jpeg')}}" />
+    <!-- site Favicon -->
+    <link rel="icon" href="{{ asset('tlandingPage/assets/images/favicon/looka-logo.jpeg') }}" sizes="32x32" />
+    {{-- <link rel="apple-touch-icon" href="{{asset('tlandingPage/assets/images/favicon/looka-logo.jpeg')}}" /> --}}
+    <meta name="msapplication-TileImage" content="{{ asset('tlandingPage/assets/images/favicon/looka-logo.jpeg') }}" />
 
-   <!-- css Icon Font -->
-   <link rel="stylesheet" href="{{asset('tlandingPage/assets/css/vendor/ecicons.min.css')}}" />
+    <!-- css Icon Font -->
+    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/vendor/ecicons.min.css') }}" />
 
-   <!-- css All Plugins Files -->
-   <link rel="stylesheet" href="{{asset('tlandingPage/assets/css/plugins/animate.css')}}" />
-   <link rel="stylesheet" href="{{asset('tlandingPage/assets/css/plugins/swiper-bundle.min.css')}}" />
-   <link rel="stylesheet" href="{{asset('tlandingPage/assets/css/plugins/jquery-ui.min.css')}}" />
-   <link rel="stylesheet" href="{{asset('tlandingPage/assets/css/plugins/countdownTimer.css')}}" />
-   <link rel="stylesheet" href="{{asset('tlandingPage/assets/css/plugins/slick.min.css')}}" />
-   <link rel="stylesheet" href="{{asset('tlandingPage/assets/css/plugins/bootstrap.css')}}" />
+    <!-- css All Plugins Files -->
+    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/animate.css') }}" />
+    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/jquery-ui.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/countdownTimer.css') }}" />
+    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/slick.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/bootstrap.css') }}" />
 
-   <!-- Main Style -->
-   <link rel="stylesheet" href="{{asset('tlandingPage/assets/css/demo5.css')}}" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/demo5.css') }}" />
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet">
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
 
 </head>

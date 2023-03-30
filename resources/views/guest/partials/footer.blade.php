@@ -4,56 +4,17 @@
             <div class="footer-top section-space-footer-p">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-lg-4 ec-footer-contact">
+                        <div class="col-sm-12 col-lg-5 ec-footer-contact">
                             <div class="ec-footer-widget">
-                                <div class="ec-footer-logo"><a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/logo-looka.png') }}"
-                                            alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/logo-looka.png')}}"
-                                            alt="Site Logo" style="display: none;" /></a></div>
-                                <h4 class="ec-footer-heading">Hubungi kami!</h4>
-                                <div class="ec-footer-links">
-                                    <ul class="align-items-center">
-                                        <li class="ec-footer-link">
-                                            <span class="call-img"><img src="{{asset('tlandingPage/assets/images/icons/call_5.svg')}}"
-                                                    class="svg_img foo_img" alt="" /></span>
-                                            <span class="call-desc">
-                                                <span>Hubungi kami! 24/7!</span>
-                                                <span><a href="https://wa.me/6282136361350" target="blank">+6282136361350</a></span>
-                                                <span><a style="text-transform: lowercase;">email : ironcastd@gmail.com</a></span>
-                                                <span><a>alamat : Bakalan Indah RT: 02 / RW: 02,</a></span>
-                                                <span><a>Ceper, Klaten, Jawa Tengah.</a></span>
-                                            </span>
-                                        </li>
-                                    </ul>
+                                <div class="ec-footer-logo">
+                                    <a href="/">
+                                        <img src="{{ asset('tlandingPage/assets/images/favicon/logo-looka.png') }}"
+                                            alt="" width="500px">
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-2 ec-footer-info">
-                            {{-- <div class="ec-footer-widget">
-                                <h4 class="ec-footer-heading">Menu</h4>
-                                <div class="ec-footer-links">
-                                    <ul class="align-items-center">
-                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">Tentang Kami</a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/products') }}">Katalog</a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/article') }}">Artikel </a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/contact') }}">Kontak</a></li>
-                                    </ul>
-                                </div>
-                            </div> --}}
-                        </div>
-                        <div class="col-sm-12 col-lg-2 ec-footer-account">
-                            <div class="ec-footer-widget">
-                                <h4 class="ec-footer-heading">Menu</h4>
-                                <div class="ec-footer-links">
-                                    <ul class="align-items-center">
-                                        <li class="ec-footer-link"><a href="{{ url('/about-us') }}">Tentang Kami</a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/products') }}">Katalog</a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/article') }}">Artikel </a></li>
-                                        <li class="ec-footer-link"><a href="{{ url('/contact') }}">Kontak</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-lg-2 ec-footer-account">
+                        <div class="col-sm-12 col-lg-3 ec-footer-account">
                             <div class="ec-footer-widget">
                                 <h4 class="ec-footer-heading">Online Shop</h4>
                                 <div class="ec-footer-links">
@@ -71,18 +32,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-2 ec-footer-news">
+                        <div class="col-sm-12 col-lg-4 ec-footer-news">
                             <div class="ec-footer-widget ec-footer-social">
-                                <h4 class="ec-footer-heading">Follow Us</h4>
+                                <h4 class="ec-footer-heading">Contact Us</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="list-inline-item"><a href="https://www.instagram.com/looka.castiron/"><i class="ecicon eci-facebook"></i></a>
-                                        </li>
-                                        <li class="list-inline-item"><a href="https://www.instagram.com/looka.castiron/"><i
-                                                    class="ecicon eci-instagram"></i></a></li>
-                                        <li class="list-inline-item"><a href="https://www.instagram.com/looka.castiron/"><i class="ecicon eci-linkedin"></i></a>
-                                        </li>
-                                        <li class="list-inline-item"><a href="https://www.instagram.com/looka.castiron/"><i class="ecicon eci-twitter"></i></a>
+                                        <li class="ec-footer-link">
+                                            <span class="call-img"><img src="{{asset('tlandingPage/assets/images/icons/call_5.svg')}}"
+                                                    class="svg_img foo_img" alt="" width="30px"/></span>
+                                            <span class="call-desc mt-2">
+                                                <span>Hubungi kami! 24/7!</span>
+                                                <br>
+                                                <span><a href="https://wa.me/6282136361350" target="blank">+6282136361350</a></span>
+                                                <span><a style="text-transform: lowercase;">email : ironcastd@gmail.com</a></span>
+                                                <span><a>alamat : Bakalan Indah RT: 02 / RW: 02,</a></span>
+                                                <span><a>Ceper, Klaten, Jawa Tengah.</a></span>
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>

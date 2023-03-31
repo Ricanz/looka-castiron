@@ -228,7 +228,7 @@
                         <div class="col-sm-12 col-lg-4 ec-footer-contact">
                             <div class="ec-footer-widget">
                                 <div class="ec-footer-logo"><a href="/"><img src="{{ asset('tlandingPage/assets/images/favicon/logo-looka.png') }}"
-                                            alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/logo-looka.png')}}"
+                                            alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/favicon/logo-looka.png')}}"
                                             alt="Site Logo" style="display: none;" /></a></div>
                                 <h4 class="ec-footer-heading">Hubungi kami!</h4>
                                 <div class="ec-footer-links">
@@ -402,8 +402,8 @@
     <script src="{{asset('tlandingPage/assets/js/vendor/modernizr-3.11.2.min.js')}}"></script>
 
     <!--Plugins JS-->
-    <script src="{{asset('tlandingPage/assets/js/plugins/swiper-bundle.min.js')}}"></script>
-    <script src="{{asset('tlandingPage/assets/js/plugins/countdownTimer.min.js')}}"></script>
+    {{-- <script src="{{asset('tlandingPage/assets/js/plugins/swiper-bundle.min.js')}}"></script> --}}
+    {{-- <script src="{{asset('tlandingPage/assets/js/plugins/countdownTimer.min.js')}}"></script> --}}
     <script src="{{asset('tlandingPage/assets/js/plugins/scrollup.js')}}"></script>
     <script src="{{asset('tlandingPage/assets/js/plugins/jquery.zoom.min.js')}}"></script>
     <script src="{{asset('tlandingPage/assets/js/plugins/slick.min.js')}}"></script>

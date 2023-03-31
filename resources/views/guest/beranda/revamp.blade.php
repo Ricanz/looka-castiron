@@ -214,7 +214,7 @@
             </div>
             <center>
                 <div class="load-more mt-4">
-                    <a href="javascrip:void(0)" class="btn btn-primary rounded">Load More</a>
+                    <a href="{{ url('/products') }}" class="btn btn-primary rounded">Lihat Produk Lebih Banyak</a>
                 </div>
             </center>
         </div>
@@ -319,6 +319,12 @@
                 x[slideIndex-1].style.display = "block";
                 setTimeout(carousel, 3000); // Change image every 2 seconds
             }
+
+            $( ".load-more" ).click(function() {
+                var sites = {!! json_encode($products->toArray()) !!};
+                // var sites = {{ $products }};
+                console.log(sites);
+            });
         });
     </script>
 </x-guest-layout>

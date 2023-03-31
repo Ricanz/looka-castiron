@@ -30,8 +30,12 @@
                                 <div class="ec-fs-pro-image-outer col-lg-4 col-md-6 col-sm-6">
                                     <div class="ec-fs-pro-image about-image">
                                         @if ($tentang != null)
-                                            <a href="#" class="image"><img class="main-image"
-                                                    src="{{ asset($tentang->gambar) }}" alt="Product" /></a>
+                                            <a href="javascript:void(0)" class="image">
+                                                <img class="main-image mySlides" id="mySlides"
+                                                    src="{{ asset($tentang->gambar) }}" alt="Product" />
+                                                 <img class="main-image mySlides" id="mySlides"
+                                                    src="{{ asset('tlandingPage/assets/images/why-us.png') }}" alt="Product" />
+                                                </a>
                                         @endif
                                     </div>
                                 </div>
@@ -258,9 +262,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="owl-nav disabled">
-
-                    </div>
                 </div>
             </div>
         </div>
@@ -300,6 +301,24 @@
             autoplay: true,
             autoplayTimeout: 2000,
             autoplayHoverPause: true
+        });
+    </script>
+    <script>
+        $( document ).ready(function() {
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
         });
     </script>
 </x-guest-layout>

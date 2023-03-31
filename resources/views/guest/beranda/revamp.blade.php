@@ -126,14 +126,10 @@
                 </div>
             </div>
             <div class="row">
-
                 <div class="owl-carousel owl-theme owl-loaded owl-drag">
-
                     <div class="owl-stage-outer">
-
                         <div class="owl-stage"
                             style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
-
                             @foreach ($testimonial as $item)
                             <div class="owl-item active" style="width: 128.906px; margin-right: 10px; background-color: white;">
                                 <div class="item">
@@ -226,26 +222,39 @@
     <section class="ec-banner section section-space-p">
         <h2 class="d-none">Banner</h2>
         <div class="container">
-            <div class="row m-tb-minus-15">
-                <div class="ec-banners">
-                    <div class="ec-banner-left col-sm-6">
-                        <div class="ec-banner-block ec-banner-block-1 col-sm-12">
-                            <div class="banner-block">
-                                <img src="{{ asset('tlandingPage/assets/images/looka/4.jpg') }}" alt="" />
-                                <div class="banner-content">
+            <div class="row">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage"
+                            style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
+                            <div class="owl-item active" style="width: 128.906px; margin-right: 10px; background-color: white;">
+                                <div class="item">
+                                    <img class="rounded" src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 128.906px; margin-right: 10px; background-color: white;">
+                                <div class="item">
+                                    <img class="rounded" src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 128.906px; margin-right: 10px; background-color: white;">
+                                <div class="item">
+                                    <img class="rounded" src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 128.906px; margin-right: 10px; background-color: white;">
+                                <div class="item">
+                                    <img class="rounded" src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}"
+                                        alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="ec-banner-right col-sm-6">
-                        <div class="ec-banner-block ec-banner-block-2 col-sm-12">
-                            <div class="banner-block">
-                                <img src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}"
-                                    alt="" />
-                                <div class="banner-content">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="owl-nav disabled">
+
                     </div>
                 </div>
             </div>

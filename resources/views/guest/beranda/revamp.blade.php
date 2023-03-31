@@ -142,18 +142,6 @@
                                 </div>
                             </div>
                             @endforeach
-
-                            <div class="owl-item active" style="width: 128.906px; margin-right: 10px;">
-                                <div class="item">
-                                    <h4>2</h4>
-                                </div>
-                            </div>
-
-                            <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
-                                <div class="item">
-                                    <h4>3</h4>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="owl-nav disabled">

@@ -213,6 +213,11 @@
                     </div>
                 </div>
             </div>
+            <center>
+                <div class="load-more mt-4">
+                    <a href="javascrip:void(0)" class="btn btn-primary rounded">Load More</a>
+                </div>
+            </center>
         </div>
     </section>
     <!-- ec Product tab Area End -->

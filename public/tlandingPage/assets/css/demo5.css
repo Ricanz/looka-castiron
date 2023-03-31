@@ -24691,3 +24691,7 @@ section.ec-instagram-section {
 }
 
 .owl-item {width: 128.906px; margin-right: 10px; background:powderblue; }
+
+.load-more {
+    display: block;
+}

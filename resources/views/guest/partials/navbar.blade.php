@@ -32,10 +32,10 @@
         <div id="ec-main-menu-desk mb-2" class="sticky-nav">
             <div class="container position-relative">
                 <div class="row">
+                    <div class="ec-main-menu logo">
+                        <img class="header-logo" src="{{ asset('tlandingPage/assets/images/favicon/looka-width.png') }}"alt="">
+                    </div>
                     <div class="col ec-main-menu-block align-self-center d-none d-lg-block p-0">
-                        <div class="ec-main-menu">
-                            <img class="header-logo" src="{{ asset('tlandingPage/assets/images/favicon/logo-looka.png') }}"alt="">
-                        </div>
                         <div class="ec-main-menu">
                             <ul>
                                 <li><a href="{{ url('/') }}">Beranda</a></li>

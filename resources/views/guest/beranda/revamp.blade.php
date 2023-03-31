@@ -13,7 +13,7 @@
     <!-- Main Slider End -->
 
     <!--  Feature & Special Section Start -->
-    <section class="section ec-exe-spe-section section-space-ptb-100 section-space-mt section-space-mb-100">
+    <section class="section ec-exe-spe-section section-space-ptb-30 section-space-mt">
         <div class="container">
             <div class="row">
                 <!--  Special Section Start -->
@@ -54,8 +54,7 @@
     </section>
     <!-- Feature & Special Section End -->
 
-    <section class="section ec-test-section section-space-ptb-100 section-space-mt section-space-mb"
-        style="background-image: url('{{ asset('tlandingPage/assets/images/testimonial/testimonial_bg.jpg') }}');">
+    <section class="section ec-test-section section-space-mt section-space-mb">
         <div class="container">
             <div class="row mb-10">
                 <div class="col-md-12 text-left">
@@ -74,7 +73,7 @@
                                         src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px" />
                                 </div>
                                 <div class="content">
-                                    <p class="text-center">Content Writing</p>
+                                    <p class="text-center"><strong>Content Writing</strong></p>
                                 </div>
                             </div>
                         </li>
@@ -85,7 +84,7 @@
                                         src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px" />
                                 </div>
                                 <div class="content">
-                                    <p class="text-center">Content Writing</p>
+                                    <p class="text-center"><strong>Content Writing</strong></p>
                                 </div>
                             </div>
                         </li>
@@ -96,7 +95,7 @@
                                         src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px" />
                                 </div>
                                 <div class="content">
-                                    <p class="text-center">Content Writing</p>
+                                    <p class="text-center"><strong>Content Writing</strong></p>
                                 </div>
                             </div>
                         </li>
@@ -107,7 +106,7 @@
                                         src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px" />
                                 </div>
                                 <div class="content">
-                                    <p class="text-center">Content Writing</p>
+                                    <p class="text-center"><strong>Content Writing</strong></p>
                                 </div>
                             </div>
                         </li>
@@ -117,7 +116,7 @@
         </div>
     </section>
 
-    <section class="section ec-test-section section-space-ptb-100 section-space-mt section-space-mb">
+    <section class="section ec-test-section section-space-ptb-30 section-space-mb">
         <div class="container">
             <div class="row mb-10">
                 <div class="col-md-12 text-left">

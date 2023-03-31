@@ -18650,6 +18650,10 @@ body {
     padding: 80px 0;
 }
 
+.section-space-ptb-30 {
+    padding: 30px 0;
+}
+
 .section-space-m {
     margin: 40px 0;
 }
@@ -20972,7 +20976,7 @@ li.ec-brand-item {
 }
 
 .ec-fs-pro-inner .ec-pro-content .ec-fs-count-desc {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: #202020;
     position: relative;
@@ -22522,8 +22526,8 @@ section.ec-test-section {
 .ec-test-inner .ec-test-img {
     /* border-radius: 100%; */
     overflow: hidden;
-    width: 80px;
-    height: 80px;
+    width: 50%;
+    height: auto;
     z-index: 1;
     margin: 0 auto;
     position: relative;
@@ -24682,7 +24686,7 @@ section.ec-instagram-section {
 }
 
 .content p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
 }
 

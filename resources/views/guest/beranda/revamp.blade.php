@@ -157,12 +157,11 @@
                         <h2 class="ec-title">Our Product</h2>
                     </div>
                 </div>
-
             </div>
             <div class="row m-tb-minus-15">
                 <div class="col">
                     <div class="tab-content">
-                        <div class="row">
+                        <div class="row mb-6">
                             @foreach ($products as $item)
                                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
                                     <div class="ec-product-inner">
@@ -220,8 +219,14 @@
 
     <!-- ec Banner Section Start -->
     <section class="ec-banner section section-space-p">
-        <h2 class="d-none">Banner</h2>
         <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <div class="section-title mb-6">
+                        <h2 class="ec-title">Galeri</h2>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="owl-carousel owl-theme owl-loaded owl-drag">
                     <div class="owl-stage-outer">

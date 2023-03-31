@@ -320,11 +320,11 @@
                 setTimeout(carousel, 3000); // Change image every 2 seconds
             }
 
-            $( ".load-more" ).click(function() {
-                var sites = {!! json_encode($products->toArray()) !!};
-                // var sites = {{ $products }};
-                console.log(sites);
-            });
+            // $( ".load-more" ).click(function() {
+            //     var sites = {!! json_encode($products->toArray()) !!};
+            //     // var sites = {{ $products }};
+            //     console.log(sites);
+            // });
         });
     </script>
 </x-guest-layout>

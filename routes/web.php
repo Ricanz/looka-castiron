@@ -45,7 +45,8 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
 
 
 //Guest
-Route::get('/', [BerandaController::class, 'index']);
+// Route::get('/', [BerandaController::class, 'index']);
+Route::get('/', [BerandaController::class, 'v2']);
 Route::get('about-us', [BerandaController::class, 'tentang_view'])->name('tentang_view');
 Route::get('products', [BerandaController::class, 'products_view'])->name('products_view');
 Route::get('article', [BerandaController::class, 'article_view'])->name('article_view');
@@ -58,7 +59,7 @@ Route::get('artikel/detail/{slug}', [BerandaController::class, 'detail_artikel']
 Route::resource('kontak', KontakController::class);
 
 // Route Dev
-Route::get('/revamp', [BerandaController::class, 'v2']);
+// Route::get('/revamp', [BerandaController::class, 'v2']);
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

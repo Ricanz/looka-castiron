@@ -404,6 +404,7 @@
     <!--Plugins JS-->
     <script src="{{asset('tlandingPage/assets/js/plugins/scrollup.js')}}"></script>
     <script src="{{asset('tlandingPage/assets/js/plugins/jquery.zoom.min.js')}}"></script>
+    <script src="{{asset('tlandingPage/assets/js/plugins/swiper-bundle.min.js')}}"></script>
     <script src="{{asset('tlandingPage/assets/js/plugins/slick.min.js')}}"></script>
     <script src="{{asset('tlandingPage/assets/js/plugins/infiniteslidev2.js')}}"></script>
     <script src="{{asset('tlandingPage/assets/js/vendor/jquery.magnific-popup.min.js')}}"></script>

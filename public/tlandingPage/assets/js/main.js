@@ -614,33 +614,33 @@ function ecCheckCookie()
     });
 
     /*----------------------------- Product Countdown --------------------- */
-    $("#ec-fs-count-1").countdowntimer({
-        startDate : "2021/10/01 00:00:00",
-        dateAndTime : "2023/01/01 00:00:00",
-        labelsFormat : true,
-        displayFormat : "DHMS"
-    });
+    // $("#ec-fs-count-1").countdowntimer({
+    //     startDate : "2021/10/01 00:00:00",
+    //     dateAndTime : "2023/01/01 00:00:00",
+    //     labelsFormat : true,
+    //     displayFormat : "DHMS"
+    // });
 
-    $("#ec-fs-count-2").countdowntimer({
-        startDate : "2021/10/01 00:00:00",
-        dateAndTime : "2022/12/01 00:00:00",
-        labelsFormat : true,
-        displayFormat : "DHMS"
-    });
+    // $("#ec-fs-count-2").countdowntimer({
+    //     startDate : "2021/10/01 00:00:00",
+    //     dateAndTime : "2022/12/01 00:00:00",
+    //     labelsFormat : true,
+    //     displayFormat : "DHMS"
+    // });
 
-    $("#ec-fs-count-3").countdowntimer({
-        startDate : "2021/10/01 00:00:00",
-        dateAndTime : "2022/11/01 00:00:00",
-        labelsFormat : true,
-        displayFormat : "DHMS"
-    });
+    // $("#ec-fs-count-3").countdowntimer({
+    //     startDate : "2021/10/01 00:00:00",
+    //     dateAndTime : "2022/11/01 00:00:00",
+    //     labelsFormat : true,
+    //     displayFormat : "DHMS"
+    // });
 
-    $("#ec-fs-count-4").countdowntimer({
-        startDate : "2021/10/01 00:00:00",
-        dateAndTime : "2023/03/01 00:00:00",
-        labelsFormat : true,
-        displayFormat : "DHMS"
-    });
+    // $("#ec-fs-count-4").countdowntimer({
+    //     startDate : "2021/10/01 00:00:00",
+    //     dateAndTime : "2023/03/01 00:00:00",
+    //     labelsFormat : true,
+    //     displayFormat : "DHMS"
+    // });
 
     /*----------------------------- Feature Product Slider   -------------------------------- */
     $('.ec-fre-products').slick({

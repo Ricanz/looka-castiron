@@ -1233,12 +1233,12 @@ function ecCheckCookie()
     });
 
     /*----------------------------- single product countdowntimer  ------------------------------ */
-    $("#ec-single-countdown").countdowntimer({
-        startDate : "2021/10/01 00:00:00",
-        dateAndTime : "2023/01/01 00:00:00",
-        labelsFormat : true,
-        displayFormat : "DHMS"
-    });
+    // $("#ec-single-countdown").countdowntimer({
+    //     startDate : "2021/10/01 00:00:00",
+    //     dateAndTime : "2023/01/01 00:00:00",
+    //     labelsFormat : true,
+    //     displayFormat : "DHMS"
+    // });
 
     /*----------------------------- Single Product Color and Size Click to Active -------------------------------- */
     $(document).ready(function() {

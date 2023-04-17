@@ -107,9 +107,12 @@ class BerandaController extends Controller
     public function detail_produk($slug){
         $products = Produk::where('status', 'aktif')->with('kategori')->latest()->limit(8)->get();
         $produk = Produk::where('slug', $slug)->where('status', 'aktif')->first();
-        $category = Kategori::all();
-        $gallery = ProductGallery::where('product_id', $produk->id)->where('role', 'produk')->get();
-        return view('guest.katalog.detail', compact('produk', 'products', 'category', 'gallery'));
+        if ($produk) {
+            $category = Kategori::all();
+            $gallery = ProductGallery::where('product_id', $produk->id)->where('role', 'produk')->get();
+            return view('guest.katalog.detail', compact('produk', 'products', 'category', 'gallery'));
+        } 
+        return false;
     }
 
     public function detail_artikel($slug){

@@ -294,8 +294,6 @@
         var owl = $('.owl-carousel');
         owl.owlCarousel({
             items: 4,
-            // items change number for slider display on desktop
-
             loop: true,
             margin: 10,
             autoplay: true,
@@ -319,12 +317,6 @@
                 x[slideIndex-1].style.display = "block";
                 setTimeout(carousel, 3000); // Change image every 2 seconds
             }
-
-            // $( ".load-more" ).click(function() {
-            //     var sites = {!! json_encode($products->toArray()) !!};
-            //     // var sites = {{ $products }};
-            //     console.log(sites);
-            // });
         });
     </script>
 </x-guest-layout>

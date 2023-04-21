@@ -178,7 +178,6 @@ class GalleryController extends Controller
         }
         $gallery->deskripsi = $request->judul;
         $gallery->save();
-        dd($gallery);
         return redirect()->route('why_us')
             ->with('post', 'Gallery Berhasil Disimpan');
     }

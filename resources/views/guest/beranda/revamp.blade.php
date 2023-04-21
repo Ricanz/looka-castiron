@@ -34,7 +34,7 @@
                                                 <img class="main-image mySlides" id="mySlides"
                                                     src="{{ asset($tentang->gambar) }}" alt="Product" />
                                                  <img class="main-image mySlides" id="mySlides"
-                                                    src="{{ asset('tlandingPage/assets/images/why-us.png') }}" alt="Product" />
+                                                    src="{{ asset($tentang2->gambar) }}" alt="Product" />
                                                 </a>
                                         @endif
                                     </div>

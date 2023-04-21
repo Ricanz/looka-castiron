@@ -24,40 +24,24 @@
                 <li class="dropdown user-menu">
                     <button class="dropdown-toggle nav-link ec-drop" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        <img src="{{asset('tadmin/assets/img/user/user.png')}}" class="user-image"
+                        <img src="{{ asset('tlandingPage/assets/images/favicon/looka-logo.jpeg') }}" class="user-image"
                             alt="User Image" />
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right ec-dropdown-menu">
                         <!-- User image -->
                         <li class="dropdown-header">
-                            <img src="{{asset('tadmin/assets/img/user/user.png')}}" class="img-circle"
+                            <img src="{{ asset('tlandingPage/assets/images/favicon/looka-logo.jpeg') }}" class="img-circle"
                                 alt="User Image" />
                             <div class="d-inline-block">
-                                John Deo <small class="pt-1">john.example@gmail.com</small>
+                                Admin <small class="pt-1">admin@gmail.com</small>
                             </div>
-                        </li>
-                        <li>
-                            <a href="user-profile.html">
-                                <i class="mdi mdi-account"></i> My Profile
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="mdi mdi-email"></i> Message
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> <i class="mdi mdi-diamond-stone"></i> Projects </a>
-                        </li>
-                        <li class="right-sidebar-in">
-                            <a href="javascript:0"> <i class="mdi mdi-settings-outline"></i> Setting </a>
                         </li>
                         <li class="dropdown-footer">
                             <a href="{{route('logout')}}"> <i class="mdi mdi-logout"></i> Log Out </a>
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown notifications-menu custom-dropdown">
+                {{-- <li class="dropdown notifications-menu custom-dropdown">
                     <button class="dropdown-toggle notify-toggler custom-dropdown-toggler">
                         <i class="mdi mdi-bell-outline"></i>
                     </button>
@@ -627,7 +611,7 @@
                             <a class="text-center" href="#"> View All </a>
                         </li>
                     </ul>
-                </li>
+                </li> --}}
                 <li class="right-sidebar-in right-sidebar-2-menu">
                     <i class="mdi mdi-settings-outline mdi-spin"></i>
                 </li>

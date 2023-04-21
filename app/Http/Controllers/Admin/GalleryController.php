@@ -172,8 +172,8 @@ class GalleryController extends Controller
         if ($request->gambar != null) {
             $extention = $request->gambar->extension();
             $file_name = time() . '.' . $extention;
-            $txt = "storage/Gallery/" . $file_name;
-            $request->gambar->storeAs('public/Gallery', $file_name);
+            $txt = "storage/WhyUs/" . $file_name;
+            $request->gambar->storeAs('public/WhyUs', $file_name);
             $gallery->image = $txt;
         }
         $gallery->deskripsi = $request->judul;

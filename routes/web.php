@@ -41,7 +41,7 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
     Route::get('/footer-gallery/create', [GalleryController::class, 'create_footer_gallery'])->name('create_footer_gallery');
     Route::post('/footer-gallery/submit', [GalleryController::class, 'store_footer_gallery'])->name('store_footer_gallery');
     Route::post('/footer-gallery/destroy', [GalleryController::class, 'footer_gallery_destroy'])->name('footer_gallery_destroy');
-    Route::get('/why-us', [GalleryController::class, 'why_us'])->name('why_us');
+    Route::get('/admin/why-us', [GalleryController::class, 'why_us'])->name('why_us');
     Route::get('/gallery/edit/{id}', [GalleryController::class, 'edit'])->name('edit_gallery');
     Route::post('/gallery/store', [GalleryController::class, 'store_gallery'])->name('store_gallery');
 

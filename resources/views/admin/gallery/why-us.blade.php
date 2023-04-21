@@ -19,7 +19,6 @@
                                     <thead>
                                         <tr>
                                             <th>Image</th>
-                                            <th>Urutan</th>
                                             <th>Judul</th>
                                             <th>Tanggal Dibuat</th>
                                             <th>Aksi</th>
@@ -31,7 +30,6 @@
                                             <tr>
                                                 <td><img class="tbl-thumb" src="{{ asset($item->image) }}"
                                                         alt="Product Image" /></td>
-                                                <td>{{ $item->sequence }}</td>
                                                 <td>{{ $item->deskripsi }}</td>
                                                 <td>{{ $item->created_at->format('d-m-Y') }}</td>
                                                 <td>

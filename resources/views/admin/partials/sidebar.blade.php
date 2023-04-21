@@ -30,9 +30,15 @@
                     </a>
                 </li>
                 <li class="has-sub">
+                    <a class="sidenav-item-link" href="{{url('admin/why-us')}}">
+                        <i class="mdi mdi-camera"></i>
+                        <span class="nav-text">Why Us Images</span> 
+                    </a>
+                </li>
+                <li class="has-sub">
                     <a class="sidenav-item-link" href="{{url('admin/footer-gallery')}}">
                         <i class="mdi mdi-camera"></i>
-                        <span class="nav-text">Footer Gallery</span> 
+                        <span class="nav-text">Footer Galleries</span> 
                     </a>
                 </li>
 

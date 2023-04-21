@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Gallery;
 use App\Models\ProductGallery;
 use App\Models\Produk;
 use Carbon\Carbon;
@@ -85,7 +86,8 @@ class GalleryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $gallery = Gallery::findOrFail($id);
+        return view('admin.gallery.edit', compact('gallery'));
     }
 
     /**
@@ -158,5 +160,25 @@ class GalleryController extends Controller
         $gallery->delete();
         return redirect()->route('footer_gallery')
             ->with('delete', 'Gallery Berhasil Dihapus');
+    }
+
+    public function why_us(){
+        $gallery = Gallery::where('role', 'why-us')->where('status', 'active')->get();
+        return view('admin.gallery.why-us', compact('gallery'));
+    }
+
+    public function store_gallery(Request $request){
+        $gallery = Gallery::findOrFail($request->id);
+        if ($request->gambar != null) {
+            $extention = $request->gambar->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/Gallery/" . $file_name;
+            $request->gambar->storeAs('public/Gallery', $file_name);
+            $gallery->image = $txt;
+        }
+        $gallery->deskripsi = $request->judul;
+        $gallery->save();
+        return redirect()->route('why_us')
+            ->with('post', 'Gallery Berhasil Disimpan');
     }
 }

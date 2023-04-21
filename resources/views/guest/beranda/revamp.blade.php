@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="ec-test-outer">
                     <ul id="" class="partnership">
-                        <li class="ec-test-item col-sm-3">
+                        {{-- <li class="ec-test-item col-sm-3">
                             <div class="ec-test-inner">
                                 <div class="ec-test-img mb-3">
                                     <img alt="testimonial" title="testimonial"
@@ -80,40 +80,20 @@
                                     <p class="text-center"><strong>Content Writing</strong></p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="ec-test-item col-sm-3">
-                            <div class="ec-test-inner">
-                                <div class="ec-test-img mb-3">
-                                    <img alt="testimonial" title="testimonial"
-                                        src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px" />
+                        </li> --}}
+                        @foreach ($why_us as $item)
+                            <li class="ec-test-item col-sm-3">
+                                <div class="ec-test-inner">
+                                    <div class="ec-test-img mb-3">
+                                        <img alt="testimonial" title="testimonial"
+                                            src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px" />
+                                    </div>
+                                    <div class="content">
+                                        <p class="text-center"><strong>Content Writing</strong></p>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <p class="text-center"><strong>Content Writing</strong></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="ec-test-item col-sm-3">
-                            <div class="ec-test-inner">
-                                <div class="ec-test-img mb-3">
-                                    <img alt="testimonial" title="testimonial"
-                                        src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px" />
-                                </div>
-                                <div class="content">
-                                    <p class="text-center"><strong>Content Writing</strong></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="ec-test-item col-sm-3">
-                            <div class="ec-test-inner">
-                                <div class="ec-test-img mb-3">
-                                    <img alt="testimonial" title="testimonial"
-                                        src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px" />
-                                </div>
-                                <div class="content">
-                                    <p class="text-center"><strong>Content Writing</strong></p>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\AboutUs;
 use App\Models\Artikel;
 use App\Models\Banner;
+use App\Models\Gallery;
 use App\Models\Kategori;
 use App\Models\Produk;
 use App\Models\Testimonial;
@@ -37,7 +38,8 @@ class BerandaController extends Controller
         $tentang = AboutUs::where('id', 1)->first();
         $tentang2 = AboutUs::where('id', 2)->first();
         $footer_gallery = ProductGallery::where('role', 'footer')->get();
-        return view('guest.beranda.revamp', compact('testimonial','produkTerbaru', 'products', 'banner', 'tentang', 'tentang2', 'randomProducts', 'footer_gallery'));
+        $why_us = Gallery::select('image', 'deskripsi')->where('role', 'why-us')->where('status', 'active')->get();
+        return view('guest.beranda.revamp', compact('testimonial','produkTerbaru', 'products', 'banner', 'tentang', 'tentang2', 'randomProducts', 'footer_gallery', 'why_us'));
     }
 
     public function kategori_produk($id)

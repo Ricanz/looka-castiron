@@ -86,10 +86,10 @@
                                 <div class="ec-test-inner">
                                     <div class="ec-test-img mb-3">
                                         <img alt="testimonial" title="testimonial"
-                                            src="{{ asset('tlandingPage/assets/images/why-us.png') }}" width="200px" />
+                                            src="{{ asset($item->image) }}" width="200px" />
                                     </div>
                                     <div class="content">
-                                        <p class="text-center"><strong>Content Writing</strong></p>
+                                        <p class="text-center"><strong>{{ $item->deskripsi }}</strong></p>
                                     </div>
                                 </div>
                             </li>

@@ -222,30 +222,14 @@
                     <div class="owl-stage-outer">
                         <div class="owl-stage"
                             style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
-                            <div class="owl-item active" style="width: 128.906px; margin-right: 10px; background-color: white;">
-                                <div class="item">
-                                    <img class="rounded" src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}"
-                                        alt="" />
+                            @foreach ($footer_gallery as $item)
+                                <div class="owl-item active" style="width: 128.906px; margin-right: 10px; background-color: white;">
+                                    <div class="item">
+                                        <img class="rounded" src="{{ asset($item->image) }}"
+                                            alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="owl-item active" style="width: 128.906px; margin-right: 10px; background-color: white;">
-                                <div class="item">
-                                    <img class="rounded" src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 128.906px; margin-right: 10px; background-color: white;">
-                                <div class="item">
-                                    <img class="rounded" src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 128.906px; margin-right: 10px; background-color: white;">
-                                <div class="item">
-                                    <img class="rounded" src="{{ asset('tlandingPage/assets/images/brand/brand-2.jpeg') }}"
-                                        alt="" />
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -255,7 +239,7 @@
     <!-- ec Banner Section End -->
 
     <!-- Ec Instagram Start -->
-    <section class="section ec-instagram-section section-space-pt mb-4">
+    {{-- <section class="section ec-instagram-section section-space-pt mb-4">
         <div class="ec-insta-wrapper">
             <div class="ec-insta-outer">
                 <div class="insta-auto">
@@ -273,7 +257,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Ec Instagram End -->
 
     <script>

@@ -37,9 +37,12 @@ class BerandaController extends Controller
         $banner = Banner::where('status', 'aktif')->get();
         $tentang = AboutUs::where('id', 1)->first();
         $tentang2 = AboutUs::where('id', 2)->first();
+        $tentang3 = AboutUs::where('id', 3)->first();
+        $tentang4 = AboutUs::where('id', 4)->first();
+        $tentang5 = AboutUs::where('id', 5)->first();
         $footer_gallery = ProductGallery::where('role', 'footer')->get();
         $why_us = Gallery::select('image', 'deskripsi')->where('role', 'why-us')->where('status', 'active')->get();
-        return view('guest.beranda.revamp', compact('testimonial','produkTerbaru', 'products', 'banner', 'tentang', 'tentang2', 'randomProducts', 'footer_gallery', 'why_us'));
+        return view('guest.beranda.revamp', compact('testimonial','produkTerbaru', 'products', 'banner', 'tentang', 'tentang2', 'tentang3', 'tentang4', 'tentang5', 'randomProducts', 'footer_gallery', 'why_us'));
     }
 
     public function kategori_produk($id)

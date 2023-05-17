@@ -35,6 +35,12 @@
                                                     src="{{ asset($tentang->gambar) }}" alt="Product" />
                                                  <img class="main-image mySlides" id="mySlides"
                                                     src="{{ asset($tentang2->gambar) }}" alt="Product" />
+                                                <img class="main-image mySlides" id="mySlides"
+                                                src="{{ asset($tentang3->gambar) }}" alt="Product" />
+                                                <img class="main-image mySlides" id="mySlides"
+                                                src="{{ asset($tentang4->gambar) }}" alt="Product" />
+                                                <img class="main-image mySlides" id="mySlides"
+                                                src="{{ asset($tentang5->gambar) }}" alt="Product" />
                                                 </a>
                                         @endif
                                     </div>

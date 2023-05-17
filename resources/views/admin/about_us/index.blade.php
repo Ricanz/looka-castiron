@@ -36,7 +36,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="ec-vendor-main-img">
                                         <div class="avatar-upload">
                                             <div class="avatar-edit">
@@ -51,6 +51,64 @@
                                                 <div class="imagePreview ec-div-preview">
                                                     <img class="ec-image-preview"
                                                         src="{{ asset($data2->gambar) }}"
+                                                        alt="edit" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ec-vendor-main-img">
+                                        <div class="avatar-upload">
+                                            <div class="avatar-edit">
+                                                <input type='file' id="imageUpload3" name="gambar3" class="ec-image-upload"
+                                                    accept=".png, .jpg, .jpeg" />
+                                                <label for="imageUpload3"><img
+                                                        src="{{ asset('tadmin/assets/img/icons/edit.svg') }}"
+                                                        class="svg_img header_svg" alt="edit" /> 
+                                                </label>
+                                            </div>
+                                            <div class="avatar-preview ec-preview">
+                                                <div class="imagePreview ec-div-preview">
+                                                    <img class="ec-image-preview"
+                                                        src="{{ asset($data3->gambar) }}"
+                                                        alt="edit" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ec-vendor-main-img">
+                                        <div class="avatar-upload">
+                                            <div class="avatar-edit">
+                                                <input type='file' id="imageUpload4" name="gambar4" class="ec-image-upload"
+                                                    accept=".png, .jpg, .jpeg" />
+                                                <label for="imageUpload4"><img
+                                                        src="{{ asset('tadmin/assets/img/icons/edit.svg') }}"
+                                                        class="svg_img header_svg" alt="edit" /> 
+                                                </label>
+                                            </div>
+                                            <div class="avatar-preview ec-preview">
+                                                <div class="imagePreview ec-div-preview">
+                                                    <img class="ec-image-preview"
+                                                        src="{{ asset($data4->gambar) }}"
+                                                        alt="edit" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ec-vendor-main-img">
+                                        <div class="avatar-upload">
+                                            <div class="avatar-edit">
+                                                <input type='file' id="imageUpload5" name="gambar5" class="ec-image-upload"
+                                                    accept=".png, .jpg, .jpeg" />
+                                                <label for="imageUpload5"><img
+                                                        src="{{ asset('tadmin/assets/img/icons/edit.svg') }}"
+                                                        class="svg_img header_svg" alt="edit" /> 
+                                                </label>
+                                            </div>
+                                            <div class="avatar-preview ec-preview">
+                                                <div class="imagePreview ec-div-preview">
+                                                    <img class="ec-image-preview"
+                                                        src="{{ asset($data5->gambar) }}"
                                                         alt="edit" />
                                                 </div>
                                             </div>

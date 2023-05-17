@@ -30,7 +30,7 @@ class BerandaController extends Controller
 
     public function v2()
     {
-        $testimonial = Testimonial::where('status', 'aktif')->take(3)->get();
+        $testimonial = Testimonial::where('status', 'aktif')->get();
         $produkTerbaru = Produk::where('status', 'aktif')->latest()->take(2)->get();
         $products = Produk::where('status', 'aktif')->with('kategori')->orderByDesc('created_at')->paginate(12);
         $randomProducts = Produk::where('status', 'aktif')->with('kategori')->inRandomOrder()->paginate(12);

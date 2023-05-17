@@ -95,7 +95,7 @@
                                             src="{{ asset($item->image) }}" width="200px" />
                                     </div>
                                     <div class="content">
-                                        <p class="text-center"><strong>{{ $item->deskripsi }}</strong></p>
+                                        <p class="text-justify"><strong>{{ $item->deskripsi }}</strong></p>
                                     </div>
                                 </div>
                             </li>
